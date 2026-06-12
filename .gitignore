@@ -1,0 +1,17 @@
+# Material interno de trabalho (não publicar) — fica só local
+_interno/
+
+# Dependências
+node_modules/
+
+# Build / saída gerada
+dist/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Editores
+.vscode/
+.idea/
