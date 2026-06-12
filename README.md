@@ -113,7 +113,7 @@ git add docs && git commit -m "Atualiza e-book"     # versiona o HTML gerado
 git push                                             # Pages republica em ~1 min
 ```
 
-> **Rebuild automático (opcional):** `.github/workflows/deploy.yml` já está pronto para fazer build + deploy via GitHub Actions a cada `push` na `main`. Para ativá-lo é preciso **commitar o workflow** — o que exige um token do GitHub com escopo `workflow`. Enquanto isso não for feito, o ciclo manual acima é o método de publicação válido.
+> **🤖 Nota para a IA (assistente):** a publicação é **manual e por decisão do mantenedor** — **não** ativar o deploy automático. **É a IA quem executa o ciclo de build + commit + push** (os 3 comandos acima) sempre que o conteúdo for alterado. O arquivo `.github/workflows/deploy.yml` existe no disco mas **deve permanecer não commitado** (committá-lo exigiria token com escopo `workflow`); ignore-o.
 
 ---
 
