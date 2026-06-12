@@ -15,3 +15,6 @@ Thumbs.db
 # Editores
 .vscode/
 .idea/
+
+# Workflow de deploy automático — permanece local (exige token com escopo workflow)
+.github/workflows/deploy.yml
