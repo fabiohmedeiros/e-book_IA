@@ -7,4 +7,9 @@ export default defineConfig({
     tailwindcss(),
     viteSingleFile()
   ],
+  build: {
+    // Saída servida pelo GitHub Pages (Settings → Pages → branch main, pasta /docs)
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
 })

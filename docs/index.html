@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Guia prático, ético e juridicamente responsável sobre o uso de Inteligência Artificial na Psicologia Clínica. CEUB — Projeto Integrador III." />
+    <meta name="author" content="Alunos da disciplina Projeto Integrador III — CEUB" />
+    <meta name="color-scheme" content="light dark" />
+    <title>IA para Psicólogos: Guia Prático para a Clínica</title>
+    <script type="module" crossorigin>(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=document.documentElement,t=`ebook-ia-theme`;function n(t){e.classList.toggle(`dark`,t===`dark`),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.setAttribute(`aria-label`,t===`dark`?`Ativar modo claro`:`Ativar modo escuro`);let n=e.querySelector(`.ico-sun`),r=e.querySelector(`.ico-moon`);n&&r&&(n.style.display=t===`dark`?`block`:`none`,r.style.display=t===`dark`?`none`:`block`)})}function r(){let e=localStorage.getItem(t),r=window.matchMedia(`(prefers-color-scheme: dark)`).matches;n(e||(r?`dark`:`light`))}document.querySelectorAll(`[data-theme-toggle]`).forEach(r=>{r.addEventListener(`click`,()=>{let r=e.classList.contains(`dark`)?`light`:`dark`;localStorage.setItem(t,r),n(r)})}),window.matchMedia(`(prefers-color-scheme: dark)`).addEventListener(`change`,e=>{localStorage.getItem(t)||n(e.matches?`dark`:`light`)}),r();var i=document.body,a=()=>i.classList.add(`nav-open`),o=()=>i.classList.remove(`nav-open`);document.querySelector(`[data-nav-open]`)?.addEventListener(`click`,a),document.getElementById(`overlay`)?.addEventListener(`click`,o),document.querySelectorAll(`.toc a`).forEach(e=>e.addEventListener(`click`,()=>{window.innerWidth<=1024&&o()})),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&o()});var s=document.getElementById(`progress-bar`),c=document.getElementById(`to-top`);function l(){let e=document.documentElement,t=e.scrollTop,n=e.scrollHeight-e.clientHeight,r=n>0?t/n*100:0;s&&(s.style.width=r+`%`),c&&c.classList.toggle(`show`,t>600)}document.addEventListener(`scroll`,l,{passive:!0}),l(),c?.addEventListener(`click`,()=>window.scrollTo({top:0,behavior:`smooth`}));var u=new Map;document.querySelectorAll(`.toc a[href^="#"]`).forEach(e=>{u.set(e.getAttribute(`href`).slice(1),e)});var d=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){u.forEach(e=>e.classList.remove(`active`));let t=u.get(e.target.id);t&&t.classList.add(`active`)}})},{rootMargin:`-30% 0px -60% 0px`,threshold:0});document.querySelectorAll(`.chapter[id]`).forEach(e=>d.observe(e)),document.querySelectorAll(`.copy-btn`).forEach(e=>{e.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span>Copiar</span>`,e.addEventListener(`click`,async()=>{let t=e.parentElement.querySelector(`.prompt-code`),n=t?t.textContent.trim():``;try{await navigator.clipboard.writeText(n)}catch{let e=document.createElement(`textarea`);e.value=n,document.body.appendChild(e),e.select(),document.execCommand(`copy`),e.remove()}e.classList.add(`copied`),e.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Copiado!</span>`,setTimeout(()=>{e.classList.remove(`copied`),e.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span>Copiar</span>`},1800)})});var f=document.getElementById(`tools-table`),p=document.getElementById(`tools-filter`);if(f&&p){let e=f.querySelector(`tbody`),t=()=>Array.from(e.querySelectorAll(`tr`));p.addEventListener(`input`,()=>{let e=p.value.trim().toLowerCase();t().forEach(t=>{t.style.display=t.textContent.toLowerCase().includes(e)?``:`none`})}),f.querySelectorAll(`thead th`).forEach((n,r)=>{n.addEventListener(`click`,()=>{let i=!n.classList.contains(`sort-asc`);f.querySelectorAll(`thead th`).forEach(e=>e.classList.remove(`sort-asc`,`sort-desc`)),n.classList.add(i?`sort-asc`:`sort-desc`);let a=t();a.sort((e,t)=>{let n=e.children[r].textContent.trim().toLowerCase(),a=t.children[r].textContent.trim().toLowerCase();return i?n.localeCompare(a,`pt-BR`):a.localeCompare(n,`pt-BR`)}),a.forEach(t=>e.appendChild(t))})})}var m=document.getElementById(`search-input`),h=document.getElementById(`search-count`),g=document.querySelector(`.content-wrap`),_=[],v=-1;function y(){g.querySelectorAll(`mark.search-hit`).forEach(e=>{let t=e.parentNode;t.replaceChild(document.createTextNode(e.textContent),e),t.normalize()}),_=[],v=-1}function b(e){if(!e||e.length<2){h&&(h.textContent=``);return}let t=e.toLowerCase(),n=document.createTreeWalker(g,NodeFilter.SHOW_TEXT,{acceptNode(e){if(!e.nodeValue.trim())return NodeFilter.FILTER_REJECT;let n=e.parentElement;return!n||n.closest(`script, style, .copy-btn, #search-count`)?NodeFilter.FILTER_REJECT:e.nodeValue.toLowerCase().includes(t)?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT}}),r=[],i;for(;i=n.nextNode();)r.push(i);r.forEach(n=>{let r=document.createDocumentFragment(),i=n.nodeValue,a=0,o,s=i.toLowerCase();for(;(o=s.indexOf(t,a))!==-1;){o>a&&r.appendChild(document.createTextNode(i.slice(a,o)));let t=document.createElement(`mark`);t.className=`search-hit`,t.textContent=i.slice(o,o+e.length),r.appendChild(t),a=o+e.length}a<i.length&&r.appendChild(document.createTextNode(i.slice(a))),n.parentNode.replaceChild(r,n)}),_=Array.from(g.querySelectorAll(`mark.search-hit`)),h&&(h.textContent=_.length?`${_.length} resultado${_.length>1?`s`:``} — Enter para navegar`:`Nenhum resultado`),_.length&&x(0)}function x(e){if(!_.length)return;_.forEach(e=>e.classList.remove(`current`)),v=(e+_.length)%_.length;let t=_[v];t.classList.add(`current`),t.scrollIntoView({behavior:`smooth`,block:`center`}),h&&(h.textContent=`${v+1} de ${_.length}`)}var S;m?.addEventListener(`input`,()=>{clearTimeout(S),S=setTimeout(()=>{y(),b(m.value.trim())},220)}),m?.addEventListener(`keydown`,e=>{e.key===`Enter`&&_.length&&(e.preventDefault(),x(v+(e.shiftKey?-1:1))),e.key===`Escape`&&(m.value=``,y(),h&&(h.textContent=``))});</script>
+    <style rel="stylesheet" crossorigin>/*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */
+@layer theme{:root,:host{--font-sans:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--shadow-sm:0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;--shadow-md:0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;--shadow-lg:0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono)}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--default-font-family,ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){appearance:button}::file-selector-button{appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}}@layer components;@layer utilities{.container{width:100%}@media (width>=40rem){.container{max-width:40rem}}@media (width>=48rem){.container{max-width:48rem}}@media (width>=64rem){.container{max-width:64rem}}@media (width>=80rem){.container{max-width:80rem}}@media (width>=96rem){.container{max-width:96rem}}.block{display:block}.contents{display:contents}}:root{--bg:#f6f8fb;--bg-elevated:#fff;--bg-sidebar:#fff;--text:#1e293b;--text-strong:#0f172a;--text-muted:#64748b;--border:#e5e9f0;--border-strong:#d4dbe6;--primary:#2563eb;--primary-strong:#1d4ed8;--primary-contrast:#fff;--primary-soft:#eff5ff;--primary-soft-border:#d6e4ff;--code-bg:#f1f5f9;--code-text:#0f172a;--shadow-sm:0 1px 2px #0f172a0f, 0 1px 3px #0f172a0d;--shadow-md:0 4px 12px #0f172a12, 0 2px 4px #0f172a0d;--shadow-lg:0 18px 40px -12px #0f172a38;--warn-bg:#fffbeb;--warn-border:#fde68a;--warn-text:#92400e;--danger-bg:#fef2f2;--danger-border:#fecaca;--danger-text:#991b1b;--ok-bg:#f0fdf4;--ok-border:#bbf7d0;--ok-text:#166534;--info-bg:#eff6ff;--info-border:#bfdbfe;--info-text:#1e40af}.dark{--bg:#0b1120;--bg-elevated:#131c2e;--bg-sidebar:#0f1827;--text:#cbd5e1;--text-strong:#f1f5f9;--text-muted:#8b9bb4;--border:#233047;--border-strong:#2f3e57;--primary:#60a5fa;--primary-strong:#93c5fd;--primary-contrast:#0b1120;--primary-soft:#16233b;--primary-soft-border:#1e3358;--code-bg:#0a1322;--code-text:#d7e3f4;--shadow-sm:0 1px 2px #0006;--shadow-md:0 6px 16px #00000073;--shadow-lg:0 22px 48px -12px #000000a6;--warn-bg:#2a2410;--warn-border:#5c4d18;--warn-text:#fcd96b;--danger-bg:#2a1717;--danger-border:#5c2626;--danger-text:#fca5a5;--ok-bg:#112318;--ok-border:#1f4d33;--ok-text:#86efac;--info-bg:#14233e;--info-border:#1f3a63;--info-text:#93c5fd}*{scroll-margin-top:5rem}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;text-rendering:optimizelegibility;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;line-height:1.7;transition:background-color .3s,color .3s}a{color:inherit}::selection{background:var(--primary);color:var(--primary-contrast)}.scroll-thin{scrollbar-width:thin;scrollbar-color:var(--border-strong) transparent}.scroll-thin::-webkit-scrollbar{width:8px}.scroll-thin::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:99px}#progress-bar{background:linear-gradient(90deg, var(--primary), #38bdf8);z-index:60;width:0%;height:3px;transition:width .12s linear;position:fixed;top:0;left:0}.layout{min-height:100vh;display:flex}.sidebar{z-index:50;background:var(--bg-sidebar);border-right:1px solid var(--border);flex-direction:column;width:19rem;transition:transform .3s cubic-bezier(.4,0,.2,1);display:flex;position:fixed;inset:0 auto 0 0}.sidebar-header{border-bottom:1px solid var(--border);padding:1.25rem 1.25rem 1rem}.brand{align-items:center;gap:.6rem;text-decoration:none;display:flex}.brand-mark{background:linear-gradient(135deg, var(--primary), #38bdf8);color:#fff;width:2.25rem;height:2.25rem;box-shadow:var(--shadow-sm);border-radius:.6rem;flex:none;place-items:center;font-size:.95rem;font-weight:700;display:grid}.brand-title{color:var(--text-strong);font-size:.95rem;font-weight:700;line-height:1.15}.brand-sub{color:var(--text-muted);font-size:.72rem}.toc{flex:1;padding:.75rem .75rem 2rem;overflow-y:auto}.toc-label{letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);padding:.5rem .75rem .35rem;font-size:.68rem;font-weight:600}.toc a{color:var(--text-muted);border-radius:.55rem;align-items:center;gap:.6rem;padding:.5rem .75rem;font-size:.875rem;font-weight:500;text-decoration:none;transition:background-color .15s,color .15s;display:flex}.toc a:hover{background:var(--primary-soft);color:var(--primary-strong)}.toc a.active{background:var(--primary-soft);color:var(--primary-strong);font-weight:600}.toc a .num{background:var(--bg);border:1px solid var(--border);width:1.5rem;height:1.5rem;color:var(--text-muted);border-radius:.4rem;flex:none;place-items:center;font-size:.72rem;font-weight:700;display:grid}.toc a:hover .num,.toc a.active .num{background:var(--primary);border-color:var(--primary);color:var(--primary-contrast)}.content-wrap{flex:1;min-width:0;margin-left:19rem}.container{max-width:56rem;margin:0 auto;padding:2.5rem 1.75rem 6rem}.topbar{z-index:40;background:var(--bg-elevated);align-items:center;gap:.75rem;padding:.6rem .9rem;display:none;position:sticky;top:0}@supports (color:color-mix(in lab, red, red)){.topbar{background:color-mix(in srgb, var(--bg-elevated) 88%, transparent)}}.topbar{-webkit-backdrop-filter:saturate(150%)blur(8px);backdrop-filter:saturate(150%)blur(8px);border-bottom:1px solid var(--border)}.icon-btn{border:1px solid var(--border);background:var(--bg-elevated);width:2.4rem;height:2.4rem;color:var(--text);cursor:pointer;border-radius:.6rem;flex:none;place-items:center;transition:background-color .15s,border-color .15s,color .15s;display:grid}.icon-btn:hover{background:var(--primary-soft);color:var(--primary-strong);border-color:var(--primary-soft-border)}.icon-btn svg{width:1.2rem;height:1.2rem}.search-box{margin-top:.9rem;position:relative}.search-box svg{width:1rem;height:1rem;color:var(--text-muted);pointer-events:none;position:absolute;top:50%;left:.7rem;transform:translateY(-50%)}.search-box input{border:1px solid var(--border);background:var(--bg);width:100%;color:var(--text);border-radius:.6rem;outline:none;padding:.55rem .8rem .55rem 2.1rem;font-size:.85rem;transition:border-color .15s,box-shadow .15s}.search-box input:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-soft)}.search-count{color:var(--text-muted);min-height:1rem;padding:.4rem .25rem 0;font-size:.72rem}mark.search-hit{color:#1e293b;background:#fde68a;border-radius:.2rem;padding:0 .1em}.dark mark.search-hit{color:#fff;background:#b45309}mark.search-hit.current{outline:2px solid var(--primary)}.cover{text-align:center;color:#fff;box-shadow:var(--shadow-lg);background:radial-gradient(120% 120% at 0 0,#1e3a8a 0%,#0000 55%),radial-gradient(120% 120% at 100% 0,#0ea5e9 0%,#0000 50%),linear-gradient(160deg,#1d4ed8,#0c4a6e);border-radius:1.5rem;padding:4rem 2.5rem 3rem;position:relative;overflow:hidden}.cover:after{content:"";opacity:.12;pointer-events:none;background-image:radial-gradient(circle,#fff 1px,#0000 1.4px);background-size:26px 26px;position:absolute;inset:0}.cover>*{z-index:1;position:relative}.cover-eyebrow{letter-spacing:.14em;text-transform:uppercase;color:#bfdbfe;font-size:.78rem;font-weight:600}.cover h1{letter-spacing:-.02em;margin:1rem 0 .5rem;font-size:clamp(2.4rem,6vw,3.6rem);font-weight:800;line-height:1.05}.cover .cover-sub{color:#e0f2fe;font-size:clamp(1.05rem,2.5vw,1.35rem);font-weight:500}.cover .cover-desc{color:#cfe3ff;max-width:40rem;margin:1rem auto 0;font-size:.95rem}.cover-principle{color:#f0f7ff;-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);background:#ffffff1a;border:1px solid #ffffff38;border-radius:.9rem;max-width:42rem;margin:2rem auto 0;padding:1.1rem 1.4rem;font-size:1rem;font-style:italic}.cover-meta{color:#dbeafe;gap:.25rem;margin-top:2.25rem;font-size:.9rem;display:grid}.cover-meta strong{color:#fff}.cover-cta{color:#1d4ed8;box-shadow:var(--shadow-md);background:#fff;border-radius:99px;align-items:center;gap:.5rem;margin-top:2rem;padding:.7rem 1.4rem;font-weight:600;text-decoration:none;transition:transform .15s,box-shadow .15s;display:inline-flex}.cover-cta:hover{box-shadow:var(--shadow-lg);transform:translateY(-1px)}.notice-grid{grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem;display:grid}@media (width<=640px){.notice-grid{grid-template-columns:1fr}}.notice{background:var(--bg-elevated);border:1px solid var(--border);box-shadow:var(--shadow-sm);border-radius:.9rem;gap:.8rem;padding:1rem 1.1rem;display:flex}.notice .notice-ico{flex:none;font-size:1.3rem;line-height:1.6}.notice p{color:var(--text-muted);margin:0;font-size:.86rem}.notice strong{color:var(--text-strong);margin-bottom:.15rem;font-size:.9rem;display:block}.chapter{padding-top:2.5rem}.chapter+.chapter{margin-top:1rem}.chapter-head{margin-bottom:1.75rem}.chapter-kicker{letter-spacing:.1em;text-transform:uppercase;color:var(--primary-strong);background:var(--primary-soft);border:1px solid var(--primary-soft-border);border-radius:99px;padding:.25rem .7rem;font-size:.72rem;font-weight:700;display:inline-block}.content h2.chapter-title{letter-spacing:-.02em;color:var(--text-strong);margin:.85rem 0 0;font-size:clamp(1.7rem,4vw,2.25rem);font-weight:800;line-height:1.15}.content{font-size:1.02rem}.content h3{color:var(--text-strong);letter-spacing:-.01em;margin:2.25rem 0 .85rem;scroll-margin-top:5rem;font-size:1.35rem;font-weight:700}.content h4{color:var(--text-strong);margin:1.75rem 0 .6rem;font-size:1.08rem;font-weight:700}.content p{margin:0 0 1.1rem}.content a.ref-link{color:var(--primary-strong);border-bottom:1px solid var(--primary-soft-border);font-weight:500;text-decoration:none}.content a.ref-link:hover{border-bottom-color:var(--primary)}.content strong{color:var(--text-strong);font-weight:700}.content ul,.content ol{margin:0 0 1.1rem;padding-left:1.4rem}.content li{margin:.35rem 0}.content ul{padding-left:0;list-style:none}.content ul>li{padding-left:1.4rem;position:relative}.content ul>li:before{content:"";background:var(--primary);border-radius:99px;width:.4rem;height:.4rem;position:absolute;top:.72em;left:.25rem}.content ol{padding-left:1.5rem;list-style:decimal}.content ol>li::marker{color:var(--primary-strong);font-weight:700}.content hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0}.content code{background:var(--code-bg);color:var(--code-text);border:1px solid var(--border);border-radius:.35rem;padding:.15em .4em;font-family:ui-monospace,SFMono-Regular,Cascadia Code,Menlo,Consolas,monospace;font-size:.86em}.table-wrap{border:1px solid var(--border);box-shadow:var(--shadow-sm);border-radius:.8rem;margin:0 0 1.5rem;overflow-x:auto}.content table{border-collapse:collapse;background:var(--bg-elevated);width:100%;font-size:.9rem}.content thead th{text-align:left;color:var(--text-strong);background:var(--primary-soft);border-bottom:1px solid var(--border-strong);white-space:nowrap;padding:.75rem .9rem;font-weight:700}.content tbody td{border-bottom:1px solid var(--border);vertical-align:top;padding:.7rem .9rem}.content tbody tr:last-child td{border-bottom:none}.content tbody tr:hover{background:var(--primary-soft)}.callout{border:1px solid var(--border);background:var(--bg-elevated);border-left:4px solid var(--primary);box-shadow:var(--shadow-sm);border-radius:.8rem;margin:1.5rem 0;padding:1.1rem 1.25rem 1.1rem 1.35rem;position:relative}.callout>:last-child{margin-bottom:0}.callout-title{color:var(--text-strong);align-items:center;gap:.5rem;margin-bottom:.4rem;font-weight:700;display:flex}.callout.principio{border-left-color:var(--primary);background:var(--primary-soft);border-color:var(--primary-soft-border);color:var(--primary-strong);font-style:italic}.callout.principio .pin{font-style:normal;font-weight:700}.callout.warn{background:var(--warn-bg);border-color:var(--warn-border);border-left-color:#f59e0b}.callout.warn,.callout.warn .callout-title{color:var(--warn-text)}.callout.danger{background:var(--danger-bg);border-color:var(--danger-border);border-left-color:#ef4444}.callout.danger,.callout.danger .callout-title{color:var(--danger-text)}.callout.ok{background:var(--ok-bg);border-color:var(--ok-border);border-left-color:#22c55e}.callout.ok,.callout.ok .callout-title{color:var(--ok-text)}.callout.info{background:var(--info-bg);border-color:var(--info-border);border-left-color:var(--primary)}.callout.info,.callout.info .callout-title{color:var(--info-text)}.callout.tip{background:var(--bg-elevated);border-left-color:#8b5cf6}.callout ul{margin-bottom:0}.callout.danger ul>li:before,.callout.warn ul>li:before,.callout.ok ul>li:before{display:none}.callout.danger li,.callout.warn li,.callout.ok li,.callout.info li{padding-left:0}.layers{gap:.55rem;margin:1.5rem 0;display:grid}.layer{color:#fff;box-shadow:var(--shadow-sm);border-radius:.7rem;align-items:baseline;gap:.6rem;padding:.85rem 1.1rem;font-weight:600;display:flex}.layer span{opacity:.92;font-size:.85rem;font-weight:400}.layer.l1{background:#1e3a8a;margin:0}.layer.l2{background:#1d4ed8;margin-left:1.25rem}.layer.l3{background:#2563eb;margin-left:2.5rem}.layer.l4{background:#0ea5e9;margin-left:3.75rem}.compare{grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0;display:grid}@media (width<=720px){.compare{grid-template-columns:1fr}}.compare-card{border:1px solid var(--border);box-shadow:var(--shadow-sm);border-radius:.8rem;padding:1rem 1.1rem}.compare-card.bad{background:var(--danger-bg);border-color:var(--danger-border)}.compare-card.good{background:var(--ok-bg);border-color:var(--ok-border)}.compare-card .tag{margin-bottom:.5rem;font-size:.85rem;font-weight:700}.compare-card.bad .tag{color:var(--danger-text)}.compare-card.good .tag{color:var(--ok-text)}.compare-card p{color:var(--text);margin:0;font-size:.9rem;font-style:italic}.checklist{background:var(--bg-elevated);border:1px solid var(--border);box-shadow:var(--shadow-sm);border-radius:.9rem;margin:1.5rem 0;padding:1.25rem 1.35rem}.checklist .checklist-title{color:var(--text-strong);align-items:center;gap:.5rem;margin-bottom:.75rem;font-weight:700;display:flex}.checklist ul{margin:0;padding:0;list-style:none}.checklist li{align-items:flex-start;gap:.65rem;padding:.4rem 0;display:flex}.checklist li:before{display:none}.checklist li .box{border:2px solid var(--primary);border-radius:.35rem;flex:none;width:1.2rem;height:1.2rem;margin-top:.15rem}.selo{background:var(--ok-bg);color:var(--ok-text);border:1px solid var(--ok-border);white-space:nowrap;border-radius:99px;align-items:center;gap:.35rem;padding:.2rem .6rem;font-size:.74rem;font-weight:700;display:inline-flex}.prompt-card{border:1px solid var(--border);background:var(--bg-elevated);box-shadow:var(--shadow-sm);border-radius:.9rem;margin:1.25rem 0;overflow:hidden}.prompt-card-head{padding:1rem 1.15rem .25rem}.prompt-card-head .pc-title{color:var(--text-strong);margin-bottom:.5rem;font-weight:700}.prompt-meta{color:var(--text-muted);margin:.15rem 0;font-size:.85rem}.prompt-meta b{color:var(--text)}.prompt-body{margin:.85rem 1.15rem 1.15rem;position:relative}.prompt-code{background:var(--code-bg);border:1px solid var(--border);color:var(--code-text);white-space:pre-wrap;overflow-wrap:anywhere;border-radius:.6rem;margin:0;padding:1rem 6rem 1rem 1.1rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85rem;line-height:1.6}.copy-btn{cursor:pointer;background:var(--primary);color:var(--primary-contrast);box-shadow:var(--shadow-sm);border:none;border-radius:.5rem;align-items:center;gap:.35rem;padding:.4rem .7rem;font-size:.76rem;font-weight:600;transition:background-color .15s,transform .1s;display:inline-flex;position:absolute;top:.6rem;right:.6rem}.copy-btn:hover{background:var(--primary-strong)}.copy-btn:active{transform:scale(.96)}.copy-btn.copied{background:#16a34a}.copy-btn svg{width:.9rem;height:.9rem}.prompt-card-foot{flex-wrap:wrap;align-items:center;gap:.6rem;padding:0 1.15rem 1.1rem;display:flex}.prompt-card-foot .note{color:var(--text-muted);font-size:.8rem}.tool-controls{flex-wrap:wrap;align-items:center;gap:.6rem;margin:0 0 1rem;display:flex}.tool-filter{flex:1;min-width:14rem;position:relative}.tool-filter svg{width:1rem;height:1rem;color:var(--text-muted);position:absolute;top:50%;left:.7rem;transform:translateY(-50%)}.tool-filter input{border:1px solid var(--border);background:var(--bg-elevated);width:100%;color:var(--text);border-radius:.6rem;outline:none;padding:.55rem .8rem .55rem 2.1rem;font-size:.88rem;transition:border-color .15s,box-shadow .15s}.tool-filter input:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-soft)}.tool-hint{color:var(--text-muted);font-size:.78rem}table.sortable thead th{cursor:pointer;-webkit-user-select:none;user-select:none;padding-right:1.5rem;position:relative}table.sortable thead th:after{content:"↕";opacity:.35;font-size:.8rem;position:absolute;right:.6rem}table.sortable thead th.sort-asc:after{content:"↑";opacity:1;color:var(--primary-strong)}table.sortable thead th.sort-desc:after{content:"↓";opacity:1;color:var(--primary-strong)}.pill{border:1px solid var(--border);white-space:nowrap;border-radius:99px;padding:.15rem .55rem;font-size:.72rem;font-weight:600;display:inline-block}.pill.ok{background:var(--ok-bg);color:var(--ok-text);border-color:var(--ok-border)}.pill.warn{background:var(--warn-bg);color:var(--warn-text);border-color:var(--warn-border)}.validar{letter-spacing:.04em;vertical-align:middle;background:var(--warn-bg);color:var(--warn-text);border:1px dashed var(--warn-border);border-radius:.35rem;padding:.08rem .45rem;font-size:.68rem;font-weight:700;display:inline-block}.summary-box{background:linear-gradient(135deg, var(--primary-soft), transparent);border:1px solid var(--primary-soft-border);border-radius:.9rem;margin:2rem 0 0;padding:1.25rem 1.4rem}.summary-box .summary-label{text-transform:uppercase;letter-spacing:.1em;color:var(--primary-strong);font-size:.72rem;font-weight:700}.summary-box p{color:var(--text-strong);margin:.4rem 0 0;font-size:1.05rem}.ref-list{counter-reset:ref;margin:0;padding:0;list-style:none}.ref-list>li{border-bottom:1px solid var(--border);padding:.85rem 0;font-size:.92rem}.ref-list>li:before{display:none}.ref-list em{color:var(--text-strong);font-style:italic}.ref-doi{color:var(--primary-strong);word-break:break-all;text-decoration:none}.ref-doi:hover{text-decoration:underline}.endnote{background:var(--bg-elevated);border:1px solid var(--border);color:var(--text-muted);text-align:center;border-radius:.8rem;margin-top:2rem;padding:1.1rem 1.25rem;font-size:.85rem}#to-top{z-index:45;cursor:pointer;background:var(--primary);color:#fff;width:2.8rem;height:2.8rem;box-shadow:var(--shadow-md);opacity:0;pointer-events:none;border:none;border-radius:99px;place-items:center;transition:opacity .25s,transform .25s,background-color .15s;display:grid;position:fixed;bottom:1.25rem;right:1.25rem;transform:translateY(12px)}#to-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}#to-top:hover{background:var(--primary-strong)}#to-top svg{width:1.25rem;height:1.25rem}#overlay{z-index:45;opacity:0;pointer-events:none;-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);background:#0f172a80;transition:opacity .3s;position:fixed;inset:0}@media (width<=1024px){.sidebar{box-shadow:var(--shadow-lg);transform:translate(-100%)}body.nav-open .sidebar{transform:translate(0)}body.nav-open #overlay{opacity:1;pointer-events:auto}.content-wrap{margin-left:0}.topbar{display:flex}.container{padding:1.5rem 1.1rem 5rem}}@media (width<=480px){.cover{border-radius:1.1rem;padding:2.75rem 1.4rem 2.25rem}.prompt-code{padding-top:3rem;padding-right:1.1rem}.copy-btn{top:.6rem;right:.6rem}}@media print{:root{--bg:#fff;--bg-elevated:#fff;--bg-sidebar:#fff;--text:#1a1a1a;--text-strong:#000;--text-muted:#444;--border:#d0d0d0;--border-strong:#b0b0b0;--primary:#1d4ed8;--primary-strong:#1d4ed8;--primary-soft:#f2f6ff;--code-bg:#f4f4f4;--shadow-sm:none;--shadow-md:none;--shadow-lg:none}html{background:#fff}body{color:#000;background:#fff;font-size:11pt;line-height:1.5}.no-print,.sidebar,.topbar,#to-top,#overlay,#progress-bar,.copy-btn{display:none!important}.content-wrap{margin-left:0!important}.container{max-width:none;padding:0}.cover{color:#000;box-shadow:none;page-break-after:always;background:#fff;border:2px solid #1d4ed8}.cover:after{display:none}.cover-eyebrow,.cover .cover-sub,.cover .cover-desc,.cover-meta,.cover-meta strong{color:#1a1a1a}.cover h1{color:#1d4ed8}.cover-principle{color:#1a1a1a;background:#f2f6ff;border-color:#1d4ed8}.cover-cta{display:none!important}.chapter{page-break-before:always;padding-top:0}#capa.chapter,#avisos{page-break-before:avoid}.page-break{page-break-before:always}.prompt-card,.callout,.compare,.table-wrap,.checklist,.prompt-code,tr,.summary-box{page-break-inside:avoid}.content h2.chapter-title,.content h3{page-break-after:avoid}a.ref-link,a.ref-doi{color:#1d4ed8;text-decoration:none}.prompt-code{padding:.6rem .8rem}}
+/*$vite$:1*/</style>
+  </head>
+  <body>
+    <div id="progress-bar" class="no-print"></div>
+    <div id="overlay" class="no-print"></div>
+
+    <div class="layout">
+      <!-- ============================ SIDEBAR ============================ -->
+      <aside class="sidebar no-print scroll-thin">
+        <div class="sidebar-header">
+          <a href="#capa" class="brand">
+            <span class="brand-mark">IA</span>
+            <span>
+              <span class="brand-title">IA para Psicólogos</span>
+              <span class="brand-sub">Guia Prático para a Clínica</span>
+            </span>
+          </a>
+
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input id="search-input" type="search" placeholder="Buscar no e-book…" autocomplete="off" aria-label="Buscar no conteúdo" />
+          </div>
+          <div id="search-count" class="search-count" aria-live="polite"></div>
+        </div>
+
+        <nav class="toc scroll-thin" aria-label="Índice">
+          <p class="toc-label">Conteúdo</p>
+          <a href="#capa"><span class="num">★</span><span>Capa &amp; avisos</span></a>
+          <a href="#cap1"><span class="num">1</span><span>O que é IA e o que não é</span></a>
+          <a href="#cap2"><span class="num">2</span><span>Ética e limites profissionais</span></a>
+          <a href="#cap3"><span class="num">3</span><span>O que o CFP e a lei dizem</span></a>
+          <a href="#cap4"><span class="num">4</span><span>Uso seguro da IA</span></a>
+          <a href="#cap5"><span class="num">5</span><span>Prompts para psicólogos</span></a>
+          <a href="#cap6"><span class="num">6</span><span>Ferramentas de IA</span></a>
+          <a href="#cap7"><span class="num">7</span><span>Futuro da Psicologia com IA</span></a>
+          <a href="#referencias"><span class="num">§</span><span>Referências &amp; encerramento</span></a>
+          <p class="toc-label" style="margin-top:1rem">Preferências</p>
+          <a href="#" data-theme-toggle role="button" onclick="return false">
+            <span class="num" aria-hidden="true">◐</span>
+            <span>Alternar tema claro/escuro</span>
+            <span style="margin-left:auto;display:inline-flex">
+              <svg class="ico-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+              <svg class="ico-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- ============================ CONTEÚDO ============================ -->
+      <div class="content-wrap">
+        <!-- Topbar (mobile) -->
+        <header class="topbar no-print">
+          <button class="icon-btn" data-nav-open aria-label="Abrir índice">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+          <strong style="flex:1;font-size:.95rem;color:var(--text-strong)">IA para Psicólogos</strong>
+          <button class="icon-btn" data-theme-toggle aria-label="Alternar tema">
+            <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </button>
+        </header>
+
+        <div class="container content">
+
+          <!-- ============================ CAPA ============================ -->
+          <section id="capa" class="chapter" style="padding-top:1rem">
+            <div class="cover">
+              <p class="cover-eyebrow">CEUB · Curso de Psicologia · Projeto Integrador III</p>
+              <h1>IA para Psicólogos</h1>
+              <p class="cover-sub">Guia Prático para a Clínica</p>
+              <p class="cover-desc">Aplicações práticas, ética profissional e limites da Inteligência Artificial na Psicologia Clínica.</p>
+              <p class="cover-principle">“A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.”</p>
+              <div class="cover-meta">
+                <span><strong>Autores:</strong> Alunos da disciplina Projeto Integrador III</span>
+                <span><strong>Orientação:</strong> Prof. Dr. Fabio Hernandez de Medeiros · CRP 01/17465</span>
+                <span>Centro Universitário de Brasília (CEUB) · 2026</span>
+              </div>
+              <a href="#cap1" class="cover-cta">
+                Começar a leitura
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+
+            <div id="avisos" class="notice-grid">
+              <div class="notice">
+                <span class="notice-ico">🤖</span>
+                <p><strong>Aviso de autoria</strong>Este material foi desenvolvido com auxílio de Inteligência Artificial, sob supervisão humana integral.</p>
+              </div>
+              <div class="notice">
+                <span class="notice-ico">📘</span>
+                <p><strong>Uso educacional</strong>Conteúdo de caráter formativo. Não substitui a prática clínica, a supervisão profissional nem a assessoria jurídica/ética formal.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- ============================ CAPÍTULO 1 ============================ -->
+          <section id="cap1" class="chapter page-break">
+            <div class="chapter-head">
+              <span class="chapter-kicker">Capítulo 1</span>
+              <h2 class="chapter-title">O que é IA e o que não é</h2>
+            </div>
+            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
+            <h3 id="cap1-oa">Objetivos de aprendizagem</h3>
+            <p>Ao final deste capítulo, você será capaz de:</p>
+            <ul>
+              <li>Distinguir os conceitos de <strong>IA, Machine Learning, Deep Learning e LLM</strong>.</li>
+              <li>Explicar, em linguagem simples, <strong>como um LLM gera texto</strong> — e por que isso não é “compreender”.</li>
+              <li>Reconhecer os principais <strong>mitos e limites</strong> (alucinação, ausência de consciência, viés).</li>
+              <li>Identificar <strong>aplicações reais</strong> de IA já documentadas em saúde mental.</li>
+            </ul>
+
+            <h3 id="cap1-0">1.0 · Por que um psicólogo precisa entender isso</h3>
+            <p>Você não precisa programar para usar IA com responsabilidade — mas precisa <strong>entender o que ela é</strong>. O Código de Ética exige competência técnica para qualquer ferramenta que entre na prática (Art. 1º, b; ver Cap. 3). Entender a IA é o que permite confiar na medida certa: nem rejeitar por medo, nem idolatrar por encantamento.</p>
+            <p>A boa notícia: os conceitos essenciais cabem em poucas páginas.</p>
+
+            <h3 id="cap1-1">1.1 · As camadas: IA › ML › DL › LLM</h3>
+            <p>Pense em <strong>círculos concêntricos</strong>, do maior para o menor — cada camada está contida na anterior:</p>
+            <div class="layers" role="img" aria-label="Diagrama de camadas: IA contém ML, que contém DL, que contém LLM">
+              <div class="layer l1">Inteligência Artificial (IA) <span>· o campo mais amplo</span></div>
+              <div class="layer l2">Machine Learning (ML) <span>· aprende padrões a partir de dados</span></div>
+              <div class="layer l3">Deep Learning (DL) <span>· redes neurais de muitas camadas</span></div>
+              <div class="layer l4">Large Language Model (LLM) <span>· especializado em linguagem</span></div>
+            </div>
+            <ul>
+              <li><strong>Inteligência Artificial (IA)</strong> — o campo mais amplo: qualquer sistema que executa tarefas que associamos à inteligência humana (decidir, reconhecer, recomendar). Inclui desde regras simples até os modelos atuais.</li>
+              <li><strong>Machine Learning (ML)</strong> — um ramo da IA em que o sistema <strong>aprende padrões a partir de dados</strong>, em vez de seguir regras escritas à mão. É a base das aplicações de IA em saúde mental revisadas na literatura (Singhal et al., 2024).</li>
+              <li><strong>Deep Learning (DL)</strong> — um tipo de ML que usa <strong>redes neurais artificiais</strong> com muitas camadas, capazes de capturar padrões complexos (imagens, linguagem, sinais). Redes neurais já são aplicadas a problemas psiquiátricos (Komatsu et al., 2021).</li>
+              <li><strong>Large Language Model (LLM)</strong> — um modelo de Deep Learning <strong>especializado em linguagem</strong>, treinado em enormes volumes de texto. ChatGPT, Claude e Gemini são LLMs.</li>
+            </ul>
+            <div class="callout info">
+              <div class="callout-title">📌 Fixe isto</div>
+              <p>Todo LLM é Deep Learning; todo Deep Learning é Machine Learning; todo Machine Learning é IA. O contrário <strong>não</strong> vale.</p>
+            </div>
+
+            <h3 id="cap1-2">1.2 · Como um LLM “pensa” (spoiler: ele não pensa)</h3>
+            <p>Esta é a ideia mais importante do capítulo.</p>
+            <p>Um LLM funciona, em essência, como um <strong>completador de texto extraordinariamente sofisticado</strong>. Dado um trecho, ele calcula <strong>qual a próxima palavra mais provável</strong>, com base nos padrões estatísticos que extraiu de bilhões de frases durante o treino. Depois repete isso, palavra após palavra.</p>
+            <div class="callout tip">
+              <div class="callout-title">💡 Analogia</div>
+              <p>É como o corretor preditivo do celular — só que com uma capacidade incomparavelmente maior de levar em conta o contexto. Quando o texto resultante soa inteligente, é porque os <strong>padrões da linguagem humana</strong> estão embutidos nas probabilidades, não porque há compreensão por trás.</p>
+            </div>
+            <p>O que isso implica para a clínica:</p>
+            <ul>
+              <li>O LLM <strong>não entende</strong> o sofrimento de quem escreveu o relato. Ele reconhece padrões textuais de sofrimento.</li>
+              <li>Ele <strong>não tem intenção, memória de você nem cuidado</strong>. A “empatia” que aparece é forma linguística, não vínculo (ver Cap. 2).</li>
+              <li>Ele pode produzir uma resposta <strong>fluente e errada</strong> com a mesma confiança de uma resposta correta.</li>
+            </ul>
+            <p>Revisões recentes em saúde mental insistem nesse ponto: LLMs são promissores como apoio, mas seu funcionamento estatístico impõe cautela sobre o que se pode delegar a eles (Guo et al., 2024; Mesquiti &amp; Nook, 2026).</p>
+
+            <h3 id="cap1-3">1.3 · Mitos e limites</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Mito</th><th>Fato</th></tr></thead>
+                <tbody>
+                  <tr><td>“A IA entende o paciente.”</td><td>Ela reconhece padrões de linguagem; não há compreensão nem consciência.</td></tr>
+                  <tr><td>“Se respondeu com segurança, está certo.”</td><td>LLMs <strong>alucinam</strong>: geram informação falsa com tom convincente, inclusive referências e dados inexistentes.</td></tr>
+                  <tr><td>“A IA é neutra e objetiva.”</td><td>Ela reflete <strong>vieses</strong> dos dados de treino — culturais, de gênero, de raça (Holm, 2024; ver Cap. 2).</td></tr>
+                  <tr><td>“A IA aprende sozinha com a minha conversa em tempo real.”</td><td>O modelo não “aprende” durante o uso; e suas conversas só viram treino se a política permitir (Cap. 4).</td></tr>
+                  <tr><td>“Quanto mais detalhe do caso eu der, melhor.”</td><td>Mais detalhe identificável = mais risco de quebra de sigilo, sem ganho clínico (Cap. 4).</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h4>Os três limites que mais importam ao psicólogo</h4>
+            <ol>
+              <li><strong>Alucinação</strong> — o modelo pode inventar fatos, estudos e citações. Tudo precisa de validação humana.</li>
+              <li><strong>Ausência de consciência e responsabilidade</strong> — a IA não responde eticamente; <strong>você</strong> responde (Código de Ética, Art. 2º, g).</li>
+              <li><strong>Viés de treino</strong> — saídas podem reproduzir preconceitos; exigem leitura crítica.</li>
+            </ol>
+
+            <h3 id="cap1-4">1.4 · O que a IA já faz em saúde mental (aplicações reais)</h3>
+            <p>Para não cair nem no ceticismo nem no exagero, vale conhecer o que <strong>já está documentado</strong> na literatura revisada por pares — sempre como <strong>apoio</strong>, não substituição:</p>
+            <ul>
+              <li><strong>Triagem e organização de informação</strong> e apoio a pesquisa em saúde mental (Irshad et al., 2022; Mesquiti &amp; Nook, 2026).</li>
+              <li><strong>Apoio a tarefas clínicas acessórias</strong> — psicoeducação, organização de materiais, rascunho de documentos (detalhado no Cap. 5).</li>
+              <li><strong>Ferramentas conversacionais</strong> que demonstram potencial e, ao mesmo tempo, limites importantes de segurança e eficácia (Guo et al., 2024; Volpe, 2025).</li>
+              <li><strong>Pesquisa e análise</strong> — apoio à análise de dados e à produção científica em psicologia (Mesquiti &amp; Nook, 2026).</li>
+            </ul>
+            <div class="callout ok">
+              <div class="callout-title">⚖️ Card de equilíbrio</div>
+              <p>A evidência atual sustenta a IA como <strong>assistente de tarefas</strong>, não como agente clínico. Onde os estudos apontam bons resultados, há sempre um profissional humano no comando da decisão.</p>
+            </div>
+
+            <div class="summary-box">
+              <span class="summary-label">Em uma frase</span>
+              <p>IA é um campo amplo cujo expoente atual, o LLM, é um <strong>preditor de texto</strong> muito capaz — útil como apoio, mas sem compreensão, consciência ou responsabilidade: por isso o julgamento clínico continua, inteiramente, com o psicólogo.</p>
+            </div>
+
+            <h4>Referências deste capítulo</h4>
+            <ul>
+              <li>Singhal et al. (2024), <em>Current Psychiatry Reports</em> — ML em saúde mental e o papel do clínico.</li>
+              <li>Komatsu et al. (2021), <em>Biomedicines</em> — redes neurais aplicadas à psiquiatria.</li>
+              <li>Irshad et al. (2022), <em>Journal of Health and Medical Sciences</em> — usos de IA na psicologia.</li>
+              <li>Guo et al. (2024), <em>JMIR Mental Health</em> — revisão sistemática de LLMs em saúde mental.</li>
+              <li>Mesquiti &amp; Nook (2026), <em>Annual Review of Biomedical Data Science</em> — LLMs em pesquisa e tratamento.</li>
+              <li>Volpe (2025), <em>European Psychiatry</em> — o que a IA já realiza em saúde mental.</li>
+            </ul>
+            <p><strong>Norma introduzida:</strong> dever de competência técnica (Código de Ética, Art. 1º, b) — aprofundado no Cap. 3.</p>
+          </section>
+
+          <!-- ============================ CAPÍTULO 2 ============================ -->
+          <section id="cap2" class="chapter page-break">
+            <div class="chapter-head">
+              <span class="chapter-kicker">Capítulo 2</span>
+              <h2 class="chapter-title">Ética e limites profissionais</h2>
+            </div>
+            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
+            <h3 id="cap2-oa">Objetivos de aprendizagem</h3>
+            <p>Ao final deste capítulo, você será capaz de:</p>
+            <ul>
+              <li>Reconhecer os <strong>riscos éticos centrais</strong> do uso de IA na prática psicológica.</li>
+              <li>Aplicar <strong>sigilo, transparência e responsabilidade</strong> ao trabalho com IA.</li>
+              <li>Distinguir <strong>empatia simulada</strong> de <strong>cuidado real</strong>.</li>
+              <li>Identificar os <strong>usos proibidos</strong> da IA na clínica.</li>
+            </ul>
+
+            <h3 id="cap2-0">2.0 · Da norma à conduta</h3>
+            <p>O Capítulo 3 apresenta as normas; este capítulo trata da <strong>postura ética</strong> ao usar IA — o que fazer quando a regra não basta e é preciso julgamento. A literatura especializada já mapeou esse terreno de forma sistemática: há catálogos de considerações éticas (Saeidnia et al., 2024), de violações concretas (Iftikhar et al., 2025) e propostas de frameworks de princípios (Pillay, 2025). Organizamos tudo em <strong>cinco pilares</strong>.</p>
+
+            <h3 id="cap2-1">2.1 · Pilar 1 — Sigilo e confidencialidade</h3>
+            <p>É o pilar mais concreto e o mais fácil de violar sem perceber. Inserir dados identificáveis de um paciente em uma IA em nuvem pode significar <strong>expor informação sigilosa a terceiros</strong> (Código de Ética, Art. 9º; Res. CFP 9/2024, Art. 3º; LGPD).</p>
+            <ul>
+              <li><strong>O risco:</strong> a confidencialidade não se rompe só por má-fé — rompe-se por descuido, por colar um relato “só para resumir”.</li>
+              <li><strong>A conduta:</strong> anonimizar <strong>sempre</strong> antes de usar a IA (o Cap. 4 ensina como). O sigilo é dever indelegável; nenhuma ferramenta o assume por você.</li>
+            </ul>
+
+            <h3 id="cap2-2">2.2 · Pilar 2 — Viés algorítmico e justiça</h3>
+            <p>LLMs aprendem com dados humanos e, com eles, herdam <strong>preconceitos</strong> — de gênero, raça, classe, cultura. Uma saída pode parecer técnica e, ainda assim, carregar um viés que prejudica determinados grupos (Holm, 2024; Zhang et al., 2025).</p>
+            <ul>
+              <li><strong>O risco:</strong> aceitar acriticamente uma sugestão enviesada como se fosse objetiva.</li>
+              <li><strong>A conduta:</strong> ler toda saída com olhar crítico, atento a generalizações e estereótipos. A IA <strong>não é neutra</strong>; cabe ao psicólogo filtrar.</li>
+            </ul>
+
+            <h3 id="cap2-3">2.3 · Pilar 3 — Responsabilidade clínica indelegável</h3>
+            <p>Este é o pilar que sustenta todos os outros. <strong>A responsabilidade por qualquer decisão ou documento é, sempre, do psicólogo humano</strong> — nunca da ferramenta (Código de Ética, Art. 1º, b e Art. 2º, g).</p>
+            <ul>
+              <li><strong>O risco:</strong> o “viés de automação” — confiar na máquina por ser rápida e fluente, terceirizando o julgamento.</li>
+              <li><strong>A conduta:</strong> a IA <strong>rascunha</strong>; o psicólogo <strong>valida, corrige e assina</strong>. Se a saída estiver errada, a falha é profissional, não “da IA”. A discussão ética sobre apoio à decisão clínica reforça que a ferramenta informa, mas não decide (Heyen &amp; Salloch, 2021).</li>
+            </ul>
+            <div class="callout tip">
+              <div class="callout-title">📐 Regra de bolso</div>
+              <p>Se você não consegue defender tecnicamente uma frase gerada pela IA, ela não pode entrar no seu documento.</p>
+            </div>
+
+            <h3 id="cap2-4">2.4 · Pilar 4 — Transparência com o paciente</h3>
+            <p>Quando a IA participa de algo que envolve o paciente (por exemplo, apoio à elaboração de materiais ou registros), há um dever de <strong>informar</strong> (Código de Ética, Art. 14; Res. CFP 9/2024, Art. 7º, parágrafo único).</p>
+            <ul>
+              <li><strong>O risco:</strong> uso silencioso de IA que, se revelado, quebraria a confiança do vínculo.</li>
+              <li><strong>A conduta:</strong> ser transparente sobre o uso de tecnologia de apoio, na medida adequada a cada contexto. Transparência protege o vínculo e cumpre a norma.</li>
+            </ul>
+
+            <h3 id="cap2-5">2.5 · Pilar 5 — Empatia simulada × cuidado real</h3>
+            <p>Um LLM pode produzir frases acolhedoras, mas isso é <strong>forma linguística, não cuidado</strong> (ver Cap. 1). A relação terapêutica — vínculo, presença, responsabilidade — é exatamente o que a IA <strong>não</strong> tem.</p>
+            <ul>
+              <li><strong>O risco:</strong> confundir fluência empática com competência clínica; sugerir, implícita ou explicitamente, que a IA “atende”.</li>
+              <li><strong>A conduta:</strong> preservar o vínculo como núcleo insubstituível da clínica. A discussão atual contrasta a <em>eficiência</em> da IA com a <em>empatia</em> humana e conclui que uma não substitui a outra (Bharti &amp; Singh, 2025; Gupta &amp; Gandhi, 2025).</li>
+            </ul>
+
+            <h3 id="cap2-6">2.6 · Os usos proibidos (linha vermelha)</h3>
+            <div class="callout danger">
+              <div class="callout-title">🚫 É eticamente vedado usar IA para:</div>
+              <ul>
+                <li>❌ <strong>Fazer diagnóstico</strong> psicológico (Código de Ética, Art. 2º, q)</li>
+                <li>❌ <strong>Substituir a avaliação clínica</strong> ou a psicoterapia</li>
+                <li>❌ <strong>Emitir parecer ou laudo automático</strong> (Art. 2º, g — documento exige fundamentação técnico-científica)</li>
+                <li>❌ <strong>Manejar crise</strong> (ideação suicida, violência, risco) sem supervisão e rede presencial (Res. CFP 9/2024, Art. 5º)</li>
+                <li>❌ <strong>Inserir dados identificáveis</strong> de pacientes (Art. 9º; LGPD)</li>
+              </ul>
+            </div>
+            <p>Estudos que catalogam o comportamento de “conselheiros de IA” mostram, empiricamente, por que essas linhas existem: sem essas barreiras, surgem violações éticas concretas e potencialmente danosas (Iftikhar et al., 2025; Saeidnia et al., 2024).</p>
+
+            <h3 id="cap2-7">2.7 · Síntese: os cinco pilares</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Pilar</th><th>Risco central</th><th>Conduta</th></tr></thead>
+                <tbody>
+                  <tr><td>Sigilo</td><td>Exposição de dado a terceiros</td><td>Anonimizar sempre (Cap. 4)</td></tr>
+                  <tr><td>Viés</td><td>Aceitar saída enviesada como neutra</td><td>Leitura crítica</td></tr>
+                  <tr><td>Responsabilidade</td><td>Terceirizar o julgamento à máquina</td><td>Validar e assinar; a IA só rascunha</td></tr>
+                  <tr><td>Transparência</td><td>Uso silencioso de IA</td><td>Informar o paciente</td></tr>
+                  <tr><td>Cuidado real</td><td>Confundir empatia simulada com vínculo</td><td>Preservar a relação humana</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="summary-box">
+              <span class="summary-label">Em uma frase</span>
+              <p>A ética do uso de IA na Psicologia se resolve em uma frase: <strong>a ferramenta pode apoiar tarefas, mas o sigilo, o julgamento, a responsabilidade e o vínculo permanecem, integralmente, humanos.</strong></p>
+            </div>
+
+            <h4>Referências deste capítulo</h4>
+            <ul>
+              <li>Saeidnia et al. (2024), <em>Social Sciences</em> — considerações éticas centrais.</li>
+              <li>Holm (2024), <em>Frontiers in Psychiatry</em> — vieses e limites de objetividade.</li>
+              <li>Heyen &amp; Salloch (2021), <em>BMC Medical Ethics</em> — ética do apoio à decisão clínica.</li>
+              <li>Bharti &amp; Singh (2025), <em>Science Insights</em> — eficiência × empatia na clínica.</li>
+              <li>Zhang et al. (2025), <em>Nature Computational Science</em> — papéis de LLM e questões éticas.</li>
+              <li>Iftikhar et al. (2025), <em>Proc. AAAI/ACM AIES</em> — violações éticas de “LLM counselors”.</li>
+              <li>Gupta &amp; Gandhi (2025), <em>International Review of Psychiatry</em> — letramento em IA e futuro.</li>
+              <li>Pillay (2025), <em>Healthcare</em> — framework ético de cinco pilares.</li>
+            </ul>
+            <p><strong>Normativas aplicadas:</strong> Código de Ética (Art. 1º b, 2º g, 2º q, 9º, 14); Res. CFP 9/2024 (Art. 5º, 7º). <em>Detalhamento no Cap. 3.</em></p>
+          </section>
+
+          <!-- ============================ CAPÍTULO 3 ============================ -->
+          <section id="cap3" class="chapter page-break">
+            <div class="chapter-head">
+              <span class="chapter-kicker">Capítulo 3</span>
+              <h2 class="chapter-title">O que o CFP e a legislação dizem</h2>
+            </div>
+            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
+            <h3 id="cap3-oa">Objetivos de aprendizagem</h3>
+            <p>Ao final deste capítulo, você será capaz de:</p>
+            <ul>
+              <li>Localizar o uso de IA dentro do arcabouço normativo brasileiro que rege a profissão.</li>
+              <li>Reconhecer quais deveres do <strong>Código de Ética</strong> se aplicam diretamente ao uso de ferramentas de IA.</li>
+              <li>Entender por que a <strong>Resolução CFP nº 9/2024</strong> (TDICs) alcança as ferramentas de IA em nuvem.</li>
+              <li>Identificar o que a <strong>LGPD</strong> exige ao tratar dados de saúde mental em sistemas de IA.</li>
+              <li>Diferenciar o que é <strong>norma vinculante</strong> do que é <strong>orientação institucional</strong> do CFP sobre IA.</li>
+            </ul>
+
+            <h3 id="cap3-0">3.0 · Por que este capítulo vem antes dos prompts</h3>
+            <p>É tentador pular direto para “como usar a IA”. Mas, na Psicologia, <strong>a pergunta não é apenas se a ferramenta funciona — é se o seu uso respeita o sigilo, a responsabilidade técnica e os direitos do paciente.</strong> Nenhuma dessas exigências foi criada para a IA; elas já existiam e simplesmente <strong>passam a valer também quando há uma IA no fluxo de trabalho.</strong></p>
+            <p>Em outras palavras: não existe (ainda) uma “lei da IA na Psicologia”. O que existe é um conjunto de normas — algumas de 2005, outras de 2018, 2024 e 2025 — que, lidas em conjunto, já dão respostas claras sobre o que pode e o que não pode. Este capítulo organiza esse conjunto em quatro camadas.</p>
+            <div class="callout info">
+              <div class="callout-title">🗺️ Mapa das quatro camadas normativas</div>
+              <ol>
+                <li><strong>Código de Ética do Psicólogo</strong> (Res. CFP 010/2005) — os deveres de fundo: sigilo, competência, responsabilidade.</li>
+                <li><strong>Resolução CFP nº 9/2024</strong> — regula o exercício mediado por tecnologia (TDICs); alcança servidores remotos e, por extensão, IA em nuvem.</li>
+                <li><strong>Documentos do CFP sobre IA (2025)</strong> — Nota de Posicionamento + cartilhas: orientação institucional, não resolução.</li>
+                <li><strong>LGPD</strong> (Lei 13.709/2018) — proteção de dados pessoais sensíveis de saúde.</li>
+              </ol>
+            </div>
+
+            <h3 id="cap3-1">3.1 · O Código de Ética do Psicólogo (Resolução CFP nº 010/2005)</h3>
+            <p>O Código de Ética é a camada mais antiga e, ainda assim, a mais decisiva para o uso de IA. Ele não menciona “inteligência artificial” — não precisava. Seus deveres são redigidos de forma ampla o bastante para alcançar qualquer ferramenta que o psicólogo coloque entre si e o paciente.</p>
+            <p>Quatro deveres concentram quase tudo o que importa aqui.</p>
+            <h4>a) Competência técnica (Art. 1º, b e c)</h4>
+            <div class="callout tip"><p><em>“Assumir responsabilidades profissionais somente por atividades para as quais esteja capacitado pessoal, teórica e tecnicamente”</em> (Art. 1º, b) e <em>“prestar serviços psicológicos de qualidade […] utilizando princípios, conhecimentos e técnicas reconhecidamente fundamentados na ciência psicológica”</em> (Art. 1º, c).</p></div>
+            <p><strong>Na prática com IA:</strong> usar uma ferramenta que você não compreende é, em si, um problema ético. Antes de colocar a IA no fluxo de trabalho, é preciso entender o que ela faz, como erra (alucinação, viés) e onde guarda os dados. O dever de competência fundamenta a própria existência deste e-book: <strong>letramento em IA é pré-requisito, não acessório.</strong></p>
+            <h4>b) Responsabilidade técnico-científica dos documentos (Art. 2º, g)</h4>
+            <div class="callout tip"><p>Ao psicólogo é vedado <em>“emitir documentos sem fundamentação e qualidade técnico-científica”</em>.</p></div>
+            <p><strong>Na prática com IA:</strong> um texto gerado por IA <strong>não tem</strong> fundamentação técnico-científica própria — ele é predição estatística de palavras. Se você usa a IA para apoiar a redação de um relatório, <strong>a responsabilidade técnica continua integralmente sua</strong>. A IA rascunha; o psicólogo valida, corrige e assina. Nunca o contrário.</p>
+            <h4>c) Sigilo profissional (Art. 9º e 10)</h4>
+            <div class="callout tip"><p><em>“É dever do psicólogo respeitar o sigilo profissional a fim de proteger, por meio da confidencialidade, a intimidade das pessoas […] a que tenha acesso no exercício profissional”</em> (Art. 9º).</p></div>
+            <p><strong>Na prática com IA:</strong> este é o ponto mais sensível de todo o e-book. Colar o relato de um paciente — com nome, história, detalhes identificáveis — em um chatbot de IA pode significar <strong>expor dado sigiloso a um servidor de terceiros</strong>. O sigilo do Art. 9º é o motivo pelo qual o Capítulo 4 inteiro é dedicado a anonimização. A quebra de sigilo só é admitida em hipóteses estritas (Art. 10) e jamais por conveniência tecnológica.</p>
+            <h4>d) Diagnóstico e exposição (Art. 2º, q)</h4>
+            <div class="callout tip"><p>É vedado <em>“realizar diagnósticos, divulgar procedimentos ou apresentar resultados de serviços psicológicos em meios de comunicação, de forma a expor pessoas, grupos ou organizações”</em>.</p></div>
+            <p><strong>Na prática com IA:</strong> sustenta a <strong>trava de segurança</strong> do e-book — nenhum prompt deste material faz diagnóstico, parecer automático ou manejo de crise. A IA não diagnostica; ela apoia tarefas acessórias.</p>
+            <div class="callout info">
+              <div class="callout-title">📣 Dever de informar o paciente (Art. 14)</div>
+              <p><em>“A utilização de quaisquer meios de registro e observação da prática psicológica […] devendo o usuário ou beneficiário, desde o início, ser informado.”</em> Se a IA entra no registro ou na observação da prática, há um dever de <strong>transparência</strong> com o paciente. Ver Capítulo 2.</p>
+            </div>
+
+            <h3 id="cap3-2">3.2 · Resolução CFP nº 9/2024 — exercício mediado por TDICs</h3>
+            <h4>Por que esta resolução, e não a 11/2018</h4>
+            <div class="callout warn">
+              <div class="callout-title">⚠️ Correção normativa importante</div>
+              <p>A antiga <strong>Resolução CFP nº 11/2018</strong> (telepsicologia) está <strong>REVOGADA</strong>. A norma vigente é a <strong>Resolução CFP nº 9, de 18 de julho de 2024</strong>, que revogou expressamente a 11/2018 e a 04/2020 (Art. 9º). Qualquer material que ainda cite a 11/2018 como vigente está desatualizado.</p>
+            </div>
+            <p>A Resolução 9/2024 regula <em>“o exercício da psicologia mediado por Tecnologia Digital da Informação e da Comunicação (TDICs) em território nacional”</em> (Art. 1º). Embora tenha sido pensada principalmente para o atendimento online, sua definição de TDIC é ampla o suficiente para alcançar ferramentas de IA.</p>
+            <h4>O elo com a IA: “servidores remotos”</h4>
+            <p>O Art. 2º define exercício mediado por TDICs como aquele que envolve <em>“emprego de métodos e técnicas psicológicas dependentes de <strong>servidores remotos</strong>”</em>. O Art. 3º, III repete: <em>“emprego de métodos e técnicas psicológicas mediante servidores remotos”</em>.</p>
+            <p><strong>Toda ferramenta de IA em nuvem (ChatGPT, Claude, Gemini etc.) roda em servidores remotos.</strong> Logo, ao processar informação ligada à prática clínica nesses serviços, o psicólogo está dentro do alcance desta resolução — e dos deveres que ela impõe.</p>
+            <h4>Os deveres que mais importam para a IA</h4>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Artigo</th><th>O que exige</th><th>O que isso significa ao usar IA</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Art. 3º, II</strong></td><td>Responsabilidade ética no manuseio de <strong>dados sensíveis</strong> e implicações para o sigilo, a privacidade e a autonomia</td><td>Antes de inserir qualquer informação em uma IA, avalie se ela é sensível e se o sigilo está protegido.</td></tr>
+                  <tr><td><strong>Art. 3º, IV</strong></td><td>Zelo ético: ser <strong>responsável</strong> por dados e informações sensíveis</td><td>A responsabilidade pelo dado não “passa” para a empresa de IA. Continua sua.</td></tr>
+                  <tr><td><strong>Art. 4º, I</strong></td><td>Avaliar as condições de <strong>confidencialidade e privacidade</strong> das informações</td><td>Conhecer a política de dados da ferramenta antes de usá-la (conecta com o Cap. 6).</td></tr>
+                  <tr><td><strong>Art. 4º, II</strong></td><td>Ter as <strong>competências</strong> para o manejo das TDICs empregadas</td><td>Reforça o dever de letramento em IA (espelha o Art. 1º, b do Código).</td></tr>
+                  <tr><td><strong>Art. 4º, V</strong></td><td>Embasar o uso (ou o não-uso) da TDIC em <strong>produção científica e ética</strong></td><td>Recomendações de IA neste e-book são ancoradas em evidência revisada por pares.</td></tr>
+                  <tr><td><strong>Art. 5º</strong></td><td>Encaminhar à <strong>rede presencial</strong> situações de risco de morte, violência, urgência e emergência</td><td>Fundamenta a trava: <strong>nenhum prompt lida com crise sem supervisão humana e rede presencial.</strong></td></tr>
+                  <tr><td><strong>Art. 7º, parág. único</strong></td><td>Especificar os recursos tecnológicos que garantem o sigilo e <strong>informar o cliente</strong></td><td>Base do dever de transparência com o paciente sobre o uso de tecnologia.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout info">
+              <div class="callout-title">🔑 Leitura-chave</div>
+              <p>A Resolução 9/2024 não “proíbe” nem “autoriza” a IA — ela <strong>transfere para o uso de IA os mesmos deveres de sigilo, competência e responsabilidade</strong> que já regem o atendimento mediado por tecnologia. A ferramenta muda; o dever permanece.</p>
+            </div>
+
+            <h3 id="cap3-3">3.3 · O posicionamento institucional do CFP sobre IA (2025)</h3>
+            <p>Em 2025, o Conselho Federal de Psicologia passou a se manifestar diretamente sobre IA. É importante entender a <strong>natureza</strong> desses documentos: são <strong>orientações institucionais</strong>, não resoluções com força normativa autônoma. Eles interpretam e aplicam as normas existentes ao contexto da IA — e sinalizam para onde a regulação caminha.</p>
+            <p>São três documentos confirmados em fonte oficial do CFP:</p>
+            <ol>
+              <li><strong>Nota de Posicionamento do CFP sobre IA e Psicologia</strong> (03/07/2025) — posição institucional sobre o uso de IA na profissão. <span class="validar">A VALIDAR: extrair citações literais do texto oficial antes da versão final</span></li>
+              <li><strong>Cartilha “IA na Psicologia: prática ética e responsável”</strong> (CFP, 2025) — guia de boas práticas para profissionais. <span class="validar">A VALIDAR: extrair recomendações específicas do PDF oficial</span></li>
+              <li><strong>Cartilha “Chatbots, IA e sua Saúde Mental”</strong> (CFP, 2025) — material voltado ao público geral sobre os riscos de usar chatbots como se fossem terapeutas. <span class="validar">A VALIDAR: extrair pontos principais</span></li>
+            </ol>
+            <div class="callout warn">
+              <div class="callout-title">✍️ Nota editorial de honestidade</div>
+              <p>O conteúdo literal desses três documentos ainda precisa ser citado a partir da fonte oficial. Marcamos <span class="validar">A VALIDAR</span> em vez de parafrasear de memória — coerente com a regra anti-alucinação do projeto. <strong>Antes da publicação, estas passagens serão preenchidas com citações verificadas dos PDFs oficiais do CFP.</strong></p>
+            </div>
+            <p>O que já se pode afirmar com segurança é a <strong>direção</strong> dessas manifestações, plenamente alinhada ao restante do arcabouço: a IA é admitida como <strong>apoio</strong>, sob responsabilidade humana integral, com proteção rigorosa de dados e sem substituir o vínculo terapêutico. Esse é o mesmo princípio condutor deste e-book.</p>
+
+            <h3 id="cap3-4">3.4 · LGPD — Lei nº 13.709/2018</h3>
+            <p>A Lei Geral de Proteção de Dados é a camada que falta para fechar o quadro. Ela não fala de Psicologia, mas trata do insumo central da clínica: <strong>dados pessoais</strong>.</p>
+            <h4>Dado de saúde mental é dado sensível</h4>
+            <p>A LGPD cria uma categoria especial — <strong>dado pessoal sensível</strong> — que inclui dados <em>referentes à saúde</em>. Informação sobre o estado psíquico, diagnóstico, sofrimento ou tratamento de uma pessoa é <strong>dado sensível</strong> e recebe proteção reforçada. <span class="validar">A VALIDAR: citar Art. 5º, II da LGPD na fonte oficial — planalto.gov.br</span></p>
+            <p>Isso muda tudo na prática com IA: o que você cola num chatbot sobre um paciente não é “um texto qualquer” — é, juridicamente, <strong>dado sensível de saúde de um terceiro</strong>.</p>
+            <h4>Três exigências que se aplicam diretamente</h4>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Conceito da LGPD</th><th>Exigência</th><th>Aplicação ao uso de IA</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Base legal e finalidade</strong></td><td>Todo tratamento de dado precisa de base legal e finalidade legítima e específica</td><td>Você precisa de fundamento para inserir o dado do paciente numa IA — e a “comodidade” não é base legal.</td></tr>
+                  <tr><td><strong>Consentimento / transparência</strong></td><td>O titular deve saber como seus dados são tratados</td><td>Conecta com o dever de informar do Código (Art. 14) e da Res. 9/2024 (Art. 7º).</td></tr>
+                  <tr><td><strong>Segurança e dados sensíveis</strong></td><td>Dados sensíveis exigem medidas de segurança reforçadas</td><td>Anonimizar antes de usar a IA; conhecer onde a ferramenta armazena e se usa o dado para treino (Cap. 4 e 6).</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout ok">
+              <div class="callout-title">🛡️ A saída mais segura</div>
+              <p>Dado <strong>anonimizado</strong> — sem qualquer elemento que permita identificar a pessoa — deixa de ser, para fins práticos, dado pessoal sob o regime mais rígido da LGPD. Por isso o Capítulo 4 trata anonimização não como “boa prática opcional”, mas como <strong>a condição</strong> para usar IA com responsabilidade. <span class="validar">A VALIDAR: precisar o conceito de anonimização do Art. 5º, XI e Art. 12 da LGPD na fonte oficial</span></p>
+            </div>
+
+            <h3 id="cap3-5">3.5 · Síntese: a norma → a prática</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Fonte</th><th>O que exige</th><th>O que isso significa ao usar IA</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Código de Ética, Art. 1º b/c</strong></td><td>Competência técnica</td><td>Entenda a ferramenta antes de usá-la.</td></tr>
+                  <tr><td><strong>Código de Ética, Art. 2º g</strong></td><td>Documentos com base técnico-científica</td><td>A IA rascunha; você valida e assina.</td></tr>
+                  <tr><td><strong>Código de Ética, Art. 9º/10</strong></td><td>Sigilo profissional</td><td>Não exponha dado identificável a servidores de terceiros.</td></tr>
+                  <tr><td><strong>Código de Ética, Art. 2º q</strong></td><td>Vedação a diagnóstico exposto</td><td>IA não diagnostica; é apoio.</td></tr>
+                  <tr><td><strong>Código de Ética, Art. 14</strong></td><td>Informar o usuário</td><td>Transparência sobre o uso de tecnologia.</td></tr>
+                  <tr><td><strong>Res. CFP 9/2024, Art. 3º–4º</strong></td><td>Sigilo, privacidade e competência em servidores remotos</td><td>Os deveres do atendimento mediado valem para a IA em nuvem.</td></tr>
+                  <tr><td><strong>Res. CFP 9/2024, Art. 5º</strong></td><td>Encaminhar risco à rede presencial</td><td>Crise não se maneja por IA.</td></tr>
+                  <tr><td><strong>CFP — documentos de IA (2025)</strong></td><td>Orientação: IA como apoio, sob responsabilidade humana</td><td>Direção institucional alinhada ao princípio condutor.</td></tr>
+                  <tr><td><strong>LGPD (13.709/2018)</strong></td><td>Proteção reforçada a dado sensível de saúde</td><td>Anonimizar e conhecer a política de dados.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="summary-box">
+              <span class="summary-label">Em uma frase</span>
+              <p>O Brasil ainda não tem uma “lei da IA na Psicologia” — mas o <strong>Código de Ética, a Resolução CFP 9/2024 e a LGPD</strong>, lidos em conjunto, já respondem com clareza: a IA é admitida como <strong>apoio a tarefas acessórias</strong>, sob <strong>sigilo rigoroso</strong>, <strong>responsabilidade técnica indelegável</strong> e <strong>transparência</strong> com o paciente.</p>
+            </div>
+
+            <h4>Referências deste capítulo</h4>
+            <p><strong>Normativas (fontes primárias):</strong></p>
+            <ul>
+              <li>Conselho Federal de Psicologia. (2005). <em>Código de Ética Profissional do Psicólogo</em> (Resolução CFP nº 010/2005).</li>
+              <li>Conselho Federal de Psicologia. (2024). <em>Resolução CFP nº 9, de 18 de julho de 2024</em> — exercício profissional mediado por TDICs.</li>
+              <li>Conselho Federal de Psicologia. (2025). <em>Nota de Posicionamento sobre Inteligência Artificial e Psicologia</em> (03/07/2025). <span class="validar">A VALIDAR</span></li>
+              <li>Conselho Federal de Psicologia. (2025). <em>IA na Psicologia: prática ética e responsável</em> (cartilha). <span class="validar">A VALIDAR</span></li>
+              <li>Conselho Federal de Psicologia. (2025). <em>Chatbots, IA e sua Saúde Mental</em> (cartilha). <span class="validar">A VALIDAR</span></li>
+              <li>Brasil. (2018). <em>Lei nº 13.709, de 14 de agosto de 2018</em> — Lei Geral de Proteção de Dados Pessoais (LGPD).</li>
+            </ul>
+            <p><strong>Científicas (da matriz do projeto):</strong></p>
+            <ul>
+              <li>Pillay (2025), <em>Healthcare</em> — framework ético de cinco pilares.</li>
+              <li>Abderrahmen &amp; Djamel (2026), <em>Science, Education and Innovations</em> — governança ética e decisão humano-IA.</li>
+            </ul>
+            <div class="callout warn">
+              <div class="callout-title">🔎 Nota de validação</div>
+              <p>As passagens marcadas <span class="validar">A VALIDAR</span> serão preenchidas com citações literais verificadas dos documentos oficiais (CFP 2025 e LGPD) antes da geração do HTML final, conforme a regra anti-alucinação do projeto.</p>
+            </div>
+          </section>
+
+          <!-- ============================ CAPÍTULO 4 ============================ -->
+          <section id="cap4" class="chapter page-break">
+            <div class="chapter-head">
+              <span class="chapter-kicker">Capítulo 4</span>
+              <h2 class="chapter-title">Uso seguro da IA</h2>
+            </div>
+            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
+            <h3 id="cap4-oa">Objetivos de aprendizagem</h3>
+            <p>Ao final deste capítulo, você será capaz de:</p>
+            <ul>
+              <li>Aplicar técnicas de <strong>anonimização e pseudonimização</strong> a casos clínicos antes de usar qualquer IA.</li>
+              <li>Identificar com precisão <strong>o que nunca deve ser inserido</strong> em uma ferramenta de IA.</li>
+              <li>Configurar suas contas para <strong>reduzir a retenção de dados</strong> e sair do uso para treino.</li>
+              <li>Reconhecer e evitar os <strong>erros mais comuns</strong> que levam à quebra de sigilo.</li>
+            </ul>
+
+            <h3 id="cap4-0">4.0 · A regra de ouro</h3>
+            <div class="callout danger">
+              <div class="callout-title">🪑 Trate todo chatbot como uma sala de espera lotada</div>
+              <p>Tudo o que você “fala” ali pode ser ouvido, guardado e processado por terceiros. Você nunca diria o nome e a história de um paciente em voz alta numa sala cheia — então não digite isso num chat.</p>
+            </div>
+            <p>O Capítulo 3 mostrou <em>por que</em> o sigilo se aplica à IA (Código de Ética, Art. 9º; Res. CFP 9/2024, Art. 3º II/IV; LGPD). Este capítulo mostra <strong>como</strong> cumprir esse dever na prática, passo a passo. A literatura sobre uso responsável de IA em saúde mental converge para um ponto: a proteção de dados não é uma etapa final, é a <strong>condição de entrada</strong> (Saeidnia et al., 2024; Stade et al., 2024).</p>
+
+            <h3 id="cap4-1">4.1 · Anonimização e pseudonimização de casos</h3>
+            <p>Há duas formas de descaracterizar um dado antes de usá-lo numa IA. Entender a diferença evita uma falsa sensação de segurança.</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Técnica</th><th>O que é</th><th>Reversível?</th><th>Quando usar</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Anonimização</strong></td><td>Remover <strong>todos</strong> os elementos que permitem identificar a pessoa, direta ou indiretamente</td><td>Não (idealmente)</td><td>Sempre que possível — é o padrão-ouro</td></tr>
+                  <tr><td><strong>Pseudonimização</strong></td><td>Substituir identificadores por códigos/apelidos, mantendo uma chave separada</td><td>Sim, com a chave</td><td>Quando você precisa reconectar ao caso depois — a chave <strong>nunca</strong> vai para a IA</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout warn">
+              <div class="callout-title">⚠️ Cuidado com a reidentificação</div>
+              <p>Anonimizar não é só trocar o nome. Um conjunto de detalhes aparentemente inofensivos — profissão rara + cidade pequena + idade + evento específico — pode identificar alguém tão bem quanto um CPF. <strong>Anonimização real remove também o contexto identificável.</strong></p>
+            </div>
+            <h4>Exemplo lado a lado</h4>
+            <div class="compare">
+              <div class="compare-card bad">
+                <div class="tag">❌ Identificável (NÃO inserir)</div>
+                <p>“Meu paciente João Carlos, 34 anos, dentista em [cidade pequena], casado com a Fernanda, relatou que desde a morte do pai em março piora a insônia. Trabalha na Clínica OdontoVida.”</p>
+              </div>
+              <div class="compare-card good">
+                <div class="tag">✅ Anonimizado (uso seguro)</div>
+                <p>“Um paciente adulto, profissional da saúde, relata piora de insônia associada a um luto recente (falecimento de um familiar próximo há alguns meses). Como organizar a psicoeducação sobre higiene do sono para esse contexto?”</p>
+              </div>
+            </div>
+            <p>Repare que a versão segura <strong>preserva o que importa clinicamente</strong> (luto recente, insônia, necessidade de psicoeducação) e <strong>descarta o que só serve para identificar</strong> (nome, cônjuge, cidade, local de trabalho).</p>
+
+            <h3 id="cap4-2">4.2 · O que NUNCA inserir em uma IA</h3>
+            <p>Uma lista mental simples, para usar antes de cada uso:</p>
+            <div class="callout danger">
+              <div class="callout-title">🚷 Os “nunca” do sigilo digital</div>
+              <ul>
+                <li>❌ Nome completo, apelido único ou iniciais reconhecíveis do paciente</li>
+                <li>❌ CPF, RG, número de prontuário, telefone, e-mail, endereço</li>
+                <li>❌ Nome de familiares, empregador, escola, clínica</li>
+                <li>❌ Cidade pequena + combinação de traços que estreite a identificação</li>
+                <li>❌ Imagens, áudios ou prints da sessão com rosto/voz</li>
+                <li>❌ Datas exatas que, somadas a outros dados, identifiquem (ex.: “deu à luz em 12/03 no Hospital X”)</li>
+                <li>❌ Qualquer trecho que, lido por um conhecido do paciente, revelaria de quem se trata</li>
+              </ul>
+            </div>
+            <p><strong>O teste prático:</strong> <em>“Se esse texto vazasse amanhã, alguém conseguiria descobrir quem é o paciente?”</em> Se a resposta não for um “não” confiante, <strong>não cole</strong>.</p>
+            <p>Esse cuidado é a tradução direta do dever de sigilo (Código de Ética, Art. 9º) e do tratamento reforçado de dado sensível de saúde pela LGPD (Cap. 3). A literatura que cataloga violações éticas de “conselheiros de IA” aponta a exposição inadvertida de dados como uma das falhas mais frequentes (Iftikhar et al., 2025).</p>
+
+            <h3 id="cap4-3">4.3 · Boas práticas de configuração</h3>
+            <p>Anonimizar é a primeira camada. A segunda é <strong>configurar a ferramenta</strong> para reduzir o rastro que ela guarda.</p>
+            <h4>a) Saia do treino do modelo</h4>
+            <p>A maioria das ferramentas grandes permite <strong>desativar o uso das suas conversas para treinar o modelo</strong>. Procure em <em>Configurações → Dados / Privacidade</em> opções como “Improve the model for everyone”, “Training” ou “Histórico e treinamento”. Desative. <span class="validar">A VALIDAR: confirmar o nome exato da opção em cada ferramenta no Cap. 6, pois mudam com frequência</span></p>
+            <h4>b) Prefira contas e planos com garantias de dados</h4>
+            <p>Versões corporativas/educacionais costumam oferecer <strong>compromisso de não usar dados para treino</strong> e maior controle de retenção. Avalie a política antes de adotar (dever do Art. 4º, I da Res. 9/2024).</p>
+            <h4>c) Gerencie histórico e retenção</h4>
+            <ul>
+              <li>Apague conversas sensíveis após o uso.</li>
+              <li>Use chats temporários/anônimos quando disponíveis.</li>
+              <li>Não acumule no histórico aquilo que você não inseriria de novo hoje.</li>
+            </ul>
+            <h4>d) Separe o ambiente profissional do pessoal</h4>
+            <p>Use uma conta dedicada ao trabalho de apoio clínico, sem misturar com buscas pessoais — facilita controlar o que entra e o que fica.</p>
+            <div class="callout info">
+              <div class="callout-title">❗ Importante</div>
+              <p>Desativar o treino <strong>não</strong> torna seguro inserir dado identificável. É uma camada extra, não um substituto da anonimização. A ordem é sempre: <strong>(1) anonimizar → (2) configurar → (3) usar.</strong></p>
+            </div>
+
+            <h3 id="cap4-4">4.4 · Erros comuns (e como evitá-los)</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Erro comum</th><th>Por que é perigoso</th><th>Como evitar</th></tr></thead>
+                <tbody>
+                  <tr><td>“Só troquei o nome”</td><td>Contexto ainda identifica (4.1)</td><td>Remova traços que estreitam a identificação</td></tr>
+                  <tr><td>Colar a transcrição inteira da sessão</td><td>Mesmo sem nome, o relato pode ser único</td><td>Resuma e abstraia o caso antes</td></tr>
+                  <tr><td>Subir áudio/print da sessão</td><td>Voz e imagem são identificadores diretos</td><td>Nunca subir mídia da sessão</td></tr>
+                  <tr><td>Usar conta pessoal com treino ativo</td><td>O dado pode alimentar o modelo</td><td>Desative o treino; conta dedicada</td></tr>
+                  <tr><td>Confiar na saída sem revisar</td><td>IA alucina e enviesa</td><td>Você valida e assina (Cap. 3, Art. 2º g)</td></tr>
+                  <tr><td>Achar que “apagar” some na hora</td><td>Pode haver retenção temporária no servidor</td><td>Não inserir é mais seguro que apagar depois</td></tr>
+                  <tr><td>Manejar fala de crise no chat</td><td>IA não substitui rede de cuidado</td><td>Encaminhar à rede presencial (Res. 9/2024, Art. 5º)</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="checklist">
+              <div class="checklist-title">✅ Checklist — antes de colar no chat</div>
+              <ul>
+                <li><span class="box"></span><span>Removi nome, contatos e documentos?</span></li>
+                <li><span class="box"></span><span>Removi familiares, empregador, instituições?</span></li>
+                <li><span class="box"></span><span>O conjunto de detalhes ainda permite identificar? (se sim, abstraia mais)</span></li>
+                <li><span class="box"></span><span>Não há áudio, imagem ou print da sessão?</span></li>
+                <li><span class="box"></span><span>O treino do modelo está desativado nesta conta?</span></li>
+                <li><span class="box"></span><span>Eu validarei e assumirei a responsabilidade pela saída?</span></li>
+                <li><span class="box"></span><span>Isto é uma tarefa de <strong>apoio</strong> (não diagnóstico, parecer ou crise)?</span></li>
+              </ul>
+            </div>
+            <p>Se todos estiverem marcados, o uso está dentro das boas práticas. Se algum falhar, <strong>pare e ajuste</strong>.</p>
+
+            <div class="summary-box">
+              <span class="summary-label">Em uma frase</span>
+              <p>Uso seguro de IA na clínica = <strong>anonimizar sempre</strong>, <strong>configurar a ferramenta</strong> para reter e treinar o mínimo, e <strong>nunca delegar à máquina</strong> a responsabilidade técnica e o sigilo que são, por lei e por ética, do psicólogo.</p>
+            </div>
+
+            <h4>Referências deste capítulo</h4>
+            <ul>
+              <li>Saeidnia et al. (2024), <em>Social Sciences</em> — considerações éticas centrais no uso de IA em saúde mental.</li>
+              <li>Stade et al. (2024), <em>npj Mental Health Research</em> — roadmap de desenvolvimento e uso responsável.</li>
+              <li>Iftikhar et al. (2025), <em>Proc. AAAI/ACM AIES</em> — catálogo de violações éticas de “LLM counselors”.</li>
+              <li>Holm (2024), <em>Frontiers in Psychiatry</em> — trade-offs éticos e limites de objetividade.</li>
+            </ul>
+            <p><strong>Normativas aplicadas:</strong> Código de Ética (Art. 9º — sigilo); Res. CFP 9/2024 (Art. 3º II/IV, Art. 4º I, Art. 5º); LGPD (dado sensível de saúde, segurança). <em>Detalhamento no Cap. 3.</em></p>
+            <div class="callout warn">
+              <div class="callout-title">🔎 Nota de validação</div>
+              <p>Os nomes exatos das opções de privacidade de cada ferramenta (4.3) mudam com frequência e estão marcados <span class="validar">A VALIDAR</span>; serão conferidos junto à tabela do Cap. 6 antes do HTML final.</p>
+            </div>
+          </section>
+
+          <!-- ============================ CAPÍTULO 5 ============================ -->
+          <section id="cap5" class="chapter page-break">
+            <div class="chapter-head">
+              <span class="chapter-kicker">Capítulo 5</span>
+              <h2 class="chapter-title">Prompts para psicólogos</h2>
+            </div>
+            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
+            <h3 id="cap5-oa">Objetivos de aprendizagem</h3>
+            <p>Ao final deste capítulo, você será capaz de:</p>
+            <ul>
+              <li>Utilizar <strong>prompts seguros</strong> para tarefas de apoio, reconhecendo seus limites.</li>
+              <li>Estruturar um bom prompt (contexto → instrução → formato).</li>
+              <li>Aplicar a <strong>trava de segurança</strong> e a <strong>anonimização</strong> a cada uso.</li>
+            </ul>
+
+            <h3 id="cap5-0">5.0 · Como ler este capítulo</h3>
+            <div class="callout danger">
+              <div class="callout-title">⚠️ Trava de segurança (vale para TODOS os prompts)</div>
+              <p>Nenhum prompt aqui faz — ou deve ser adaptado para fazer — <strong>diagnóstico, avaliação psicológica, psicoterapia, parecer/laudo automático ou manejo de crise</strong>. Todos executam <strong>tarefas acessórias</strong> que continuam sob sua responsabilidade técnica (Cap. 2 e 3). E todos pressupõem <strong>dados anonimizados</strong> (Cap. 4).</p>
+            </div>
+            <p>Cada prompt segue a mesma estrutura: <strong>Contexto</strong> (para que serve) · <strong>Limite</strong> (o que ele NÃO faz) · <strong>Prompt pronto</strong> (com botão “copiar”) · <strong>Selo</strong> ✔ <em>Uso de apoio</em>.</p>
+            <h4>Anatomia de um bom prompt</h4>
+            <p>Um prompt eficaz tem três partes: <strong>(1) papel/contexto</strong> (“Você é um assistente que apoia um psicólogo em…”), <strong>(2) instrução clara</strong> (o que fazer) e <strong>(3) formato de saída</strong> (lista, tabela, tom, extensão). A literatura sobre IA aplicada ao trabalho clínico de apoio mostra que instruções bem-estruturadas melhoram a utilidade e reduzem desvios (Stade et al., 2024; McCrudden et al., 2025).</p>
+
+            <h3 id="cap5-1">5.1 · Documentos clínicos <span style="font-weight:400;color:var(--text-muted);font-size:.95rem">(apoio à redação, não substituição do registro)</span></h3>
+            <div class="callout warn"><p><strong>Este conjunto NÃO serve para:</strong> gerar laudo, parecer ou diagnóstico, nem substituir o prontuário. Serve para <strong>organizar e revisar a forma</strong> de um texto que <strong>você</strong> redige e valida (Código de Ética, Art. 2º, g).</p></div>
+
+            <div class="prompt-card">
+              <div class="prompt-card-head">
+                <div class="pc-title">Prompt 1 — Revisar a clareza de um texto já escrito por você</div>
+                <p class="prompt-meta"><b>Contexto:</b> melhorar a redação de uma anotação que você mesmo escreveu, sem alterar o conteúdo clínico.</p>
+                <p class="prompt-meta"><b>Limite:</b> não cria conteúdo clínico; só revisa forma.</p>
+              </div>
+              <div class="prompt-body">
+                <button class="copy-btn no-print" type="button"></button>
+                <pre class="prompt-code"><code>Você é um assistente de redação que apoia um psicólogo.
+Revise o texto abaixo apenas quanto à clareza, coesão e gramática,
+SEM acrescentar informações, interpretações ou conteúdo clínico novo.
+Mantenha o sentido original. Aponte ao final, em lista, o que alterou.
+
+Texto: "[cole aqui o seu texto, já anonimizado]"</code></pre>
+              </div>
+              <div class="prompt-card-foot"><span class="selo">✔ Uso de apoio</span></div>
+            </div>
+
+            <div class="prompt-card">
+              <div class="prompt-card-head">
+                <div class="pc-title">Prompt 2 — Estruturar tópicos de uma anotação de evolução (modelo genérico)</div>
+                <p class="prompt-meta"><b>Contexto:</b> obter um esqueleto neutro para organizar suas próprias anotações.</p>
+                <p class="prompt-meta"><b>Limite:</b> gera <b>estrutura</b>, não conteúdo do caso.</p>
+              </div>
+              <div class="prompt-body">
+                <button class="copy-btn no-print" type="button"></button>
+                <pre class="prompt-code"><code>Sugira uma estrutura de tópicos (apenas títulos de seções) para
+organizar uma anotação de evolução clínica genérica em psicologia.
+Não invente conteúdo de caso; apresente somente o esqueleto reutilizável.</code></pre>
+              </div>
+              <div class="prompt-card-foot"><span class="selo">✔ Uso de apoio</span></div>
+            </div>
+
+            <h3 id="cap5-2">5.2 · Planejamento terapêutico <span style="font-weight:400;color:var(--text-muted);font-size:.95rem">(organização das ideias do psicólogo)</span></h3>
+            <div class="callout warn"><p><strong>Este conjunto NÃO serve para:</strong> definir o tratamento no lugar do psicólogo nem prescrever conduta. Serve para <strong>organizar e ampliar ideias</strong> que você avalia criticamente.</p></div>
+
+            <div class="prompt-card">
+              <div class="prompt-card-head">
+                <div class="pc-title">Prompt 3 — Levantar possibilidades para você avaliar</div>
+                <p class="prompt-meta"><b>Limite:</b> a IA propõe; a decisão clínica é sua.</p>
+              </div>
+              <div class="prompt-body">
+                <button class="copy-btn no-print" type="button"></button>
+                <pre class="prompt-code"><code>Você apoia um psicólogo no planejamento. Para o tema clínico abstrato
+abaixo (sem dados de paciente), liste possíveis eixos de trabalho
+psicoeducativo e organizacional que um profissional PODERIA considerar,
+apresentando-os como opções a avaliar criticamente — não como prescrição.
+
+Tema (genérico e anonimizado): "[ex.: manejo de ansiedade de desempenho em adultos]"</code></pre>
+              </div>
+              <div class="prompt-card-foot"><span class="selo">✔ Uso de apoio</span></div>
+            </div>
+
+            <h3 id="cap5-3">5.3 · Supervisão <span style="font-weight:400;color:var(--text-muted);font-size:.95rem">(estruturação de estudo de caso)</span></h3>
+            <div class="callout warn"><p><strong>Este conjunto NÃO serve para:</strong> substituir o supervisor humano. Serve para <strong>organizar a apresentação</strong> de um caso já anonimizado para levar à supervisão. A literatura explora a IA como apoio à supervisão e ao treino — sempre complementar ao supervisor (Sheperis &amp; Sadeh-Sharvit, 2023; Shafran et al., 2025).</p></div>
+
+            <div class="prompt-card">
+              <div class="prompt-card-head">
+                <div class="pc-title">Prompt 4 — Roteiro para apresentar um caso na supervisão</div>
+              </div>
+              <div class="prompt-body">
+                <button class="copy-btn no-print" type="button"></button>
+                <pre class="prompt-code"><code>Ajude a organizar a APRESENTAÇÃO de um estudo de caso para supervisão
+em psicologia. Forneça um roteiro de seções (ex.: motivo de busca,
+hipóteses de trabalho, intervenções, dúvidas para o supervisor),
+em formato de checklist. Não preencha com conteúdo; só o roteiro.</code></pre>
+              </div>
+              <div class="prompt-card-foot"><span class="selo">✔ Uso de apoio</span></div>
+            </div>
+
+            <div class="prompt-card">
+              <div class="prompt-card-head">
+                <div class="pc-title">Prompt 5 — Gerar perguntas para levar ao supervisor</div>
+              </div>
+              <div class="prompt-body">
+                <button class="copy-btn no-print" type="button"></button>
+                <pre class="prompt-code"><code>Com base no tema clínico genérico abaixo (sem dados de paciente),
+sugira perguntas reflexivas que um psicólogo poderia levar à supervisão
+para aprofundar sua própria análise. Apresente como perguntas, não respostas.
+
+Tema: "[genérico e anonimizado]"</code></pre>
+              </div>
+              <div class="prompt-card-foot"><span class="selo">✔ Uso de apoio</span></div>
+            </div>
+
+            <h3 id="cap5-4">5.4 · Psicoeducação <span style="font-weight:400;color:var(--text-muted);font-size:.95rem">(materiais para pacientes)</span></h3>
+            <div class="callout warn"><p><strong>Este conjunto NÃO serve para:</strong> orientar um paciente específico sem a curadoria do psicólogo. Serve para <strong>rascunhar materiais educativos genéricos</strong> que você revisa, adapta e valida antes de entregar.</p></div>
+
+            <div class="prompt-card">
+              <div class="prompt-card-head">
+                <div class="pc-title">Prompt 6 — Rascunho de material psicoeducativo genérico</div>
+              </div>
+              <div class="prompt-body">
+                <button class="copy-btn no-print" type="button"></button>
+                <pre class="prompt-code"><code>Você apoia um psicólogo na criação de material psicoeducativo.
+Escreva um texto curto, acessível e acolhedor (linguagem leiga, sem jargão)
+explicando, de forma geral, o tema abaixo para o público adulto.
+Inclua um aviso de que o material é informativo e não substitui
+acompanhamento profissional. Evite prometer resultados.
+
+Tema: "[ex.: o que é higiene do sono]"</code></pre>
+              </div>
+              <div class="prompt-card-foot"><span class="selo">✔ Uso de apoio</span><span class="note">Revise e adapte antes de entregar a qualquer paciente.</span></div>
+            </div>
+
+            <h3 id="cap5-5">5.5 · Redes sociais / comunicação profissional</h3>
+            <div class="callout warn"><p><strong>Este conjunto NÃO serve para:</strong> fazer divulgação sensacionalista, prometer resultados ou expor casos. Deve respeitar o Código de Ética na publicidade (Art. 20: identificação com CRP, sem previsão taxativa de resultados, sem sensacionalismo).</p></div>
+
+            <div class="prompt-card">
+              <div class="prompt-card-head">
+                <div class="pc-title">Prompt 7 — Rascunho de post educativo para o público geral</div>
+              </div>
+              <div class="prompt-body">
+                <button class="copy-btn no-print" type="button"></button>
+                <pre class="prompt-code"><code>Escreva um rascunho de post curto para redes sociais, de um psicólogo,
+com teor EDUCATIVO sobre o tema abaixo. Regras:
+- linguagem acessível e respeitosa;
+- NÃO prometa resultados nem use tom sensacionalista;
+- inclua um convite leve a procurar acompanhamento profissional;
+- deixe um espaço "[Nome – CRP 00/00000]" para identificação.
+
+Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
+              </div>
+              <div class="prompt-card-foot"><span class="selo">✔ Uso de apoio</span><span class="note">Confira a conformidade com o Art. 20 antes de publicar.</span></div>
+            </div>
+
+            <h3 id="cap5-6">5.6 · Antes de usar qualquer prompt (resumo)</h3>
+            <div class="checklist">
+              <div class="checklist-title">✅ Confira sempre</div>
+              <ul>
+                <li><span class="box"></span><span>O conteúdo está <strong>anonimizado</strong> (Cap. 4)?</span></li>
+                <li><span class="box"></span><span>A tarefa é de <strong>apoio</strong> (não diagnóstico/parecer/crise)?</span></li>
+                <li><span class="box"></span><span>Vou <strong>revisar e assumir a responsabilidade</strong> pela saída?</span></li>
+                <li><span class="box"></span><span>O resultado respeita <strong>sigilo, viés e transparência</strong> (Cap. 2)?</span></li>
+              </ul>
+            </div>
+
+            <div class="summary-box">
+              <span class="summary-label">Em uma frase</span>
+              <p>Um bom prompt para psicólogo é aquele que <strong>economiza tempo em tarefas acessórias</strong> — revisar, organizar, rascunhar — <strong>sem nunca tocar</strong> no que é insubstituível: o juízo clínico, o vínculo e a responsabilidade técnica.</p>
+            </div>
+
+            <h4>Referências deste capítulo</h4>
+            <ul>
+              <li>Sheperis &amp; Sadeh-Sharvit (2023), <em>J. Technology in Counselor Education &amp; Supervision</em> — supervisão apoiada por IA.</li>
+              <li>McCrudden et al. (2025), <em>JMIR Formative Research</em> — documentação clínica com IA.</li>
+              <li>Shafran et al. (2025), <em>Behaviour Research and Therapy</em> — IA em treino/supervisão de TCC.</li>
+              <li>Volpe (2025), <em>European Psychiatry</em> — aplicações atuais de IA em saúde mental.</li>
+              <li>Mesquiti &amp; Nook (2026), <em>Annual Review of Biomedical Data Science</em> — LLMs em pesquisa e tratamento.</li>
+              <li>Stade et al. (2024), <em>npj Mental Health Research</em> — desenvolvimento e uso responsável.</li>
+            </ul>
+            <p><strong>Normativas aplicadas:</strong> Código de Ética (Art. 2º g, 2º q, 9º, 20); Res. CFP 9/2024 (Art. 5º); LGPD. <em>Detalhamento no Cap. 3 e 4.</em></p>
+          </section>
+
+          <!-- ============================ CAPÍTULO 6 ============================ -->
+          <section id="cap6" class="chapter page-break">
+            <div class="chapter-head">
+              <span class="chapter-kicker">Capítulo 6</span>
+              <h2 class="chapter-title">Ferramentas de IA</h2>
+            </div>
+            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
+            <h3 id="cap6-oa">Objetivos de aprendizagem</h3>
+            <p>Ao final deste capítulo, você será capaz de:</p>
+            <ul>
+              <li>Comparar as principais ferramentas de IA segundo <strong>critérios relevantes ao psicólogo</strong>.</li>
+              <li>Avaliar a <strong>política de dados</strong> de uma ferramenta antes de adotá-la (dever da LGPD e da Res. CFP 9/2024, Art. 4º, I).</li>
+              <li>Escolher a ferramenta adequada à <strong>tarefa de apoio</strong> pretendida.</li>
+            </ul>
+
+            <h3 id="cap6-0">6.0 · Como comparar com responsabilidade</h3>
+            <p>Antes da tabela, três avisos:</p>
+            <ol>
+              <li><strong>Privacidade vem primeiro.</strong> Para o psicólogo, o critério decisivo não é “qual é mais inteligente”, e sim <strong>o que a ferramenta faz com os dados</strong>. Avaliar isso é dever normativo (Res. CFP 9/2024, Art. 4º, I; LGPD).</li>
+              <li><strong>Tudo muda rápido.</strong> Preços, limites e políticas de dados de IA mudam de um mês para o outro. Por isso, <strong>dados voláteis abaixo estão marcados</strong> <span class="validar">A VALIDAR</span> e devem ser conferidos na fonte oficial de cada produto antes da publicação.</li>
+              <li><strong>Comparar é factual, não promocional.</strong> Descrevemos finalidades típicas observáveis; <strong>não inventamos capacidades</strong>. Recurso não verificável fica <span class="validar">A VALIDAR</span> (regra anti-alucinação do projeto).</li>
+            </ol>
+            <p>A literatura que revisa LLMs em saúde mental reforça que a escolha de ferramenta deve considerar adequação à tarefa, limites e segurança — não apenas desempenho (Guo et al., 2024; Tan et al., 2025).</p>
+
+            <h3 id="cap6-1">6.1 · Tabela comparativa</h3>
+            <div class="callout warn"><p>⚠️ Os campos de <strong>custo</strong> e <strong>política de dados</strong> mudam com frequência — <span class="validar">A VALIDAR na fonte oficial antes de publicar</span>. Clique nos cabeçalhos para ordenar; use o campo abaixo para filtrar.</p></div>
+
+            <div class="tool-controls no-print">
+              <div class="tool-filter">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input id="tools-filter" type="search" placeholder="Filtrar ferramentas (ex.: pesquisa, Google, redação)…" autocomplete="off" aria-label="Filtrar tabela de ferramentas" />
+              </div>
+              <span class="tool-hint">↕ clique no cabeçalho para ordenar</span>
+            </div>
+
+            <div class="table-wrap">
+              <table id="tools-table" class="sortable">
+                <thead>
+                  <tr>
+                    <th>Ferramenta</th>
+                    <th>Finalidade típica</th>
+                    <th>PT-BR</th>
+                    <th>Custo (modelo)</th>
+                    <th>Política de dados / treino</th>
+                    <th>Adequação a tarefas de apoio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>ChatGPT</strong> (OpenAI)</td>
+                    <td>Assistente geral de texto: rascunho, revisão, organização</td>
+                    <td><span class="pill ok">Bom</span></td>
+                    <td>Gratuito + pago <span class="validar">A VALIDAR</span></td>
+                    <td>Permite desativar uso para treino; planos com mais garantias <span class="validar">A VALIDAR</span></td>
+                    <td>Redação e organização de materiais (Cap. 5)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Claude</strong> (Anthropic)</td>
+                    <td>Assistente geral de texto, forte em textos longos e análise cuidadosa</td>
+                    <td><span class="pill ok">Bom</span></td>
+                    <td>Gratuito + pago <span class="validar">A VALIDAR</span></td>
+                    <td>Política de retenção/treino própria <span class="validar">A VALIDAR</span></td>
+                    <td>Revisão e síntese de textos longos (Cap. 5)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Gemini</strong> (Google)</td>
+                    <td>Assistente geral integrado ao ecossistema Google</td>
+                    <td><span class="pill ok">Bom</span></td>
+                    <td>Gratuito + pago <span class="validar">A VALIDAR</span></td>
+                    <td>Controles de atividade na conta Google <span class="validar">A VALIDAR</span></td>
+                    <td>Apoio a redação e pesquisa</td>
+                  </tr>
+                  <tr>
+                    <td><strong>NotebookLM</strong> (Google)</td>
+                    <td>Trabalhar sobre documentos que você fornece (resumir, perguntar)</td>
+                    <td><span class="pill ok">Bom</span></td>
+                    <td>Gratuito <span class="validar">A VALIDAR</span></td>
+                    <td>Responde com base nas suas fontes <span class="validar">A VALIDAR</span></td>
+                    <td>Estudar materiais/artigos que você já tem</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Perplexity</strong></td>
+                    <td>Busca com IA e citação de fontes</td>
+                    <td><span class="pill ok">Bom</span></td>
+                    <td>Gratuito + pago <span class="validar">A VALIDAR</span></td>
+                    <td>Verificar política de dados <span class="validar">A VALIDAR</span></td>
+                    <td>Pesquisa com rastreabilidade de fontes</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Copilot</strong> (Microsoft)</td>
+                    <td>Assistente integrado ao Windows/Office</td>
+                    <td><span class="pill ok">Bom</span></td>
+                    <td>Gratuito + pago <span class="validar">A VALIDAR</span></td>
+                    <td>Controles via conta Microsoft <span class="validar">A VALIDAR</span></td>
+                    <td>Apoio à produtividade em documentos</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout info">
+              <div class="callout-title">🏷️ Selo de privacidade</div>
+              <p>Cada linha receberá um selo — ✅ “permite desativar treino”, ⚠️ “verificar política” — preenchido após a validação oficial de cada produto na data mais próxima da publicação.</p>
+            </div>
+
+            <h3 id="cap6-2">6.2 · Critérios para escolher (independente da moda)</h3>
+            <p>Ao decidir, pergunte-se, nesta ordem:</p>
+            <ol>
+              <li><strong>Privacidade</strong> — a ferramenta permite desativar o uso para treino? Onde os dados ficam? (Cap. 4)</li>
+              <li><strong>Finalidade</strong> — a tarefa é de redação, de pesquisa com fontes, ou de trabalhar sobre documentos seus? Ferramentas diferentes brilham em coisas diferentes.</li>
+              <li><strong>Idioma</strong> — qualidade em PT-BR para o seu uso.</li>
+              <li><strong>Custo × necessidade</strong> — o plano gratuito já resolve a sua tarefa de apoio?</li>
+              <li><strong>Rastreabilidade</strong> — preciso de fontes citadas (Perplexity) ou de trabalhar meus próprios documentos (NotebookLM)?</li>
+            </ol>
+            <div class="callout ok">
+              <div class="callout-title">📌 Regra que não muda</div>
+              <p>Independentemente da ferramenta, <strong>anonimize antes</strong> e <strong>valide depois</strong>. A ferramenta é a parte fácil; a responsabilidade é sua (Cap. 2 e 3).</p>
+            </div>
+
+            <h3 id="cap6-3">6.3 · Qual usar para quê (guia rápido)</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Sua tarefa de apoio</th><th>Ponto de partida sugerido</th></tr></thead>
+                <tbody>
+                  <tr><td>Revisar/organizar um texto seu</td><td>ChatGPT ou Claude</td></tr>
+                  <tr><td>Trabalhar em cima de artigos/PDFs que você tem</td><td>NotebookLM</td></tr>
+                  <tr><td>Pesquisar algo com fontes citadas</td><td>Perplexity</td></tr>
+                  <tr><td>Apoio dentro do Office/Windows</td><td>Copilot</td></tr>
+                  <tr><td>Síntese de textos longos</td><td>Claude</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p><em>Sugestões de ponto de partida, não recomendações exclusivas — todas exigem a mesma checagem de privacidade.</em></p>
+
+            <div class="summary-box">
+              <span class="summary-label">Em uma frase</span>
+              <p>A melhor ferramenta de IA para o psicólogo é aquela cuja <strong>política de dados você conhece e aprova</strong> e que se ajusta à <strong>tarefa de apoio</strong> específica — a “inteligência” do modelo é secundária diante do sigilo.</p>
+            </div>
+
+            <h4>Referências deste capítulo</h4>
+            <ul>
+              <li>Guo et al. (2024), <em>JMIR Mental Health</em> — revisão sistemática de LLMs em saúde mental.</li>
+              <li>Tan et al. (2025), <em>Journal of Psychology and AI</em> — competência de LLMs em contextos de psicoterapia.</li>
+            </ul>
+            <p><strong>Norma aplicada:</strong> dever de avaliar a política de dados antes de usar (LGPD; Res. CFP 9/2024, Art. 4º, I). <em>Detalhamento no Cap. 3.</em></p>
+            <div class="callout warn">
+              <div class="callout-title">🔎 Nota de validação</div>
+              <p>Todos os campos de <strong>custo</strong> e <strong>política de dados</strong> estão <span class="validar">A VALIDAR</span> e serão preenchidos a partir das páginas oficiais de cada produto na data mais próxima da publicação, dado o ritmo de mudança do setor.</p>
+            </div>
+          </section>
+
+          <!-- ============================ CAPÍTULO 7 ============================ -->
+          <section id="cap7" class="chapter page-break">
+            <div class="chapter-head">
+              <span class="chapter-kicker">Capítulo 7</span>
+              <h2 class="chapter-title">Futuro da Psicologia com IA</h2>
+            </div>
+            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
+            <h3 id="cap7-oa">Objetivos de aprendizagem</h3>
+            <p>Ao final deste capítulo, você será capaz de:</p>
+            <ul>
+              <li>Analisar criticamente <strong>cenários emergentes</strong> do uso de IA na Psicologia.</li>
+              <li>Pesar <strong>potencial × risco</strong> de cada cenário.</li>
+              <li>Reconhecer o que permanece <strong>insubstituível</strong> no trabalho do psicólogo.</li>
+            </ul>
+
+            <h3 id="cap7-0">7.0 · Como pensar o futuro sem ingenuidade</h3>
+            <p>Falar do futuro da IA na Psicologia exige equilíbrio entre dois erros: o <strong>deslumbramento</strong> (achar que a máquina resolverá tudo) e o <strong>negacionismo</strong> (achar que nada mudará). A literatura mais recente adota um terceiro caminho — <strong>cautela informada</strong>: mapear o que é possível, o que é desejável e o que é arriscado (Stade et al., 2024; Zhang et al., 2025; Gupta &amp; Gandhi, 2025).</p>
+            <p>Examinamos quatro cenários. Para cada um: o <strong>potencial</strong>, o <strong>risco</strong> e o <strong>limite ético</strong> que não se negocia.</p>
+
+            <h3 id="cap7-1">7.1 · Supervisão assistida</h3>
+            <p><strong>O cenário:</strong> ferramentas de IA que ajudam o supervisor e o supervisionando a organizar casos, gerar perguntas reflexivas e estruturar feedback de treino (Sheperis &amp; Sadeh-Sharvit, 2023; Shafran et al., 2025).</p>
+            <ul>
+              <li><strong>Potencial:</strong> ampliar o acesso à supervisão, padronizar parte do treino, liberar tempo para a discussão que realmente importa.</li>
+              <li><strong>Risco:</strong> terceirizar o julgamento formativo; achatar a singularidade do caso em respostas genéricas.</li>
+              <li><strong>Limite ético:</strong> a IA <strong>apoia</strong> a supervisão; o supervisor humano permanece responsável pela formação e pela avaliação.</li>
+            </ul>
+
+            <h3 id="cap7-2">7.2 · Documentação automática</h3>
+            <p><strong>O cenário:</strong> assistência à produção de registros e materiais a partir de informações fornecidas pelo profissional (McCrudden et al., 2025; Stade et al., 2024).</p>
+            <ul>
+              <li><strong>Potencial:</strong> reduzir a carga burocrática, um fator real de sobrecarga e desgaste.</li>
+              <li><strong>Risco:</strong> registros genéricos ou imprecisos; <strong>quebra de sigilo</strong> se dados identificáveis forem inseridos; documentos sem fundamentação técnica própria.</li>
+              <li><strong>Limite ético:</strong> todo documento exige <strong>fundamentação técnico-científica</strong> e validação humana (Código de Ética, Art. 2º, g); dados sempre <strong>anonimizados</strong> (Cap. 4). A IA rascunha; o psicólogo assina.</li>
+            </ul>
+
+            <h3 id="cap7-3">7.3 · Simulação de pacientes para treino</h3>
+            <p><strong>O cenário:</strong> “pacientes virtuais” gerados por IA para estudantes praticarem entrevista, escuta e manejo, em ambiente seguro (Shafran et al., 2025; Tan et al., 2025).</p>
+            <ul>
+              <li><strong>Potencial:</strong> treino repetível e de baixo risco, sem expor pessoas reais; espaço para errar e aprender.</li>
+              <li><strong>Risco:</strong> aprender padrões irreais (um paciente simulado não reage como um humano); confundir competência técnica com competência relacional.</li>
+              <li><strong>Limite ético:</strong> simulação é <strong>complemento</strong> do treino supervisionado, nunca substituto da experiência clínica real com supervisão.</li>
+            </ul>
+
+            <h3 id="cap7-4">7.4 · Riscos transversais e o lugar insubstituível do psicólogo</h3>
+            <p>Além dos cenários, há riscos que atravessam todos eles e exigem vigilância contínua:</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Risco transversal</th><th>Por quê</th><th>Como mitigar</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Viés de automação</strong></td><td>Confiar na máquina por ser fluente e rápida</td><td>Validação crítica sempre (Cap. 2)</td></tr>
+                  <tr><td><strong>Erosão do sigilo</strong></td><td>Mais ferramentas = mais pontos de vazamento</td><td>Anonimização e política de dados (Cap. 4, 6)</td></tr>
+                  <tr><td><strong>Viés algorítmico</strong></td><td>Modelos herdam preconceitos dos dados</td><td>Leitura crítica das saídas (Cap. 2)</td></tr>
+                  <tr><td><strong>Desigualdade de acesso</strong></td><td>Nem todos terão as mesmas ferramentas</td><td>Letramento e governança (Gupta &amp; Gandhi, 2025)</td></tr>
+                  <tr><td><strong>Vácuo regulatório</strong></td><td>A norma corre atrás da tecnologia</td><td>Governança ética e decisão humano-IA (Abderrahmen &amp; Djamel, 2026)</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout principio">
+              <div class="callout-title" style="font-style:normal">🫶 O que a IA não substitui</div>
+              <p style="font-style:normal">O vínculo terapêutico. A presença. A escuta que acolhe o que não foi dito. O julgamento clínico que pesa singularidades. A responsabilidade ética e legal. Esses são o núcleo da Psicologia — e nenhum avanço técnico os transfere para uma máquina.</p>
+            </div>
+            <p>A taxonomia de papéis que os LLMs podem assumir em saúde mental converge para a mesma conclusão deste e-book: <strong>quanto mais a tarefa se aproxima do juízo clínico e do cuidado, menos cabe à IA e mais cabe ao humano</strong> (Zhang et al., 2025).</p>
+
+            <div class="summary-box">
+              <span class="summary-label">Em uma frase</span>
+              <p>O futuro da Psicologia com IA não é a substituição do psicólogo, e sim a <strong>liberação do psicólogo das tarefas acessórias</strong> para que ele se dedique ao que só um humano faz: cuidar, vincular-se e decidir com responsabilidade.</p>
+            </div>
+
+            <h4>Referências deste capítulo</h4>
+            <ul>
+              <li>Stade et al. (2024), <em>npj Mental Health Research</em> — roadmap de desenvolvimento responsável.</li>
+              <li>Shafran et al. (2025), <em>Behaviour Research and Therapy</em> — IA em treino/supervisão.</li>
+              <li>Zhang et al. (2025), <em>Nature Computational Science</em> — taxonomia de papéis de LLM e ética.</li>
+              <li>Tan et al. (2025), <em>Journal of Psychology and AI</em> — competência de LLMs em psicoterapia.</li>
+              <li>Abderrahmen &amp; Djamel (2026), <em>Science, Education and Innovations</em> — governança ética e decisão humano-IA.</li>
+              <li>Gupta &amp; Gandhi (2025), <em>International Review of Psychiatry</em> — letramento em IA e futuro da área.</li>
+              <li>Sheperis &amp; Sadeh-Sharvit (2023), <em>J. Technology in Counselor Education &amp; Supervision</em> — supervisão apoiada por IA.</li>
+              <li>McCrudden et al. (2025), <em>JMIR Formative Research</em> — documentação clínica com IA.</li>
+            </ul>
+            <p><strong>Norma aplicada:</strong> reforço do posicionamento ético central + Código de Ética (Art. 2º, g). <em>Detalhamento no Cap. 3.</em></p>
+          </section>
+
+          <!-- ============================ REFERÊNCIAS ============================ -->
+          <section id="referencias" class="chapter page-break">
+            <div class="chapter-head">
+              <span class="chapter-kicker">Seção final</span>
+              <h2 class="chapter-title">Referências &amp; encerramento</h2>
+            </div>
+            <div class="callout info">
+              <p>Reúne (1) as 20 referências científicas — todas com DOI verificável, extraídas da planilha Elicit — e (2) as normativas (CFP/LGPD). Formatação <strong>APA 7ª edição</strong>.</p>
+              <p style="margin-top:.6rem"><strong>Nota de validação:</strong> volume, número e páginas foram completados via API do Crossref e conferidos na OpenAlex a partir do DOI de cada artigo (12/06/2026). <strong>17 das 20</strong> estão completas. As 3 restantes (Irshad, 2022; Sheperis &amp; Sadeh-Sharvit, 2023; Mesquiti &amp; Nook, 2026) não têm número de página em nenhuma das bases — nesses casos a APA 7 admite a omissão das páginas. As marcações <span class="validar">A VALIDAR</span> restantes apontam divergências menores (ano/ordem de autor) a confirmar na página oficial do artigo.</p>
+            </div>
+
+            <h3 id="ref-cientificas">Referências (APA 7)</h3>
+            <ol class="ref-list">
+              <li>Abderrahmen, S., &amp; Djamel, R. (2026). Reframing ethical governance of artificial intelligence in mental health care: Toward a human-centered, explainable, and clinically responsible psychotherapeutic paradigm. <em>Science, Education and Innovations in the Context of Modern Problems</em>, <em>9</em>(5), 1–13. <a class="ref-doi" href="https://doi.org/10.56334/sei/9.5.22" target="_blank" rel="noopener">https://doi.org/10.56334/sei/9.5.22</a> <span class="validar">A VALIDAR: ordem sobrenome/nome</span></li>
+              <li>Bharti, J., &amp; Singh, R. (2025). Between care and code: Clinicians' perspectives as an ethical lens for AI in mental health – Insights from an interview-based case study. <em>Science Insights</em>, <em>47</em>(5), 2041–2048. <a class="ref-doi" href="https://doi.org/10.15354/si.25.or1302" target="_blank" rel="noopener">https://doi.org/10.15354/si.25.or1302</a></li>
+              <li>Guo, Z., Lai, A., Thygesen, J., Farrington, J., Keen, T., &amp; Li, K. (2024). Large language models for mental health applications: Systematic review. <em>JMIR Mental Health</em>, <em>11</em>, e57400. <a class="ref-doi" href="https://doi.org/10.2196/57400" target="_blank" rel="noopener">https://doi.org/10.2196/57400</a></li>
+              <li>Gupta, D. R., &amp; Gandhi, T. (2025). AI and ethics in mental health: Personal reflections on the future of psychiatry. <em>International Review of Psychiatry</em>, <em>38</em>(1–3), 122–125. <a class="ref-doi" href="https://doi.org/10.1080/09540261.2025.2600617" target="_blank" rel="noopener">https://doi.org/10.1080/09540261.2025.2600617</a></li>
+              <li>Heyen, N., &amp; Salloch, S. (2021). The ethics of machine learning-based clinical decision support: An analysis through the lens of professionalisation theory. <em>BMC Medical Ethics</em>, <em>22</em>(1), Article 112. <a class="ref-doi" href="https://doi.org/10.1186/s12910-021-00679-3" target="_blank" rel="noopener">https://doi.org/10.1186/s12910-021-00679-3</a></li>
+              <li>Holm, S. (2024). Ethical trade-offs in AI for mental health. <em>Frontiers in Psychiatry</em>, <em>15</em>, Article 1407562. <a class="ref-doi" href="https://doi.org/10.3389/fpsyt.2024.1407562" target="_blank" rel="noopener">https://doi.org/10.3389/fpsyt.2024.1407562</a></li>
+              <li>Iftikhar, Z., Xiao, A., Ransom, S., Huang, J., &amp; Suresh, H. (2025). How LLM counselors violate ethical standards in mental health practice: A practitioner-informed framework. <em>Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society</em>, <em>8</em>(2), 1311–1323. <a class="ref-doi" href="https://doi.org/10.1609/aies.v8i2.36632" target="_blank" rel="noopener">https://doi.org/10.1609/aies.v8i2.36632</a></li>
+              <li>Irshad, S., Azmi, S., &amp; Begum, N. (2022). Uses of artificial intelligence in psychology. <em>Journal of Health and Medical Sciences</em>, <em>5</em>(4). <a class="ref-doi" href="https://doi.org/10.31014/aior.1994.05.04.242" target="_blank" rel="noopener">https://doi.org/10.31014/aior.1994.05.04.242</a></li>
+              <li>Komatsu, H., Watanabe, E., &amp; Fukuchi, M. (2021). Psychiatric neural networks and precision therapeutics by machine learning. <em>Biomedicines</em>, <em>9</em>(4), 403. <a class="ref-doi" href="https://doi.org/10.3390/biomedicines9040403" target="_blank" rel="noopener">https://doi.org/10.3390/biomedicines9040403</a></li>
+              <li>McCrudden, K., Swirbul, M., Peake, E., Rodio, M. J., &amp; Padmanabhan, A. (2025). AI-powered documentation for mental health providers: Retrospective observational mixed methods study. <em>JMIR Formative Research</em>, <em>10</em>, e84628. <a class="ref-doi" href="https://doi.org/10.2196/84628" target="_blank" rel="noopener">https://doi.org/10.2196/84628</a> <span class="validar">A VALIDAR: ano — bases indicam 2026</span></li>
+              <li>Mesquiti, S., &amp; Nook, E. C. (2026). Large language models in mental health research and treatment. <em>Annual Review of Biomedical Data Science</em>. Advance online publication. <a class="ref-doi" href="https://doi.org/10.1146/annurev-biodatasci-092524-113527" target="_blank" rel="noopener">https://doi.org/10.1146/annurev-biodatasci-092524-113527</a> <span class="validar">A VALIDAR: volume/páginas</span></li>
+              <li>Pillay, Y. (2025). Ethical decision-making guidelines for mental health clinicians in the artificial intelligence (AI) era. <em>Healthcare</em>, <em>13</em>(23), 3057. <a class="ref-doi" href="https://doi.org/10.3390/healthcare13233057" target="_blank" rel="noopener">https://doi.org/10.3390/healthcare13233057</a></li>
+              <li>Saeidnia, H. R., Hashemi Fotami, S. G., Lund, B. D., &amp; Ghiasi, N. (2024). Ethical considerations in artificial intelligence interventions for mental health and well-being: Ensuring responsible implementation and impact. <em>Social Sciences</em>, <em>13</em>(7), 381. <a class="ref-doi" href="https://doi.org/10.3390/socsci13070381" target="_blank" rel="noopener">https://doi.org/10.3390/socsci13070381</a></li>
+              <li>Shafran, R., Bond, L., Carlbring, P., Cohen, Z., Creed, T. A., Davey, E., Egan, S. J., Freeman, D., Hollon, S. D., Jacobson, N. C., Johnson, C., Kaysen, D. L., McGuinness, D. L., Patel, V., Pozuelo, J. R., Santos, H., Singla, D. R., Stirman, S., Taylor, D., &amp; Wade, T. D. (2025). From innovation to implementation: Artificial intelligence in cognitive behaviour therapy training and supervision. <em>Behaviour Research and Therapy</em>, <em>197</em>, Article 104945. <a class="ref-doi" href="https://doi.org/10.1016/j.brat.2025.104945" target="_blank" rel="noopener">https://doi.org/10.1016/j.brat.2025.104945</a></li>
+              <li>Sheperis, D., &amp; Sadeh-Sharvit, S. (2023). Using AI-supported supervision in a university telemental health training clinic. <em>Journal of Technology in Counselor Education and Supervision</em>, <em>4</em>(1). <a class="ref-doi" href="https://doi.org/10.61888/2692-4129.1093" target="_blank" rel="noopener">https://doi.org/10.61888/2692-4129.1093</a></li>
+              <li>Singhal, S., Cooke, D. L., Villareal, R. I., Stoddard, J. J., Lin, C.-T., &amp; Dempsey, A. G. (2024). Machine learning for mental health: Applications, challenges, and the clinician's role. <em>Current Psychiatry Reports</em>, <em>26</em>(12), 694–702. <a class="ref-doi" href="https://doi.org/10.1007/s11920-024-01561-w" target="_blank" rel="noopener">https://doi.org/10.1007/s11920-024-01561-w</a></li>
+              <li>Stade, E. C., Stirman, S. W., Ungar, L. H., Boland, C., Schwartz, H. A., Yaden, D. B., Sedoc, J., DeRubeis, R. J., Willer, R., &amp; Eichstaedt, J. C. (2024). Large language models could change the future of behavioral healthcare: A proposal for responsible development and evaluation. <em>npj Mental Health Research</em>, <em>3</em>(1), Article 12. <a class="ref-doi" href="https://doi.org/10.1038/s44184-024-00056-z" target="_blank" rel="noopener">https://doi.org/10.1038/s44184-024-00056-z</a></li>
+              <li>Tan, K. S., Cervin, M., Leman, P., Nielsen, K., Kumar, P., &amp; Medvedev, O. N. (2025). AI meets psychology: An exploratory study of large language models' competence in psychotherapy contexts. <em>Journal of Psychology and AI</em>, <em>1</em>(1), Article 2545258. <a class="ref-doi" href="https://doi.org/10.1080/29974100.2025.2545258" target="_blank" rel="noopener">https://doi.org/10.1080/29974100.2025.2545258</a></li>
+              <li>Volpe, U. (2025). What can AI do for mental health care? <em>European Psychiatry</em>, <em>68</em>(S1), S61–S62. <a class="ref-doi" href="https://doi.org/10.1192/j.eurpsy.2025.239" target="_blank" rel="noopener">https://doi.org/10.1192/j.eurpsy.2025.239</a></li>
+              <li>Zhang, R., Meng, H., Neubronner, M., &amp; Lee, Y.-C. (2025). Computational and ethical considerations for using large language models in psychotherapy. <em>Nature Computational Science</em>, <em>5</em>(10), 854–862. <a class="ref-doi" href="https://doi.org/10.1038/s43588-025-00874-x" target="_blank" rel="noopener">https://doi.org/10.1038/s43588-025-00874-x</a></li>
+            </ol>
+
+            <h3 id="ref-normativas">Normativas e documentos oficiais</h3>
+            <ul class="ref-list">
+              <li>Brasil. (2018). <em>Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD)</em>. Diário Oficial da União. <a class="ref-doi" href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">planalto.gov.br</a></li>
+              <li>Conselho Federal de Psicologia. (2005). <em>Resolução CFP nº 010/2005. Código de Ética Profissional do Psicólogo</em>. CFP.</li>
+              <li>Conselho Federal de Psicologia. (2024). <em>Resolução CFP nº 9, de 18 de julho de 2024. Regulamenta o exercício profissional da Psicologia mediado por Tecnologias Digitais da Informação e da Comunicação (TDICs)</em>. CFP.</li>
+              <li>Conselho Federal de Psicologia. (2025). <em>Nota de posicionamento sobre Inteligência Artificial e Psicologia</em> (03 de julho de 2025). CFP. <span class="validar">A VALIDAR: URL e título exatos</span></li>
+              <li>Conselho Federal de Psicologia. (2025). <em>IA na Psicologia: prática ética e responsável</em> [Cartilha]. CFP. <span class="validar">A VALIDAR: título e dados exatos</span></li>
+              <li>Conselho Federal de Psicologia. (2025). <em>Chatbots, IA e sua saúde mental</em> [Cartilha]. CFP. <span class="validar">A VALIDAR: título e dados exatos</span></li>
+            </ul>
+
+            <h3 id="encerramento">Encerramento</h3>
+            <p>Este e-book nasceu de uma convicção simples: <strong>a melhor resposta à chegada da Inteligência Artificial na Psicologia não é proibir nem idolatrar, mas compreender.</strong> Ao longo dos sete capítulos, procuramos mostrar que a IA pode aliviar o psicólogo de tarefas acessórias — organizar, revisar, rascunhar, pesquisar — sem jamais tocar naquilo que é o coração da profissão: o vínculo, a escuta, o julgamento clínico e a responsabilidade ética.</p>
+            <p>As normas brasileiras — o Código de Ética, a Resolução CFP nº 9/2024 e a LGPD — não foram escritas para a IA, mas já oferecem um mapa seguro: sigilo rigoroso, competência técnica, transparência com o paciente e responsabilidade indelegável. A evidência científica reunida aqui aponta na mesma direção: quanto mais perto do cuidado, menos lugar para a máquina e mais lugar para o humano.</p>
+            <p>Que este material sirva de bússola — não de manual fechado — para um uso da tecnologia que seja, antes de tudo, <strong>ético, seguro e a serviço das pessoas</strong>.</p>
+            <div class="callout principio">
+              <p>“A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.”</p>
+            </div>
+
+            <div class="endnote">
+              <p style="margin:0 0 .6rem"><em>Material desenvolvido com auxílio de Inteligência Artificial, sob supervisão humana integral. Uso educacional — não substitui a prática clínica, a supervisão profissional nem a assessoria jurídica/ética formal.</em></p>
+              <p style="margin:0"><strong>CEUB — Centro Universitário de Brasília · Curso de Psicologia · Projeto Integrador III</strong><br>
+              Autores: Alunos da disciplina Projeto Integrador III · Orientação: Prof. Dr. Fabio Hernandez de Medeiros (CRP 01/17465) · 2026</p>
+            </div>
+          </section>
+
+        </div><!-- /.container -->
+      </div><!-- /.content-wrap -->
+    </div><!-- /.layout -->
+
+    <button id="to-top" class="no-print" aria-label="Voltar ao topo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+  </body>
+</html>
