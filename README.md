@@ -2,6 +2,9 @@
 
 E-book interativo **"IA para Psicólogos: Guia Prático para a Clínica"** — aplicações práticas, ética profissional e limites da Inteligência Artificial na Psicologia Clínica.
 
+🔗 **Versão publicada (online):** https://fabiohmedeiros.github.io/e-book_IA/
+📦 **Repositório:** https://github.com/fabiohmedeiros/e-book_IA · branch `main`
+
 **CEUB — Centro Universitário de Brasília · Curso de Psicologia · Projeto Integrador III**
 Autores: Alunos da disciplina Projeto Integrador III · Orientação: Prof. Dr. Fabio Hernandez de Medeiros (CRP 01/17465) · 2026.
 
@@ -9,53 +12,127 @@ Autores: Alunos da disciplina Projeto Integrador III · Orientação: Prof. Dr. 
 
 > Material desenvolvido com auxílio de Inteligência Artificial, sob supervisão humana integral. Uso educacional — não substitui a prática clínica, a supervisão profissional nem a assessoria jurídica/ética formal.
 
-## Conteúdo
+---
 
-- **`capitulos/`** — miolo dos 7 capítulos + referências (APA 7) em Markdown. É a **fonte da verdade** do conteúdo, redigida e revisada antes da geração do HTML.
-- **`fontes/`** — textos oficiais de apoio (Código de Ética do Psicólogo 2005; Resolução CFP 9/2024 — TDICs).
-- **`index.html` / `src/` / `vite.config.js`** — infraestrutura de build (placeholder até a geração do HTML final).
+## 📖 Sobre o projeto
+
+E-book didático para **psicólogos formados e estudantes** (nível iniciante → intermediário em IA), com rigor acadêmico nas fontes. Equivalente a ~60–80 páginas. Entregue como **um único arquivo HTML** (premium, responsivo, com dark mode, busca, índice lateral e exportação para PDF via impressão do navegador).
 
 ### Estrutura dos capítulos
-1. O que é IA e o que não é · 2. Ética e limites profissionais · 3. O que o CFP e a legislação dizem · 4. Uso seguro da IA · 5. Prompts para psicólogos · 6. Ferramentas de IA · 7. Futuro da Psicologia com IA · + Referências.
+1. **O que é IA e o que não é** — Machine Learning, Deep Learning, LLMs; mitos comuns.
+2. **Ética e limites profissionais** — cinco pilares (sigilo, viés, responsabilização, transparência, cuidado autêntico).
+3. **O que o CFP e a legislação dizem** — Código de Ética, Resolução CFP 9/2024 (TDICs), LGPD, publicações CFP 2025.
+4. **Uso seguro da IA** — protocolos de anonimização e proteção de dados.
+5. **Prompts para psicólogos** — 7 prompts prontos para tarefas de apoio (documentação, supervisão, psicoeducação), com botão "copiar".
+6. **Ferramentas de IA** — tabela filtrável/ordenável (ChatGPT, Claude, Gemini, NotebookLM, Perplexity, Copilot) com selos de privacidade.
+7. **Futuro da Psicologia com IA** — cenários emergentes.
+- **Referências** (APA 7).
 
-Visão geral original do repositório: o material é projetado para visualização "SaaS Premium", com interatividade, botões de cópia de prompts, leitura agradável e conversão fácil para PDF (impressão).
+---
 
-## Tecnologias Utilizadas
+## 👩‍🎓 Para os alunos revisores
 
-A infraestrutura foi montada priorizando produtividade no desenvolvimento e portabilidade no formato final:
-- **Vite:** Para o servidor de desenvolvimento local rápido (com hot-reload).
-- **Tailwind CSS v4:** Para o design do sistema, facilitando a criação de layouts responsivos, dark mode, e animações sem poluir o CSS.
-- **vite-plugin-singlefile:** Garante que no momento da publicação (`build`), o HTML, CSS e JavaScript sejam unificados em um **único arquivo HTML independente**.
-- **HTML/CSS/JS (Vanilla):** Não são utilizados frameworks pesados como React ou Vue, garantindo que a saída seja enxuta, leve e atenda estritamente aos requisitos do projeto.
+O conteúdo está **redigido e aguardando revisão de cada capítulo** (professor + alunos). Como participar:
 
-## Como Executar Localmente
+1. **Leia o e-book publicado:** https://fabiohmedeiros.github.io/e-book_IA/ (ou abra `docs/index.html` localmente).
+2. **A fonte editorial de cada capítulo está em `capitulos/*.md`** (Markdown, mais fácil de revisar/comentar que o HTML).
+3. **Marcadores `[A VALIDAR]`** = dado que ainda depende de conferência em fonte oficial (ex.: artigo exato da LGPD, custo/política de dados de uma ferramenta, paginação de um artigo). Ao revisar, **substitua o `[A VALIDAR]` pela informação confirmada e cite a fonte**, ou comente o que falta.
+4. **Como enviar correções:** edite o `.md` do capítulo e abra um Pull Request, **ou** registre suas observações (issue / documento à parte / mensagem ao orientador). Não é preciso saber programar para revisar — o que importa é o conteúdo nos `capitulos/*.md`.
 
-Siga os passos abaixo para iniciar o ambiente de desenvolvimento:
+### Regras de conteúdo inegociáveis (valem para humanos e IA)
+- **Não inventar** referências nem DOIs. Usar apenas as 20 referências reais já mapeadas (`capitulos/referencias.md`) + textos normativos oficiais (`fontes/`).
+- Toda afirmação normativa deve estar **ancorada em fonte oficial**.
+- **Nenhum prompt ou recomendação** que faça diagnóstico, psicoterapia, parecer automático ou manejo de crise sem supervisão humana.
+- Dado faltante → manter o marcador **`[A VALIDAR]`** (não preencher com suposição).
 
-1. **Instale as dependências:**
-   ```bash
-   npm install
-   ```
+---
 
-2. **Inicie o servidor local:**
-   ```bash
-   npm run dev
-   ```
-   *O Vite criará um servidor local (geralmente em `http://localhost:5173`) e abrirá automaticamente no navegador. Qualquer modificação no código refletirá imediatamente na tela.*
+## 🗂️ Estrutura do repositório
 
-## Como Gerar a Versão Final (Build)
+| Caminho | O que é | Versionado? |
+|---|---|---|
+| `capitulos/` | **Fonte editorial** dos 7 capítulos + `referencias.md` (Markdown). É a fonte da verdade do *texto* para revisão. | ✅ |
+| `fontes/` | Textos normativos oficiais de apoio (Código de Ética 2005; Resolução CFP 9/2024 — TDICs) para citação. | ✅ |
+| `index.html` | **Página-fonte do build** — contém todo o conteúdo dos capítulos já em HTML (inline). É o que o Vite empacota. | ✅ |
+| `src/main.js` | Interatividade: dark mode, drawer mobile, barra de progresso, scroll-spy, botões "copiar", tabela filtrável, busca interna. | ✅ |
+| `src/style.css` | Design system (Tailwind v4 + estilos), incluindo regras `@media print`. | ✅ |
+| `vite.config.js` | Config do build. `outDir: 'docs'` + `vite-plugin-singlefile` (gera 1 HTML único). | ✅ |
+| `docs/index.html` | **Saída do build = o que o GitHub Pages publica.** Gerado por `npm run build`; é commitado. | ✅ |
+| `.github/workflows/deploy.yml` | Workflow opcional de build+deploy automático (inativo — ver abaixo). | ⚠️ untracked |
+| `_interno/` | Material de trabalho (projeto editorial, briefing, planilha Elicit, progresso). | ❌ local-only (`.gitignore`) |
+| `dist/` | Saída antiga de build. | ❌ ignorada |
+| `node_modules/` | Dependências. | ❌ ignorada |
 
-Para gerar a versão de distribuição do E-book em um arquivo HTML único:
+> ⚠️ **Atenção a quem edita o conteúdo:** o texto existe em **dois lugares** — `capitulos/*.md` (fonte editorial de revisão) e `index.html` (fonte do build publicado). **Não há geração automática de um para o outro.** Ao fechar uma revisão, atualize o `index.html` (é ele que vira o site) e, idealmente, mantenha o `.md` correspondente em sincronia.
+
+---
+
+## 🛠️ Tecnologias
+
+- **Vite 8** — servidor de desenvolvimento com hot-reload e empacotador de build.
+- **Tailwind CSS v4** — design system responsivo, dark mode e animações.
+- **vite-plugin-singlefile** — no `build`, unifica HTML + CSS + JS em **um único arquivo HTML independente**.
+- **HTML/CSS/JS Vanilla** — sem React/Vue; saída enxuta, leve e portátil.
+
+---
+
+## 💻 Como executar localmente
+
+Pré-requisito: **Node.js 20+**.
+
+```bash
+npm install      # instala dependências (1ª vez)
+npm run dev      # servidor local em http://localhost:5173 com hot-reload
+```
+
+Qualquer alteração em `index.html` / `src/` reflete na hora no navegador.
+
+---
+
+## 📦 Como gerar a versão final (build)
 
 ```bash
 npm run build
 ```
 
-Após executar este comando, acesse a pasta `dist/`. O arquivo `index.html` gerado dentro dela já conterá todo o código (CSS e JS injetados inline) e poderá ser aberto em qualquer navegador, enviado por e-mail ou hospedado facilmente, sem depender de nenhuma outra pasta.
+Gera `docs/index.html` (definido por `outDir` em `vite.config.js`), com CSS e JS injetados inline. Esse arquivo é autossuficiente: abre em qualquer navegador, vai por e-mail ou é hospedado sem depender de outras pastas.
 
-## Geração de PDF
+---
 
-O arquivo principal possui diretivas `@media print`. Para gerar o E-book em PDF:
-1. Abra a versão de desenvolvimento ou a versão final (`dist/index.html`) no navegador.
-2. Pressione `Ctrl + P` (ou `Cmd + P` no Mac) para abrir a janela de impressão.
-3. O design irá ignorar temas escuros, esconder elementos de navegação que contêm a classe `.no-print` e preparar quebras de página automáticas, garantindo uma versão limpa para PDF e impressão física.
+## 🚀 Publicação (GitHub Pages)
+
+O e-book é servido pelo GitHub Pages a partir do branch `main`, pasta **`/docs`**
+(Settings → Pages → Source: *Deploy from a branch* → `main` / `/docs`).
+URL pública: **https://fabiohmedeiros.github.io/e-book_IA/**
+
+> **A pasta `/docs` não tem rebuild automático.** Sempre que o conteúdo mudar (fechar `[A VALIDAR]`, ajustes de revisão etc.), regenere e publique manualmente:
+
+```bash
+npm run build                                       # regenera docs/index.html
+git add docs && git commit -m "Atualiza e-book"     # versiona o HTML gerado
+git push                                             # Pages republica em ~1 min
+```
+
+> **Rebuild automático (opcional):** `.github/workflows/deploy.yml` já está pronto para fazer build + deploy via GitHub Actions a cada `push` na `main`. Para ativá-lo é preciso **commitar o workflow** — o que exige um token do GitHub com escopo `workflow`. Enquanto isso não for feito, o ciclo manual acima é o método de publicação válido.
+
+---
+
+## 🖨️ Geração de PDF
+
+O arquivo principal possui diretivas `@media print`. Para gerar o e-book em PDF:
+1. Abra a versão de desenvolvimento ou `docs/index.html` no navegador.
+2. Pressione `Ctrl + P` (ou `Cmd + P` no Mac).
+3. O design ignora o tema escuro, oculta elementos com a classe `.no-print` e aplica quebras de página automáticas por capítulo, gerando uma versão limpa para PDF/impressão.
+
+---
+
+## ✅ Status atual
+
+- **Etapa 1 (Projeto Editorial):** concluída.
+- **Etapa 2 (e-book HTML):** concluída e **publicada** no GitHub Pages.
+- **Revisão de conteúdo (prof. + alunos):** em andamento, capítulo a capítulo.
+- **Pontos `[A VALIDAR]` em aberto** (dependem de fonte externa):
+  - **Cap. 3:** citações literais das 3 publicações do CFP 2025 (Nota 03/07/2025 + 2 cartilhas); artigos exatos da LGPD.
+  - **Cap. 4:** nomes atuais das opções de privacidade de cada ferramenta.
+  - **Cap. 6:** custo e política de dados de cada ferramenta (voláteis — conferir perto da publicação).
+  - **Referências:** volume/número/páginas de alguns artigos; URLs/títulos exatos das publicações do CFP 2025.
