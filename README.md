@@ -5,12 +5,12 @@ E-book interativo **"IA para Psicólogos: Guia Prático para a Clínica"** — a
 🔗 **Versão publicada (online):** https://fabiohmedeiros.github.io/e-book_IA/
 📦 **Repositório:** https://github.com/fabiohmedeiros/e-book_IA · branch `main`
 
-**CEUB — Centro Universitário de Brasília · Curso de Psicologia · Projeto Integrador III**
-Autores: Alunos da disciplina Projeto Integrador III · Orientação: Prof. Dr. Fabio Hernandez de Medeiros (CRP 01/17465) · 2026.
+**Obra autoral · 1ª edição · Brasília · 2026**
+Autoria: Fabio Hernandez de Medeiros (CRP 01/17465) e coautores · ISBN a definir.
 
 > *A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.*
 
-> Material desenvolvido com auxílio de Inteligência Artificial, sob supervisão humana integral. Uso educacional — não substitui a prática clínica, a supervisão profissional nem a assessoria jurídica/ética formal.
+> Obra produzida com auxílio de Inteligência Artificial (Claude Opus 4.8, da Anthropic), sob revisão humana integral. Uso educacional — não substitui a prática clínica, a supervisão profissional nem a assessoria jurídica/ética formal.
 
 ---
 

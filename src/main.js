@@ -1,21 +1,32 @@
 import './style.css'
 
 /* ============================================================
-   DARK MODE — toggle + prefers-color-scheme + localStorage
+   TEMA DE LEITURA — ciclo claro › sépia › escuro
+   (toggle + prefers-color-scheme + localStorage)
    ============================================================ */
 const root = document.documentElement
 const THEME_KEY = 'ebook-ia-theme'
+const THEMES = ['light', 'sepia', 'dark']
+const THEME_LABEL = { light: 'claro', sepia: 'sépia', dark: 'escuro' }
 
 function applyTheme(theme) {
+  if (!THEMES.includes(theme)) theme = 'light'
   root.classList.toggle('dark', theme === 'dark')
+  root.classList.toggle('sepia', theme === 'sepia')
+
+  const next = THEMES[(THEMES.indexOf(theme) + 1) % THEMES.length]
   document.querySelectorAll('[data-theme-toggle]').forEach((btn) => {
-    btn.setAttribute('aria-label', theme === 'dark' ? 'Ativar modo claro' : 'Ativar modo escuro')
-    const sun = btn.querySelector('.ico-sun')
-    const moon = btn.querySelector('.ico-moon')
-    if (sun && moon) {
-      sun.style.display = theme === 'dark' ? 'block' : 'none'
-      moon.style.display = theme === 'dark' ? 'none' : 'block'
+    btn.setAttribute('aria-label', `Tema ${THEME_LABEL[theme]} — clique para ${THEME_LABEL[next]}`)
+    const icons = {
+      light: btn.querySelector('.ico-sun'),
+      sepia: btn.querySelector('.ico-sepia'),
+      dark: btn.querySelector('.ico-moon'),
     }
+    Object.entries(icons).forEach(([name, el]) => {
+      if (el) el.style.display = name === theme ? 'block' : 'none'
+    })
+    const nameEl = btn.querySelector('[data-theme-name]')
+    if (nameEl) nameEl.textContent = `· ${THEME_LABEL[theme]}`
   })
 }
 
@@ -25,9 +36,15 @@ function initTheme() {
   applyTheme(saved || (prefersDark ? 'dark' : 'light'))
 }
 
+function currentTheme() {
+  if (root.classList.contains('dark')) return 'dark'
+  if (root.classList.contains('sepia')) return 'sepia'
+  return 'light'
+}
+
 document.querySelectorAll('[data-theme-toggle]').forEach((btn) => {
   btn.addEventListener('click', () => {
-    const next = root.classList.contains('dark') ? 'light' : 'dark'
+    const next = THEMES[(THEMES.indexOf(currentTheme()) + 1) % THEMES.length]
     localStorage.setItem(THEME_KEY, next)
     applyTheme(next)
   })
@@ -93,7 +110,7 @@ const spy = new IntersectionObserver(
   },
   { rootMargin: '-30% 0px -60% 0px', threshold: 0 }
 )
-document.querySelectorAll('.chapter[id]').forEach((s) => spy.observe(s))
+document.querySelectorAll('.sheet[id]').forEach((s) => spy.observe(s))
 
 /* ============================================================
    BOTÕES "COPIAR" DOS PROMPTS

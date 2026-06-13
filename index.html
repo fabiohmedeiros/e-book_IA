@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Guia prático, ético e juridicamente responsável sobre o uso de Inteligência Artificial na Psicologia Clínica. CEUB — Projeto Integrador III." />
-    <meta name="author" content="Alunos da disciplina Projeto Integrador III — CEUB" />
+    <meta name="description" content="Guia prático, ético e juridicamente responsável sobre o uso de Inteligência Artificial na Psicologia Clínica." />
+    <meta name="author" content="Fabio Hernandez de Medeiros" />
     <meta name="color-scheme" content="light dark" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <title>IA para Psicólogos: Guia Prático para a Clínica</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
       <!-- ============================ SIDEBAR ============================ -->
       <aside class="sidebar no-print scroll-thin">
         <div class="sidebar-header">
-          <a href="#capa" class="brand">
+          <a href="#rosto" class="brand">
             <span class="brand-mark">IA</span>
             <span>
               <span class="brand-title">IA para Psicólogos</span>
@@ -35,8 +35,11 @@
         </div>
 
         <nav class="toc scroll-thin" aria-label="Índice">
-          <p class="toc-label">Conteúdo</p>
-          <a href="#capa"><span class="num">★</span><span>Capa &amp; avisos</span></a>
+          <p class="toc-label">Início</p>
+          <a href="#rosto"><span class="num">❖</span><span>Folha de rosto</span></a>
+          <a href="#creditos"><span class="num">©</span><span>Créditos &amp; ficha</span></a>
+          <a href="#sumario"><span class="num">☰</span><span>Sumário</span></a>
+          <p class="toc-label" style="margin-top:1rem">Capítulos</p>
           <a href="#cap1"><span class="num">1</span><span>O que é IA e o que não é</span></a>
           <a href="#cap2"><span class="num">2</span><span>Ética e limites profissionais</span></a>
           <a href="#cap3"><span class="num">3</span><span>O que o CFP e a lei dizem</span></a>
@@ -48,9 +51,10 @@
           <p class="toc-label" style="margin-top:1rem">Preferências</p>
           <a href="#" data-theme-toggle role="button" onclick="return false">
             <span class="num" aria-hidden="true">◐</span>
-            <span>Alternar tema claro/escuro</span>
+            <span>Tema de leitura <span class="theme-name" data-theme-name></span></span>
             <span style="margin-left:auto;display:inline-flex">
               <svg class="ico-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+              <svg class="ico-sepia" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
               <svg class="ico-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
             </span>
           </a>
@@ -67,33 +71,56 @@
           <strong style="flex:1;font-size:.95rem;color:var(--text-strong)">IA para Psicólogos</strong>
           <button class="icon-btn" data-theme-toggle aria-label="Alternar tema">
             <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            <svg class="ico-sepia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
             <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
           </button>
         </header>
 
         <div class="container content">
 
-          <!-- ============================ CAPA ============================ -->
-          <section id="capa" class="chapter" style="padding-top:1rem">
-            <div class="cover">
-              <h1>IA para Psicólogos</h1>
-              <p class="cover-sub">Guia Prático para a Clínica</p>
-              <p class="cover-desc">Aplicações práticas, ética profissional e limites da Inteligência Artificial na Psicologia Clínica.</p>
-              <div class="cover-meta">
-                <span><strong>Autores:</strong> Alunos da disciplina Projeto Integrador III</span>
-                <span><strong>Orientação:</strong> Prof. Dr. Fabio Hernandez de Medeiros · CRP 01/17465</span>
-                <span>Centro Universitário de Brasília (CEUB) · 2026</span>
-              </div>
-              <a href="#cap1" class="cover-cta">
-                Começar a leitura
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
+          <!-- ============================ FOLHA DE ROSTO ============================ -->
+          <section id="rosto" class="sheet title-page" aria-label="Folha de rosto">
+            <h1 class="tp-title">IA para Psicólogos</h1>
+            <p class="tp-subtitle">Guia Prático para a Clínica</p>
+            <hr class="tp-rule" />
+            <p class="tp-desc">Aplicações práticas, ética profissional e limites da<br>Inteligência Artificial na Psicologia Clínica</p>
+            <hr class="tp-rule" />
+            <div class="tp-credits">
+              <p><span class="tp-label">Autoria</span>Fabio Hernandez de Medeiros · CRP 01/17465</p>
+              <p><span class="tp-label">Coautoria</span>[Coautor 2]<br>[Coautor 3]<br>[Coautor 4]</p>
+            </div>
+            <p class="tp-imprint">1ª edição · Brasília · 2026</p>
+          </section>
+
+          <!-- ============================ CRÉDITOS / FICHA ============================ -->
+          <section id="creditos" class="sheet colophon-page" aria-label="Créditos e ficha">
+            <p class="cl-eyebrow">Créditos &amp; ficha</p>
+
+            <div class="cl-meta">
+              <p><strong>IA para Psicólogos — Guia Prático para a Clínica</strong></p>
+              <p>1ª edição · Brasília · 2026.</p>
+              <p>© 2026 Fabio Hernandez de Medeiros e coautores. Todos os direitos reservados. Nenhuma parte desta obra pode ser reproduzida sem autorização prévia dos autores.</p>
+              <p><strong>Autoria:</strong> Fabio Hernandez de Medeiros (CRP 01/17465).<br>
+              <strong>Coautoria:</strong> [Coautor 2] · [Coautor 3] · [Coautor 4].</p>
+              <p><strong>ISBN:</strong> 978-________________ <span class="validar">A DEFINIR</span></p>
+            </div>
+
+            <!-- Ficha catalográfica (CIP) — preencher com bibliotecário(a) -->
+            <div class="cip" aria-label="Ficha catalográfica">
+              <p class="cip-title">Dados Internacionais de Catalogação na Publicação (CIP)</p>
+              <p class="cip-body">Medeiros, Fabio Hernandez de.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;IA para Psicólogos : guia prático para a clínica / Fabio Hernandez de Medeiros [et al.]. — 1. ed. — Brasília : [Editora], 2026.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;___ p.<br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;ISBN 978-________________<br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;1. Inteligência artificial. 2. Psicologia clínica. 3. Ética profissional. I. Título.<br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDD: 150</p>
+              <p class="cip-note"><span class="validar">A VALIDAR</span> Ficha catalográfica a ser elaborada por bibliotecário(a) com CRB no momento do registro do ISBN.</p>
             </div>
 
             <div id="avisos" class="notice-grid">
               <div class="notice">
                 <span class="notice-ico">🤖</span>
-                <p><strong>Aviso de autoria</strong>Este material foi desenvolvido com auxílio de Inteligência Artificial, sob supervisão humana integral.</p>
+                <p><strong>Produção com auxílio de IA</strong>Esta obra foi produzida com o auxílio de Inteligência Artificial (modelo Claude Opus 4.8, da Anthropic), sob revisão humana integral do autor, que responde por todo o conteúdo.</p>
               </div>
               <div class="notice">
                 <span class="notice-ico">📘</span>
@@ -102,8 +129,23 @@
             </div>
           </section>
 
+          <!-- ============================ SUMÁRIO ============================ -->
+          <section id="sumario" class="sheet toc-page" aria-label="Sumário">
+            <p class="cl-eyebrow">Sumário</p>
+            <nav class="book-toc" aria-label="Sumário do livro">
+              <a class="bt-item" href="#cap1"><span class="bt-num">1</span><span class="bt-text">O que é IA e o que não é</span></a>
+              <a class="bt-item" href="#cap2"><span class="bt-num">2</span><span class="bt-text">Ética e limites profissionais</span></a>
+              <a class="bt-item" href="#cap3"><span class="bt-num">3</span><span class="bt-text">O que o CFP e a legislação dizem</span></a>
+              <a class="bt-item" href="#cap4"><span class="bt-num">4</span><span class="bt-text">Uso seguro da IA</span></a>
+              <a class="bt-item" href="#cap5"><span class="bt-num">5</span><span class="bt-text">Prompts para psicólogos</span></a>
+              <a class="bt-item" href="#cap6"><span class="bt-num">6</span><span class="bt-text">Ferramentas de IA</span></a>
+              <a class="bt-item" href="#cap7"><span class="bt-num">7</span><span class="bt-text">Futuro da Psicologia com IA</span></a>
+              <a class="bt-item" href="#referencias"><span class="bt-num">§</span><span class="bt-text">Referências &amp; encerramento</span></a>
+            </nav>
+          </section>
+
           <!-- ============================ CAPÍTULO 1 ============================ -->
-          <section id="cap1" class="chapter page-break">
+          <section id="cap1" class="sheet chapter">
             <div class="chapter-head">
               <span class="chapter-kicker">Capítulo 1</span>
               <h2 class="chapter-title">O que é IA e o que não é</h2>
@@ -208,7 +250,7 @@
           </section>
 
           <!-- ============================ CAPÍTULO 2 ============================ -->
-          <section id="cap2" class="chapter page-break">
+          <section id="cap2" class="sheet chapter">
             <div class="chapter-head">
               <span class="chapter-kicker">Capítulo 2</span>
               <h2 class="chapter-title">Ética e limites profissionais</h2>
@@ -313,7 +355,7 @@
           </section>
 
           <!-- ============================ CAPÍTULO 3 ============================ -->
-          <section id="cap3" class="chapter page-break">
+          <section id="cap3" class="sheet chapter">
             <div class="chapter-head">
               <span class="chapter-kicker">Capítulo 3</span>
               <h2 class="chapter-title">O que o CFP e a legislação dizem</h2>
@@ -473,7 +515,7 @@
           </section>
 
           <!-- ============================ CAPÍTULO 4 ============================ -->
-          <section id="cap4" class="chapter page-break">
+          <section id="cap4" class="sheet chapter">
             <div class="chapter-head">
               <span class="chapter-kicker">Capítulo 4</span>
               <h2 class="chapter-title">Uso seguro da IA</h2>
@@ -610,7 +652,7 @@
           </section>
 
           <!-- ============================ CAPÍTULO 5 ============================ -->
-          <section id="cap5" class="chapter page-break">
+          <section id="cap5" class="sheet chapter">
             <div class="chapter-head">
               <span class="chapter-kicker">Capítulo 5</span>
               <h2 class="chapter-title">Prompts para psicólogos</h2>
@@ -792,7 +834,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
           </section>
 
           <!-- ============================ CAPÍTULO 6 ============================ -->
-          <section id="cap6" class="chapter page-break">
+          <section id="cap6" class="sheet chapter">
             <div class="chapter-head">
               <span class="chapter-kicker">Capítulo 6</span>
               <h2 class="chapter-title">Ferramentas de IA</h2>
@@ -943,7 +985,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
           </section>
 
           <!-- ============================ CAPÍTULO 7 ============================ -->
-          <section id="cap7" class="chapter page-break">
+          <section id="cap7" class="sheet chapter">
             <div class="chapter-head">
               <span class="chapter-kicker">Capítulo 7</span>
               <h2 class="chapter-title">Futuro da Psicologia com IA</h2>
@@ -1026,7 +1068,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
           </section>
 
           <!-- ============================ REFERÊNCIAS ============================ -->
-          <section id="referencias" class="chapter page-break">
+          <section id="referencias" class="sheet chapter">
             <div class="chapter-head">
               <span class="chapter-kicker">Seção final</span>
               <h2 class="chapter-title">Referências &amp; encerramento</h2>
@@ -1079,9 +1121,9 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
             </div>
 
             <div class="endnote">
-              <p style="margin:0 0 .6rem"><em>Material desenvolvido com auxílio de Inteligência Artificial, sob supervisão humana integral. Uso educacional — não substitui a prática clínica, a supervisão profissional nem a assessoria jurídica/ética formal.</em></p>
-              <p style="margin:0"><strong>CEUB — Centro Universitário de Brasília · Curso de Psicologia · Projeto Integrador III</strong><br>
-              Autores: Alunos da disciplina Projeto Integrador III · Orientação: Prof. Dr. Fabio Hernandez de Medeiros (CRP 01/17465) · 2026</p>
+              <p style="margin:0 0 .6rem"><em>Obra produzida com auxílio de Inteligência Artificial (Claude Opus 4.8, da Anthropic), sob revisão humana integral. Uso educacional — não substitui a prática clínica, a supervisão profissional nem a assessoria jurídica/ética formal.</em></p>
+              <p style="margin:0"><strong>IA para Psicólogos — Guia Prático para a Clínica</strong><br>
+              Fabio Hernandez de Medeiros (CRP 01/17465) e coautores · 1ª edição · Brasília · 2026</p>
             </div>
           </section>
 
