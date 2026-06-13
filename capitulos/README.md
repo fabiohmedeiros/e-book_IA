@@ -20,7 +20,7 @@ Cada arquivo será depois "embrulhado" no HTML final — o texto aqui é a fonte
 8. [x] Referências (APA 7) + encerramento → `referencias.md`
 
 ## Status de revisão
-| Capítulo | Redigido | Revisado (você/alunos) |
+| Capítulo | Redigido | Revisado (autor/coautores) |
 |---|---|---|
 | Cap. 1 | ✅ | ⏳ |
 | Cap. 2 | ✅ | ⏳ |
