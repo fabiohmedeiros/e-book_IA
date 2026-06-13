@@ -264,16 +264,6 @@ mark.search-hit.current { outline: 2px solid var(--primary); }
 .colophon-page .cl-meta p { margin: 0 0 .65rem; text-align: left; }
 .colophon-page .cl-meta strong { color: var(--text-strong); }
 
-/* Ficha catalográfica (CIP) */
-.cip {
-  margin: 1.75rem auto; max-width: 30rem; padding: 1rem 1.1rem;
-  border: 1px solid var(--border-strong); border-radius: .4rem;
-  background: var(--bg); color: var(--text);
-}
-.cip-title { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: .7rem; letter-spacing: .05em; text-transform: uppercase; text-align: center; margin: 0 0 .6rem; color: var(--text-strong); }
-.cip-body { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: .78rem; line-height: 1.5; margin: 0; }
-.cip-note { margin: .75rem 0 0; font-size: .76rem; font-style: italic; color: var(--text-muted); text-align: center; }
-
 /* Sumário */
 .toc-page .book-toc { display: grid; gap: 0; max-width: 30rem; margin: 0 auto; }
 .book-toc .bt-item {
@@ -588,7 +578,7 @@ table.sortable thead th.sort-desc::after { content: "↓"; opacity: 1; color: va
   .title-page .tp-rule { background: #1d4ed8; }
   .chapter { padding-top: 0; }
   #avisos { page-break-before: avoid; }
-  .prompt-card, .callout, .compare, .table-wrap, .checklist, .prompt-code, tr, .summary-box, .cip, .book-toc .bt-item { page-break-inside: avoid; }
+  .prompt-card, .callout, .compare, .table-wrap, .checklist, .prompt-code, tr, .summary-box, .book-toc .bt-item { page-break-inside: avoid; }
   .content h2.chapter-title, .content h3 { page-break-after: avoid; }
   a.ref-link, a.ref-doi { color: #1d4ed8; text-decoration: none; }
   .prompt-code { padding: .6rem .8rem; }
