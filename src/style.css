@@ -255,22 +255,37 @@ mark.search-hit.current { outline: 2px solid var(--primary); }
 .title-page .tp-credits p { margin: 0; font-size: 1.02rem; color: var(--text); line-height: 1.5; }
 .title-page .tp-label { display: block; font-family: 'Outfit', sans-serif; font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: .25rem; }
 .title-page .tp-imprint { margin-top: 2.5rem; font-family: 'Outfit', sans-serif; letter-spacing: .15em; text-transform: uppercase; font-size: .8rem; color: var(--text-muted); }
-.title-page .tp-cite {
-  margin-top: 2.25rem; width: 100%; max-width: 34rem; text-align: left;
-  border: 1px solid var(--border); border-radius: .9rem;
+.tp-cite {
+  margin: 1.75rem 0 0; width: 100%; text-align: left;
+  border: 1px solid var(--border); border-radius: .8rem;
   background: var(--bg-elevated); box-shadow: var(--shadow-sm);
-  padding: 1.1rem 1.25rem; display: grid; gap: .9rem;
+  padding: 1rem 1.15rem; display: grid; gap: .8rem;
 }
-.title-page .tp-cite-title {
+.tp-cite-title {
   font-family: 'Outfit', sans-serif; font-weight: 700; font-size: .7rem;
   letter-spacing: .16em; text-transform: uppercase; color: var(--text-muted); margin: 0;
 }
-.title-page .tp-cite-item { display: grid; gap: .4rem; }
-.title-page .tp-cite-head { display: flex; align-items: center; justify-content: space-between; gap: .6rem; }
-.title-page .tp-cite-tag { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: .72rem; color: var(--primary); letter-spacing: .04em; }
-.title-page .tp-cite .copy-btn { position: static; flex: none; }
-.title-page .cite-text { margin: 0; font-size: .9rem; line-height: 1.55; color: var(--text); }
-.title-page .tp-cite-note { margin: 0; font-size: .76rem; color: var(--text-muted); font-style: italic; }
+.tp-cite-item { display: grid; gap: .35rem; }
+.tp-cite-head { display: flex; align-items: center; justify-content: space-between; gap: .6rem; }
+.tp-cite-tag { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: .72rem; color: var(--primary); letter-spacing: .04em; }
+.tp-cite .copy-btn { position: static; flex: none; }
+.tp-cite .cite-text { margin: 0; font-size: .88rem; line-height: 1.5; color: var(--text); }
+.tp-cite-note { margin: 0; font-size: .75rem; color: var(--text-muted); font-style: italic; }
+
+/* Compactação da página de créditos só na impressão (cabe em 1 folha 6×9) */
+@media print {
+  .colophon-page .cl-eyebrow { margin-bottom: .55rem; }
+  .colophon-page .cl-meta { line-height: 1.35; font-size: .88rem; }
+  .colophon-page .cl-meta p { margin-bottom: .25rem; }
+  .colophon-page .tp-cite { margin-top: .55rem; padding: .55rem .8rem; gap: .35rem; box-shadow: none; }
+  .colophon-page .tp-cite-title { font-size: .66rem; }
+  .colophon-page .tp-cite .cite-text { font-size: .8rem; line-height: 1.35; }
+  .colophon-page .tp-cite-note { font-size: .7rem; }
+  .colophon-page .notice-grid { margin-top: .7rem; gap: .6rem; }
+  .colophon-page .notice { padding: .6rem .75rem; box-shadow: none; page-break-inside: avoid; }
+  .colophon-page .notice strong { font-size: .82rem; }
+  .colophon-page .notice p { font-size: .76rem; }
+}
 
 /* Cabeçalho de seção das páginas de abertura */
 .cl-eyebrow { font-family: 'Outfit', sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--text-muted); text-align: center; margin: 0 0 1.5rem; }
