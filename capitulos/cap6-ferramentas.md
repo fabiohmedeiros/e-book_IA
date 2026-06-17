@@ -15,8 +15,8 @@ Ao final deste capítulo, você será capaz de:
 Antes da tabela, três avisos:
 
 1. **Privacidade vem primeiro.** Para o psicólogo, o critério decisivo não é "qual é mais inteligente", e sim **o que a ferramenta faz com os dados**. Avaliar isso é dever normativo (Res. CFP 9/2024, Art. 4º, I; LGPD).
-2. **Tudo muda rápido.** Preços, limites e políticas de dados de IA mudam de um mês para o outro. Por isso, **dados voláteis abaixo estão marcados `[A VALIDAR]`** e devem ser conferidos na fonte oficial de cada produto antes da publicação.
-3. **Comparar é factual, não promocional.** Descrevemos finalidades típicas observáveis; **não inventamos capacidades**. Recurso não verificável fica `[A VALIDAR]` (regra anti-alucinação do projeto).
+2. **Tudo muda rápido.** Preços, limites e políticas de dados de IA mudam de um mês para o outro. Os valores abaixo foram **verificados nas páginas oficiais de cada produto em junho de 2026** e devem ser reconferidos na fonte antes de qualquer decisão.
+3. **Comparar é factual, não promocional.** Descrevemos finalidades típicas observáveis e verificadas; **não inventamos capacidades** (regra anti-alucinação do projeto).
 
 A literatura que revisa LLMs em saúde mental reforça que a escolha de ferramenta deve considerar adequação à tarefa, limites e segurança — não apenas desempenho (Guo et al., 2024; Tan et al., 2025).
 
@@ -26,18 +26,18 @@ A literatura que revisa LLMs em saúde mental reforça que a escolha de ferramen
 
 ## 6.1 Tabela comparativa
 
-> ⚠️ Os campos de **custo** e **política de dados** mudam com frequência — `[A VALIDAR na fonte oficial antes de publicar]`.
+> ⚠️ Os campos de **custo** e **política de dados** mudam com frequência — valores e nomes de opções **verificados nas páginas oficiais em junho de 2026**; reconfira na fonte antes de decidir.
 
 | Ferramenta | Finalidade típica | Idioma PT-BR | Custo (modelo) | Política de dados / treino | Adequação a tarefas de apoio |
 |---|---|---|---|---|---|
-| **ChatGPT** (OpenAI) | Assistente geral de texto: rascunho, revisão, organização | Bom | Gratuito + pago `[A VALIDAR]` | Permite desativar uso para treino; planos com mais garantias `[A VALIDAR]` | Redação e organização de materiais (Cap. 5) |
-| **Claude** (Anthropic) | Assistente geral de texto, forte em textos longos e análise cuidadosa | Bom | Gratuito + pago `[A VALIDAR]` | Política de retenção/treino própria `[A VALIDAR]` | Revisão e síntese de textos longos (Cap. 5) |
-| **Gemini** (Google) | Assistente geral integrado ao ecossistema Google | Bom | Gratuito + pago `[A VALIDAR]` | Controles de atividade na conta Google `[A VALIDAR]` | Apoio a redação e pesquisa |
-| **NotebookLM** (Google) | Trabalhar **sobre documentos que você fornece** (resumir, perguntar) | Bom | Gratuito + pago (NotebookLM Plus) `[A VALIDAR]` | Responde com base nas suas fontes `[A VALIDAR]` | Estudar materiais/artigos que você já tem |
-| **Perplexity** | Busca com IA e **citação de fontes** | Bom | Gratuito + pago `[A VALIDAR]` | Usa dados para treino por padrão; verificar opções de desativação `[A VALIDAR]` | Pesquisa com rastreabilidade de fontes |
-| **Copilot** (Microsoft) | Assistente integrado ao Windows/Office | Bom | Gratuito + pago `[A VALIDAR]` | Controles via conta Microsoft `[A VALIDAR]` | Apoio à produtividade em documentos |
+| **ChatGPT** (OpenAI) | Assistente geral de texto: rascunho, revisão, organização | Bom | Gratuito; planos pagos Go (US$ 8/mês) e Plus (US$ 20/mês) | Permite desativar o uso para treino em *Configurações → Controles de dados → "Improve the model for everyone"* | Redação e organização de materiais (Cap. 5) |
+| **Claude** (Anthropic) | Assistente geral de texto, forte em textos longos e análise cuidadosa | Bom | Gratuito (Sonnet 4.5); Pro US$ 20/mês | Permite desativar em *Configurações → Privacidade → "Help Improve Claude"*; conversas sinalizadas para revisão de segurança ainda podem ser usadas | Revisão e síntese de textos longos (Cap. 5) |
+| **Gemini** (Google) | Assistente geral integrado ao ecossistema Google | Bom | Gratuito; plano pago via Google AI Pro | Desative em *Conta Google → Dados e privacidade → "Atividade dos apps Gemini"* | Apoio a redação e pesquisa |
+| **NotebookLM** (Google) | Trabalhar **sobre documentos que você fornece** (resumir, perguntar) | Bom | Gratuito; recursos ampliados no NotebookLM Plus (assinatura Google AI) | Para uso individual, suas fontes não são usadas para treino, salvo se você enviar feedback ao Google | Estudar materiais/artigos que você já tem |
+| **Perplexity** | Busca com IA e **citação de fontes** | Bom | Gratuito; Pro US$ 20/mês | Usa dados para treino por padrão; desative em *Configurações → Preferências → "AI data retention"* | Pesquisa com rastreabilidade de fontes |
+| **Copilot** (Microsoft) | Assistente integrado ao Windows/Office | Bom | Gratuito; recursos pagos integrados ao Microsoft 365 | Desative o treino em *Configurações → Privacidade → "Training on conversation activity"* | Apoio à produtividade em documentos |
 
-> **Selo de privacidade (Viz):** no HTML, cada linha recebe um selo — ✅ "permite desativar treino", ⚠️ "verificar política", etc. — preenchido após a validação oficial.
+> **Selo de privacidade (Viz):** no HTML, cada linha recebe um selo — ✅ "permite desativar treino", ⚠️ "verificar política", etc. — conforme a coluna de política de dados.
 
 ---
 
@@ -80,4 +80,4 @@ A melhor ferramenta de IA para o psicólogo é aquela cuja **política de dados 
 
 **Norma aplicada:** dever de avaliar a política de dados antes de usar (LGPD; Res. CFP 9/2024, Art. 4º, I). *Detalhamento no Cap. 3.*
 
-> **Nota de validação.** Todos os campos de **custo** e **política de dados** estão `[A VALIDAR]` e serão preenchidos a partir das páginas oficiais de cada produto na data mais próxima da publicação, dado o ritmo de mudança do setor.
+> **Nota de validação.** Os campos de **custo** e **política de dados** foram **verificados nas páginas oficiais de cada produto em junho de 2026**. Dado o ritmo de mudança do setor, reconfira na fonte antes de qualquer decisão.

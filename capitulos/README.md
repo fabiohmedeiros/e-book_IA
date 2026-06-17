@@ -31,8 +31,10 @@ Cada arquivo será depois "embrulhado" no HTML final — o texto aqui é a fonte
 | Cap. 7 | ✅ | ⏳ |
 | Referências | ✅ | ⏳ |
 
-## Pontos `[A VALIDAR]` que dependem de fonte externa
-- **Cap. 3:** citações literais das 3 publicações do CFP 2025 (Nota + 2 cartilhas); artigos exatos da LGPD (Art. 5º II/XI, Art. 12).
-- **Cap. 4:** nomes atuais das opções de privacidade de cada ferramenta.
-- **Cap. 6:** custo e política de dados de cada ferramenta (voláteis — conferir perto da publicação).
-- **Referências:** volume/número/páginas de cada artigo (não constavam na planilha — completar pelo DOI); URLs/títulos exatos das 3 publicações do CFP 2025.
+## Pontos `[A VALIDAR]` — situação
+Todos resolvidos com verificação em fonte oficial (jun/2026). Resta apenas o **ISBN** (a comprar na CBL).
+- **Cap. 3:** ✅ citações literais das 3 publicações do CFP 2025 + LGPD (Art. 5º II/III/XI, Art. 12) verificadas no Planalto e site do CFP.
+- **Cap. 4:** ✅ nomes atuais das opções de privacidade de cada ferramenta (verificados nas páginas oficiais).
+- **Cap. 6:** ✅ custo e política de dados de cada ferramenta verificados (jun/2026); mantido aviso de volatilidade.
+- **Referências:** ✅ volume/número/páginas completados via Crossref/OpenAlex (15/18; 3 sem paginação por natureza do periódico, omissão admitida na APA 7); URLs/títulos do CFP 2025 conferidos.
+- **ISBN:** ⏳ pendente (placeholder `978-___ · A DEFINIR`).

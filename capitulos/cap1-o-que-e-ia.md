@@ -94,6 +94,6 @@ IA é um campo amplo cujo expoente atual, o LLM, é um **preditor de texto** mui
 - Irshad et al. (2022), *Journal of Health and Medical Sciences* — usos de IA na psicologia.
 - Guo et al. (2024), *JMIR Mental Health* — revisão sistemática de LLMs em saúde mental.
 - Mesquiti & Nook (2026), *Annual Review of Biomedical Data Science* — LLMs em pesquisa e tratamento.
-- Singhal et al. (2024), *Current Psychiatry Reports* — aplicações de ML em saúde mental e o papel do clínico.
+- Holm (2024), *Frontiers in Psychiatry* — vieses e limites de objetividade.
 
 **Norma introduzida:** dever de competência técnica (Código de Ética, Art. 1º, b) — aprofundado no Cap. 3.

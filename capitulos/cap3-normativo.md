@@ -137,7 +137,7 @@ Isso muda tudo na prática com IA: o que você cola num chatbot sobre um pacient
 | **Consentimento / transparência** | O titular deve saber como seus dados são tratados | Conecta com o dever de informar do Código (Art. 14) e da Res. 9/2024 (Art. 7º). |
 | **Segurança e dados sensíveis** | Dados sensíveis exigem medidas de segurança reforçadas | Anonimizar antes de usar a IA; conhecer onde a ferramenta armazena e se usa o dado para treino (Cap. 4 e 6). |
 
-> **A saída mais segura.** Dado **anonimizado** — sem qualquer elemento que permita identificar a pessoa — deixa de ser, para fins práticos, dado pessoal sob o regime mais rígido da LGPD. Por isso o Capítulo 4 trata anonimização não como "boa prática opcional", mas como **a condição** para usar IA com responsabilidade. `[A VALIDAR: precisar o conceito de anonimização do Art. 5º, XI e Art. 12 da LGPD na fonte oficial]`
+> **A saída mais segura.** A LGPD define **anonimização** (Art. 5º, XI) como a "*utilização de meios técnicos razoáveis e disponíveis no momento do tratamento, por meio dos quais um dado perde a possibilidade de associação, direta ou indireta, a um indivíduo*", e o resultado é o **dado anonimizado** (Art. 5º, III): "*dado relativo a titular que não possa ser identificado, considerando a utilização de meios técnicos razoáveis e disponíveis na ocasião de seu tratamento*". O **Art. 12** estabelece que "*os dados anonimizados não serão considerados dados pessoais para os fins desta Lei, salvo quando o processo de anonimização ao qual foram submetidos for revertido [...] ou quando, com esforços razoáveis, puder ser revertido*". Ou seja: o dado verdadeiramente anonimizado sai do regime mais rígido da LGPD — mas só enquanto **não puder ser reidentificado**. Por isso o Capítulo 4 trata anonimização não como "boa prática opcional", mas como **a condição** para usar IA com responsabilidade.
 
 ---
 
@@ -177,4 +177,4 @@ O Brasil ainda não tem uma "lei da IA na Psicologia" — mas o **Código de Ét
 - Pillay (2025), *Healthcare* — framework ético de cinco pilares.
 - Heyen & Salloch (2021), *BMC Medical Ethics* — ética do apoio à decisão clínica (humano-IA).
 
-> **Nota de validação.** As passagens marcadas `[A VALIDAR]` serão preenchidas com citações literais verificadas dos documentos oficiais (CFP 2025 e LGPD) antes da geração do HTML final, conforme a regra anti-alucinação do projeto.
+> **Nota de validação.** As citações dos documentos oficiais (CFP 2025 e LGPD) foram **verificadas literalmente na fonte** (Planalto e site do CFP), conforme a regra anti-alucinação do projeto.

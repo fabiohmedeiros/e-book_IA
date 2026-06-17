@@ -77,4 +77,4 @@ Que este material sirva de bússola — não de manual fechado — para um uso d
 *Obra produzida com auxílio de Inteligência Artificial (Claude Opus 4.8, da Anthropic), sob revisão humana integral. Uso educacional — não substitui a prática clínica, a supervisão profissional nem a assessoria jurídica/ética formal.*
 
 **Inteligência Artificial para a Psicologia — Guia Prático para a Clínica**
-Fabio Hernandez de Medeiros (CRP 01/17465) e coautores · 1ª edição · Brasília · 2026
+Fabio Hernandez de Medeiros e coautores · 1ª edição · Brasília · 2026

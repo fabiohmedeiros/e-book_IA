@@ -155,8 +155,6 @@ Um bom prompt para psicólogo é aquele que **economiza tempo em tarefas acessó
 - Sheperis & Sadeh-Sharvit (2023), *J. Technology in Counselor Education & Supervision* — supervisão apoiada por IA.
 - McCrudden et al. (2026), *JMIR Formative Research* — documentação clínica com IA.
 - Shafran et al. (2025), *Behaviour Research and Therapy* — IA em treino/supervisão de TCC.
-- Singhal et al. (2024), *Current Psychiatry Reports* — aplicações de ML em saúde mental e o papel do clínico.
-- Mesquiti & Nook (2026), *Annual Review of Biomedical Data Science* — LLMs em pesquisa e tratamento.
 - Stade et al. (2024), *npj Mental Health Research* — desenvolvimento e uso responsável.
 
 **Normativas aplicadas:** Código de Ética (Art. 2º g, 2º q, 9º, 20); Res. CFP 9/2024 (Art. 5º); LGPD. *Detalhamento no Cap. 3 e 4.*

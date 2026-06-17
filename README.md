@@ -6,7 +6,7 @@ E-book interativo **"Inteligência Artificial para a Psicologia: Guia Prático p
 📦 **Repositório:** https://github.com/fabiohmedeiros/e-book_IA · branch `main`
 
 **Obra autoral · 1ª edição · Brasília · 2026**
-Autoria: Fabio Hernandez de Medeiros (CRP 01/17465) e coautores · ISBN a definir.
+Autoria: Fabio Hernandez de Medeiros (autor) · Davi de Barros Silva, Letícia Maria Cristino Fritsch, Janaína Souza de Lima (coautores) · ISBN a definir.
 
 > *A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.*
 

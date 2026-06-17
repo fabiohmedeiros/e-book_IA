@@ -66,7 +66,15 @@ Esse cuidado é a tradução direta do dever de sigilo (Código de Ética, Art. 
 Anonimizar é a primeira camada. A segunda é **configurar a ferramenta** para reduzir o rastro que ela guarda.
 
 ### a) Saia do treino do modelo
-A maioria das ferramentas grandes permite **desativar o uso das suas conversas para treinar o modelo**. Procure em *Configurações → Dados / Privacidade* opções como "Improve the model for everyone", "Training" ou "Histórico e treinamento". Desative. `[A VALIDAR: confirmar o nome exato da opção em cada ferramenta no Cap. 6, pois mudam com frequência]`
+A maioria das ferramentas grandes permite **desativar o uso das suas conversas para treinar o modelo**. Procure em *Configurações → Dados / Privacidade* e desative. Os nomes exatos da opção, verificados em junho de 2026 (ver tabela do Cap. 6):
+
+- **ChatGPT** (OpenAI): *Configurações → Controles de dados → "Improve the model for everyone"*.
+- **Claude** (Anthropic): *Configurações → Privacidade → "Help Improve Claude"*.
+- **Gemini** (Google): *Conta Google → Dados e privacidade → "Atividade dos apps Gemini"*.
+- **Perplexity**: *Configurações → Preferências → "AI data retention"* (vem ligado por padrão).
+- **Copilot** (Microsoft): *Configurações → Privacidade → "Training on conversation activity"*.
+
+Como esses nomes mudam com frequência, reconfira na própria ferramenta.
 
 ### b) Prefira contas e planos com garantias de dados
 Versões corporativas/educacionais costumam oferecer **compromisso de não usar dados para treino** e maior controle de retenção. Avalie a política antes de adotar (dever do Art. 4º, I da Res. 9/2024).
@@ -124,4 +132,4 @@ Uso seguro de IA na clínica = **anonimizar sempre**, **configurar a ferramenta*
 
 **Normativas aplicadas:** Código de Ética (Art. 9º — sigilo); Res. CFP 9/2024 (Art. 3º II/IV, Art. 4º I, Art. 5º); LGPD (dado sensível de saúde, segurança). *Detalhamento no Cap. 3.*
 
-> **Nota de validação.** Os nomes exatos das opções de privacidade de cada ferramenta (4.3) mudam com frequência e estão marcados `[A VALIDAR]`; serão conferidos junto à tabela do Cap. 6 antes do HTML final.
+> **Nota de validação.** Os nomes exatos das opções de privacidade de cada ferramenta (4.3) foram **verificados nas páginas oficiais em junho de 2026** (mesma base da tabela do Cap. 6). Como mudam com frequência, reconfira na própria ferramenta antes de usar.
