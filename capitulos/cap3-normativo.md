@@ -72,13 +72,15 @@ O Art. 2º define exercício mediado por TDICs como aquele que envolve *"emprego
 
 | Artigo | O que exige | O que isso significa ao usar IA |
 |---|---|---|
-| **Art. 3º, II** | Responsabilidade ética no manuseio de **dados sensíveis** e implicações para o sigilo, a privacidade e a autonomia | Antes de inserir qualquer informação em uma IA, avalie se ela é sensível e se o sigilo está protegido. |
-| **Art. 3º, IV** | Zelo ético: ser **responsável** por dados e informações sensíveis | A responsabilidade pelo dado não "passa" para a empresa de IA. Continua sua. |
-| **Art. 4º, I** | Avaliar as condições de **confidencialidade e privacidade** das informações | Conhecer a política de dados da ferramenta antes de usá-la (conecta com o Cap. 6). |
-| **Art. 4º, II** | Ter as **competências** para o manejo das TDICs empregadas | Reforça o dever de letramento em IA (espelha o Art. 1º, b do Código). |
-| **Art. 4º, V** | Embasar o uso (ou o não-uso) da TDIC em **produção científica e ética** | Recomendações de IA neste e-book são ancoradas em evidência revisada por pares. |
-| **Art. 5º** | Encaminhar à **rede presencial** situações de risco de morte, violência, urgência e emergência | Fundamenta a trava: **nenhum prompt lida com crise sem supervisão humana e rede presencial.** |
-| **Art. 7º, parág. único** | Especificar os recursos tecnológicos que garantem o sigilo e **informar o cliente** | Base do dever de transparência com o paciente sobre o uso de tecnologia. |
+| **Art. 3º, II** | Responsabilidade ética no manuseio de **dados sensíveis** e implicações para o sigilo, a privacidade e a autonomia | Na prática: antes de digitar qualquer coisa numa IA, identifique se há **dado sensível** (ver o quadro abaixo). Havendo, anonimize ou não use — o que você cola passa a estar nas mãos de um terceiro. |
+| **Art. 3º, IV** | Zelo ético: ser **responsável** por dados e informações sensíveis | Na prática: a responsabilidade pelo dado **não se transfere** para a empresa de IA quando você usa a ferramenta — ela continua inteiramente sua. |
+| **Art. 4º, I** | Avaliar as condições de **confidencialidade e privacidade** das informações | Na prática: antes de adotar uma ferramenta, descubra **onde ela guarda seus dados, por quanto tempo e se os usa para treinar o modelo** — e só use a que você conhece e aprova. |
+| **Art. 4º, II** | Ter as **competências** para o manejo das TDICs empregadas | Na prática: você precisa entender **como a ferramenta funciona, como ela erra** (alucinação, viés) e onde processa os dados antes de colocá-la no seu fluxo de trabalho. |
+| **Art. 4º, V** | Embasar o uso (ou o não-uso) da TDIC em **produção científica e ética** | Na prática: decida usar — ou deixar de usar — a IA com base em **evidência e fundamentos éticos**, não por modismo ou comodidade. |
+| **Art. 5º** | Encaminhar à **rede presencial** situações de risco de morte, violência, urgência e emergência | Na prática: diante de risco, violência ou emergência, **encaminhe à rede presencial de imediato**. Uma IA jamais conduz uma crise. |
+| **Art. 7º, parág. único** | Especificar os recursos tecnológicos que garantem o sigilo e **informar o cliente** | Na prática: **avise o paciente** quando uma tecnologia (inclusive IA) participa do atendimento e quais recursos protegem o sigilo dele. |
+
+> **O que conta como "informação sensível"?** A LGPD (Art. 5º, II) define **dado pessoal sensível** como aquele que revela origem racial ou étnica, convicção religiosa, opinião política, filiação sindical ou a organização religiosa/filosófica/política, **dado referente à saúde ou à vida sexual**, e dado genético ou biométrico. Na clínica, isso abrange quase tudo o que um paciente traz: diagnóstico, sofrimento, história de vida, orientação sexual, religião. Por isso, **praticamente todo conteúdo clínico é dado sensível** — e exige proteção reforçada antes de chegar a qualquer IA (detalhamento jurídico em 3.4).
 
 > **Leitura-chave:** a Resolução 9/2024 não "proíbe" nem "autoriza" a IA — ela **transfere para o uso de IA os mesmos deveres de sigilo, competência e responsabilidade** que já regem o atendimento mediado por tecnologia. A ferramenta muda; o dever permanece.
 
@@ -88,15 +90,29 @@ O Art. 2º define exercício mediado por TDICs como aquele que envolve *"emprego
 
 Em 2025, o Conselho Federal de Psicologia passou a se manifestar diretamente sobre IA. É importante entender a **natureza** desses documentos: são **orientações institucionais**, não resoluções com força normativa autônoma. Eles interpretam e aplicam as normas existentes ao contexto da IA — e sinalizam para onde a regulação caminha.
 
-São três documentos confirmados em fonte oficial do CFP:
+São três documentos confirmados em fonte oficial do CFP.
 
-1. **Nota de Posicionamento do CFP sobre IA e Psicologia** (03/07/2025) — posição institucional sobre o uso de IA na profissão. `[A VALIDAR: extrair citações literais do texto oficial antes da versão final]`
-2. **Cartilha "IA na Psicologia: prática ética e responsável"** (CFP, 2025) — guia de boas práticas para profissionais. `[A VALIDAR: extrair recomendações específicas do PDF oficial]`
-3. **Cartilha "Chatbots, IA e sua Saúde Mental"** (CFP, 2025) — material voltado ao público geral sobre os riscos de usar chatbots como se fossem terapeutas. `[A VALIDAR: extrair pontos principais]`
+**1. Nota de Posicionamento sobre IA e Psicologia** (03/07/2025) — posição institucional sobre o uso de IA na profissão. O CFP afirma:
 
-> **Nota editorial de honestidade.** O conteúdo literal desses três documentos ainda precisa ser citado a partir da fonte oficial. Marcamos `[A VALIDAR]` em vez de parafrasear de memória — coerente com a regra anti-alucinação do projeto. **Antes da publicação, estas passagens serão preenchidas com citações verificadas dos PDFs oficiais do CFP.**
+> "[...] reforçamos que, embora a IA possa gerar conteúdos com agilidade e oferecer apoio a diversas tarefas, sua aplicação exige supervisão e discernimento humanos. Cabe exclusivamente às psicólogas e aos psicólogos, em seus distintos contextos de trabalho — clínicos, institucionais, educacionais, organizacionais, jurídicos, comunitários, entre outros —, decidir se, quando e como integrar essas ferramentas à sua prática tendo como referência que o compromisso da Psicologia é com a garantia dos direitos fundamentais, com a promoção da saúde mental, com o desenvolvimento humano, com a proteção social e cidadania digna e com o exercício responsável da profissão, em todos os seus campos de atuação."
 
-O que já se pode afirmar com segurança é a **direção** dessas manifestações, plenamente alinhada ao restante do arcabouço: a IA é admitida como **apoio**, sob responsabilidade humana integral, com proteção rigorosa de dados e sem substituir o vínculo terapêutico. Esse é o mesmo princípio condutor deste e-book.
+**2. Cartilha "Inteligência Artificial na Psicologia: guia para uma prática ética e responsável"** (CFP, 2025) — guia de boas práticas para profissionais. Abre lembrando que a IA não é neutra:
+
+> "A Inteligência Artificial não é uma força neutra da natureza, trata-se de uma criação humana, moldada por valores e preconceitos humanos e pelos dados da sociedade em que emerge. Se não formos vigilantes, críticos e atualizados, a IA corre o risco de se tornar mais uma ferramenta a serviço da reprodução e da amplificação de desigualdades e injustiças que já afligem nossa sociedade. O Conselho Federal de Psicologia e cada psicóloga e psicólogo brasileiro têm um compromisso ético e social com a promoção da equidade, da justiça social e da não discriminação."
+
+A cartilha traz recomendações práticas, entre elas:
+
+| Frente | Recomendação | Página |
+|---|---|---|
+| **Supervisão de assistentes e chatbots** | É **vedado** o uso de assistentes virtuais, chatbots, avatares ou robôs para a condução **inteiramente autônoma** de psicoterapias ou intervenções clínicas; exige-se supervisão humana contínua e suficiente. | p. 13 e 24 |
+| **Gravação e transcrição de atendimentos** | Obter **consentimento informado prévio** do paciente e usar apenas plataformas cujas condições de privacidade, sigilo e armazenamento sejam conhecidas e seguras. | p. 24 |
+| **Avaliação psicológica** | Uso de testes, plataformas de correção ou IA para laudos/diagnósticos exige **supervisão e mediação humana direta**; o psicólogo é o **único responsável** pelo resultado final e pela validação. | p. 24 |
+| **Triagem e agendamentos** | Uso **recomendado** para tarefas administrativas rotineiras que não tocam o núcleo técnico (agenda, lembretes, fluxo de trabalho). | p. 22 |
+| **Sistematização de prontuários** | Governança rigorosa da informação, assegurando que o armazenamento cumpra todas as regras de sigilo profissional. | p. 25 |
+
+**3. Cartilha "Chatbots, Inteligência Artificial e sua Saúde Mental"** (CFP, 2025) — material voltado ao **público geral**, que alerta para os riscos de tratar um chatbot como terapeuta. O guia reconhece que chatbots podem oferecer informação e apoio inicial, mas adverte que **não realizam avaliação clínica, não assumem responsabilidade ética e podem errar — ou até agravar — um quadro de saúde mental**, e que inserir dados identificáveis de um paciente em uma IA genérica representa risco ético e legal.
+
+A direção dessas manifestações é clara e alinhada ao restante do arcabouço: a IA é admitida como **apoio**, sob responsabilidade humana integral, com proteção rigorosa de dados e sem substituir o vínculo terapêutico. É o mesmo princípio condutor deste e-book.
 
 ---
 
@@ -105,7 +121,11 @@ O que já se pode afirmar com segurança é a **direção** dessas manifestaçõ
 A Lei Geral de Proteção de Dados é a camada que falta para fechar o quadro. Ela não fala de Psicologia, mas trata do insumo central da clínica: **dados pessoais**.
 
 ### Dado de saúde mental é dado sensível
-A LGPD cria uma categoria especial — **dado pessoal sensível** — que inclui dados *referentes à saúde*. Informação sobre o estado psíquico, diagnóstico, sofrimento ou tratamento de uma pessoa é **dado sensível** e recebe proteção reforçada. `[A VALIDAR: citar Art. 5º, II da LGPD na fonte oficial — planalto.gov.br]`
+A LGPD cria uma categoria especial — **dado pessoal sensível**. O Art. 5º, II define como tal o:
+
+> "dado pessoal sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural".
+
+Informação sobre o estado psíquico, diagnóstico, sofrimento ou tratamento de uma pessoa é, portanto, **dado referente à saúde** — dado sensível — e recebe proteção reforçada.
 
 Isso muda tudo na prática com IA: o que você cola num chatbot sobre um paciente não é "um texto qualquer" — é, juridicamente, **dado sensível de saúde de um terceiro**.
 
@@ -148,13 +168,13 @@ O Brasil ainda não tem uma "lei da IA na Psicologia" — mas o **Código de Ét
 **Normativas (fontes primárias):**
 - Conselho Federal de Psicologia. (2005). *Código de Ética Profissional do Psicólogo* (Resolução CFP nº 010/2005).
 - Conselho Federal de Psicologia. (2024). *Resolução CFP nº 9, de 18 de julho de 2024* — exercício profissional mediado por TDICs.
-- Conselho Federal de Psicologia. (2025). *Nota de Posicionamento sobre Inteligência Artificial e Psicologia* (03/07/2025). `[A VALIDAR]`
-- Conselho Federal de Psicologia. (2025). *IA na Psicologia: prática ética e responsável* (cartilha). `[A VALIDAR]`
-- Conselho Federal de Psicologia. (2025). *Chatbots, IA e sua Saúde Mental* (cartilha). `[A VALIDAR]`
+- Conselho Federal de Psicologia. (2025, 3 de julho). *CFP divulga posicionamento sobre Inteligência Artificial no contexto da prática psicológica*. https://site.cfp.org.br/cfp-divulga-posicionamento-sobre-inteligencia-artificial-no-contexto-da-pratica-psicologica/
+- Conselho Federal de Psicologia. (2025). *Inteligência Artificial na Psicologia: guia para uma prática ética e responsável* (cartilha). https://site.cfp.org.br/wp-content/uploads/2025/12/Cartilha_IA_A5-1.pdf
+- Conselho Federal de Psicologia. (2025). *Chatbots, Inteligência Artificial e sua Saúde Mental: um guia para navegar com mais segurança na nova fronteira digital* (cartilha). https://site.cfp.org.br/wp-content/uploads/2025/12/Cartilha_chatbot_IA_A5-1.pdf
 - Brasil. (2018). *Lei nº 13.709, de 14 de agosto de 2018* — Lei Geral de Proteção de Dados Pessoais (LGPD).
 
 **Científicas (da matriz do projeto):**
 - Pillay (2025), *Healthcare* — framework ético de cinco pilares.
-- Abderrahmen & Djamel (2026), *Science, Education and Innovations* — governança ética e decisão humano-IA.
+- Senoussaoui & Rahmani (2026), *Science, Education and Innovations* — governança ética e decisão humano-IA.
 
 > **Nota de validação.** As passagens marcadas `[A VALIDAR]` serão preenchidas com citações literais verificadas dos documentos oficiais (CFP 2025 e LGPD) antes da geração do HTML final, conforme a regra anti-alucinação do projeto.

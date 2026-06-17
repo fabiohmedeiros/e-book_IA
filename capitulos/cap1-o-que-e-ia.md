@@ -25,10 +25,10 @@ Pense em **círculos concêntricos**, do maior para o menor:
 
 > **Diagrama (Viz):** quatro círculos encaixados — IA por fora, depois ML, depois DL, e LLM no centro.
 
-- **Inteligência Artificial (IA)** — o campo mais amplo: qualquer sistema que executa tarefas que associamos à inteligência humana (decidir, reconhecer, recomendar). Inclui desde regras simples até os modelos atuais.
-- **Machine Learning (ML)** — um ramo da IA em que o sistema **aprende padrões a partir de dados**, em vez de seguir regras escritas à mão. É a base das aplicações de IA em saúde mental revisadas na literatura (Singhal et al., 2024).
-- **Deep Learning (DL)** — um tipo de ML que usa **redes neurais artificiais** com muitas camadas, capazes de capturar padrões complexos (imagens, linguagem, sinais). Redes neurais já são aplicadas a problemas psiquiátricos (Komatsu et al., 2021).
-- **Large Language Model (LLM)** — um modelo de Deep Learning **especializado em linguagem**, treinado em enormes volumes de texto. ChatGPT, Claude e Gemini são LLMs.
+- **Inteligência Artificial (IA)** — o campo mais amplo: qualquer sistema que executa tarefas que associamos à inteligência humana (decidir, reconhecer, recomendar). Inclui desde regras simples até os modelos atuais. *Ex.: um filtro de spam, um GPS que recalcula a rota.*
+- **Machine Learning (ML)** — um ramo da IA em que o sistema **aprende padrões a partir de dados**, em vez de seguir regras escritas à mão. É a base das aplicações de IA em saúde mental revisadas na literatura (Singhal et al., 2024). *Ex.: estimar risco de evasão escolar a partir de históricos.*
+- **Deep Learning (DL)** — um tipo de ML que usa **redes neurais artificiais** com muitas camadas, capazes de capturar padrões complexos (imagens, linguagem, sinais). Redes neurais já são aplicadas a problemas psiquiátricos (Komatsu et al., 2021). *Ex.: reconhecer fala, transcrever áudio, identificar imagens.*
+- **Large Language Model (LLM)** — um modelo de Deep Learning **especializado em linguagem**, treinado em enormes volumes de texto. ChatGPT, Claude e Gemini são LLMs. *Ex.: ChatGPT, Claude, Gemini.*
 
 > **Card "fixe isto":** todo LLM é Deep Learning; todo Deep Learning é Machine Learning; todo Machine Learning é IA. O contrário não vale.
 

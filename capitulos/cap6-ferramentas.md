@@ -33,8 +33,8 @@ A literatura que revisa LLMs em saúde mental reforça que a escolha de ferramen
 | **ChatGPT** (OpenAI) | Assistente geral de texto: rascunho, revisão, organização | Bom | Gratuito + pago `[A VALIDAR]` | Permite desativar uso para treino; planos com mais garantias `[A VALIDAR]` | Redação e organização de materiais (Cap. 5) |
 | **Claude** (Anthropic) | Assistente geral de texto, forte em textos longos e análise cuidadosa | Bom | Gratuito + pago `[A VALIDAR]` | Política de retenção/treino própria `[A VALIDAR]` | Revisão e síntese de textos longos (Cap. 5) |
 | **Gemini** (Google) | Assistente geral integrado ao ecossistema Google | Bom | Gratuito + pago `[A VALIDAR]` | Controles de atividade na conta Google `[A VALIDAR]` | Apoio a redação e pesquisa |
-| **NotebookLM** (Google) | Trabalhar **sobre documentos que você fornece** (resumir, perguntar) | Bom | Gratuito `[A VALIDAR]` | Responde com base nas suas fontes `[A VALIDAR]` | Estudar materiais/artigos que você já tem |
-| **Perplexity** | Busca com IA e **citação de fontes** | Bom | Gratuito + pago `[A VALIDAR]` | Verificar política de dados `[A VALIDAR]` | Pesquisa com rastreabilidade de fontes |
+| **NotebookLM** (Google) | Trabalhar **sobre documentos que você fornece** (resumir, perguntar) | Bom | Gratuito + pago (NotebookLM Plus) `[A VALIDAR]` | Responde com base nas suas fontes `[A VALIDAR]` | Estudar materiais/artigos que você já tem |
+| **Perplexity** | Busca com IA e **citação de fontes** | Bom | Gratuito + pago `[A VALIDAR]` | Usa dados para treino por padrão; verificar opções de desativação `[A VALIDAR]` | Pesquisa com rastreabilidade de fontes |
 | **Copilot** (Microsoft) | Assistente integrado ao Windows/Office | Bom | Gratuito + pago `[A VALIDAR]` | Controles via conta Microsoft `[A VALIDAR]` | Apoio à produtividade em documentos |
 
 > **Selo de privacidade (Viz):** no HTML, cada linha recebe um selo — ✅ "permite desativar treino", ⚠️ "verificar política", etc. — preenchido após a validação oficial.

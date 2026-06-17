@@ -155,12 +155,21 @@
 
             <h3 id="cap1-1">1.1 · As camadas: IA › ML › DL › LLM</h3>
             <p>Pense em <strong>círculos concêntricos</strong>, do maior para o menor — cada camada está contida na anterior:</p>
-            <div class="layers" role="img" aria-label="Diagrama de camadas: IA contém ML, que contém DL, que contém LLM">
-              <div class="layer l1">Inteligência Artificial (IA) <span>· o campo mais amplo</span></div>
-              <div class="layer l2">Machine Learning (ML) <span>· aprende padrões a partir de dados</span></div>
-              <div class="layer l3">Deep Learning (DL) <span>· redes neurais de muitas camadas</span></div>
-              <div class="layer l4">Large Language Model (LLM) <span>· especializado em linguagem</span></div>
+            <div class="layers-circles" role="img" aria-label="Diagrama de círculos concêntricos: IA contém ML, que contém DL, que contém LLM">
+              <div class="ring r-ia"><span class="ring-label">IA</span>
+                <div class="ring r-ml"><span class="ring-label">ML</span>
+                  <div class="ring r-dl"><span class="ring-label">DL</span>
+                    <div class="ring r-llm"><span class="ring-label">LLM</span></div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <ul class="layer-legend">
+              <li><span class="dot d-ia"></span><strong>IA</strong> · o campo mais amplo — ex.: um filtro de spam, um GPS que recalcula a rota</li>
+              <li><span class="dot d-ml"></span><strong>ML</strong> · aprende padrões a partir de dados — ex.: estimar risco de evasão escolar a partir de históricos</li>
+              <li><span class="dot d-dl"></span><strong>DL</strong> · redes neurais de muitas camadas — ex.: reconhecer fala, transcrever áudio, identificar imagens</li>
+              <li><span class="dot d-llm"></span><strong>LLM</strong> · especializado em linguagem — ex.: ChatGPT, Claude, Gemini</li>
+            </ul>
             <ul>
               <li><strong>Inteligência Artificial (IA)</strong> — o campo mais amplo: qualquer sistema que executa tarefas que associamos à inteligência humana (decidir, reconhecer, recomendar). Inclui desde regras simples até os modelos atuais.</li>
               <li><strong>Machine Learning (ML)</strong> — um ramo da IA em que o sistema <strong>aprende padrões a partir de dados</strong>, em vez de seguir regras escritas à mão. É a base das aplicações de IA em saúde mental revisadas na literatura (Singhal et al., 2024).</li>
@@ -408,15 +417,19 @@
               <table>
                 <thead><tr><th>Artigo</th><th>O que exige</th><th>O que isso significa ao usar IA</th></tr></thead>
                 <tbody>
-                  <tr><td><strong>Art. 3º, II</strong></td><td>Responsabilidade ética no manuseio de <strong>dados sensíveis</strong> e implicações para o sigilo, a privacidade e a autonomia</td><td>Antes de inserir qualquer informação em uma IA, avalie se ela é sensível e se o sigilo está protegido.</td></tr>
-                  <tr><td><strong>Art. 3º, IV</strong></td><td>Zelo ético: ser <strong>responsável</strong> por dados e informações sensíveis</td><td>A responsabilidade pelo dado não “passa” para a empresa de IA. Continua sua.</td></tr>
-                  <tr><td><strong>Art. 4º, I</strong></td><td>Avaliar as condições de <strong>confidencialidade e privacidade</strong> das informações</td><td>Conhecer a política de dados da ferramenta antes de usá-la (conecta com o Cap. 6).</td></tr>
-                  <tr><td><strong>Art. 4º, II</strong></td><td>Ter as <strong>competências</strong> para o manejo das TDICs empregadas</td><td>Reforça o dever de letramento em IA (espelha o Art. 1º, b do Código).</td></tr>
-                  <tr><td><strong>Art. 4º, V</strong></td><td>Embasar o uso (ou o não-uso) da TDIC em <strong>produção científica e ética</strong></td><td>Recomendações de IA neste e-book são ancoradas em evidência revisada por pares.</td></tr>
-                  <tr><td><strong>Art. 5º</strong></td><td>Encaminhar à <strong>rede presencial</strong> situações de risco de morte, violência, urgência e emergência</td><td>Fundamenta a trava: <strong>nenhum prompt lida com crise sem supervisão humana e rede presencial.</strong></td></tr>
-                  <tr><td><strong>Art. 7º, parág. único</strong></td><td>Especificar os recursos tecnológicos que garantem o sigilo e <strong>informar o cliente</strong></td><td>Base do dever de transparência com o paciente sobre o uso de tecnologia.</td></tr>
+                  <tr><td><strong>Art. 3º, II</strong></td><td>Responsabilidade ética no manuseio de <strong>dados sensíveis</strong> e implicações para o sigilo, a privacidade e a autonomia</td><td>Na prática: antes de digitar qualquer coisa numa IA, identifique se há <strong>dado sensível</strong> (ver o quadro abaixo). Havendo, anonimize ou não use — o que você cola passa a estar nas mãos de um terceiro.</td></tr>
+                  <tr><td><strong>Art. 3º, IV</strong></td><td>Zelo ético: ser <strong>responsável</strong> por dados e informações sensíveis</td><td>Na prática: a responsabilidade pelo dado <strong>não se transfere</strong> para a empresa de IA quando você usa a ferramenta — ela continua inteiramente sua.</td></tr>
+                  <tr><td><strong>Art. 4º, I</strong></td><td>Avaliar as condições de <strong>confidencialidade e privacidade</strong> das informações</td><td>Na prática: antes de adotar uma ferramenta, descubra <strong>onde ela guarda seus dados, por quanto tempo e se os usa para treinar o modelo</strong> — e só use a que você conhece e aprova.</td></tr>
+                  <tr><td><strong>Art. 4º, II</strong></td><td>Ter as <strong>competências</strong> para o manejo das TDICs empregadas</td><td>Na prática: você precisa entender <strong>como a ferramenta funciona, como ela erra</strong> (alucinação, viés) e onde processa os dados antes de colocá-la no seu fluxo de trabalho.</td></tr>
+                  <tr><td><strong>Art. 4º, V</strong></td><td>Embasar o uso (ou o não-uso) da TDIC em <strong>produção científica e ética</strong></td><td>Na prática: decida usar — ou deixar de usar — a IA com base em <strong>evidência e fundamentos éticos</strong>, não por modismo ou comodidade.</td></tr>
+                  <tr><td><strong>Art. 5º</strong></td><td>Encaminhar à <strong>rede presencial</strong> situações de risco de morte, violência, urgência e emergência</td><td>Na prática: diante de risco, violência ou emergência, <strong>encaminhe à rede presencial de imediato</strong>. Uma IA jamais conduz uma crise.</td></tr>
+                  <tr><td><strong>Art. 7º, parág. único</strong></td><td>Especificar os recursos tecnológicos que garantem o sigilo e <strong>informar o cliente</strong></td><td>Na prática: <strong>avise o paciente</strong> quando uma tecnologia (inclusive IA) participa do atendimento e quais recursos protegem o sigilo dele.</td></tr>
                 </tbody>
               </table>
+            </div>
+            <div class="callout info">
+              <div class="callout-title">🔎 O que conta como “informação sensível”?</div>
+              <p>A LGPD (Art. 5º, II) define <strong>dado pessoal sensível</strong> como aquele que revela origem racial ou étnica, convicção religiosa, opinião política, filiação sindical ou a organização religiosa/filosófica/política, <strong>dado referente à saúde ou à vida sexual</strong>, e dado genético ou biométrico. Na clínica, isso abrange quase tudo o que um paciente traz: diagnóstico, sofrimento, história de vida, orientação sexual, religião. Por isso, <strong>praticamente todo conteúdo clínico é dado sensível</strong> — e exige proteção reforçada antes de chegar a qualquer IA (detalhamento jurídico em 3.4).</p>
             </div>
             <div class="callout info">
               <div class="callout-title">🔑 Leitura-chave</div>
@@ -425,22 +438,37 @@
 
             <h3 id="cap3-3">3.3 · O posicionamento institucional do CFP sobre IA (2025)</h3>
             <p>Em 2025, o Conselho Federal de Psicologia passou a se manifestar diretamente sobre IA. É importante entender a <strong>natureza</strong> desses documentos: são <strong>orientações institucionais</strong>, não resoluções com força normativa autônoma. Eles interpretam e aplicam as normas existentes ao contexto da IA — e sinalizam para onde a regulação caminha.</p>
-            <p>São três documentos confirmados em fonte oficial do CFP:</p>
-            <ol>
-              <li><strong>Nota de Posicionamento do CFP sobre IA e Psicologia</strong> (03/07/2025) — posição institucional sobre o uso de IA na profissão. <span class="validar">A VALIDAR: extrair citações literais do texto oficial antes da versão final</span></li>
-              <li><strong>Cartilha “IA na Psicologia: prática ética e responsável”</strong> (CFP, 2025) — guia de boas práticas para profissionais. <span class="validar">A VALIDAR: extrair recomendações específicas do PDF oficial</span></li>
-              <li><strong>Cartilha “Chatbots, IA e sua Saúde Mental”</strong> (CFP, 2025) — material voltado ao público geral sobre os riscos de usar chatbots como se fossem terapeutas. <span class="validar">A VALIDAR: extrair pontos principais</span></li>
-            </ol>
-            <div class="callout warn">
-              <div class="callout-title">✍️ Nota editorial de honestidade</div>
-              <p>O conteúdo literal desses três documentos ainda precisa ser citado a partir da fonte oficial. Marcamos <span class="validar">A VALIDAR</span> em vez de parafrasear de memória — coerente com a regra anti-alucinação do projeto. <strong>Antes da publicação, estas passagens serão preenchidas com citações verificadas dos PDFs oficiais do CFP.</strong></p>
+            <p>São três documentos confirmados em fonte oficial do CFP.</p>
+
+            <p><strong>1. Nota de Posicionamento sobre IA e Psicologia</strong> (03/07/2025) — posição institucional sobre o uso de IA na profissão. O CFP afirma:</p>
+            <blockquote>“[...] reforçamos que, embora a IA possa gerar conteúdos com agilidade e oferecer apoio a diversas tarefas, sua aplicação exige supervisão e discernimento humanos. Cabe exclusivamente às psicólogas e aos psicólogos, em seus distintos contextos de trabalho — clínicos, institucionais, educacionais, organizacionais, jurídicos, comunitários, entre outros —, decidir se, quando e como integrar essas ferramentas à sua prática tendo como referência que o compromisso da Psicologia é com a garantia dos direitos fundamentais, com a promoção da saúde mental, com o desenvolvimento humano, com a proteção social e cidadania digna e com o exercício responsável da profissão, em todos os seus campos de atuação.”</blockquote>
+
+            <p><strong>2. Cartilha “Inteligência Artificial na Psicologia: guia para uma prática ética e responsável”</strong> (CFP, 2025) — guia de boas práticas para profissionais. Abre lembrando que a IA não é neutra:</p>
+            <blockquote>“A Inteligência Artificial não é uma força neutra da natureza, trata-se de uma criação humana, moldada por valores e preconceitos humanos e pelos dados da sociedade em que emerge. Se não formos vigilantes, críticos e atualizados, a IA corre o risco de se tornar mais uma ferramenta a serviço da reprodução e da amplificação de desigualdades e injustiças que já afligem nossa sociedade. O Conselho Federal de Psicologia e cada psicóloga e psicólogo brasileiro têm um compromisso ético e social com a promoção da equidade, da justiça social e da não discriminação.”</blockquote>
+            <p>A cartilha traz recomendações práticas, entre elas:</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Frente</th><th>Recomendação</th><th>Página</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Supervisão de assistentes e chatbots</strong></td><td>É <strong>vedado</strong> o uso de assistentes virtuais, chatbots, avatares ou robôs para a condução <strong>inteiramente autônoma</strong> de psicoterapias ou intervenções clínicas; exige-se supervisão humana contínua e suficiente.</td><td>p. 13 e 24</td></tr>
+                  <tr><td><strong>Gravação e transcrição de atendimentos</strong></td><td>Obter <strong>consentimento informado prévio</strong> do paciente e usar apenas plataformas cujas condições de privacidade, sigilo e armazenamento sejam conhecidas e seguras.</td><td>p. 24</td></tr>
+                  <tr><td><strong>Avaliação psicológica</strong></td><td>Uso de testes, plataformas de correção ou IA para laudos/diagnósticos exige <strong>supervisão e mediação humana direta</strong>; o psicólogo é o <strong>único responsável</strong> pelo resultado final e pela validação.</td><td>p. 24</td></tr>
+                  <tr><td><strong>Triagem e agendamentos</strong></td><td>Uso <strong>recomendado</strong> para tarefas administrativas rotineiras que não tocam o núcleo técnico (agenda, lembretes, fluxo de trabalho).</td><td>p. 22</td></tr>
+                  <tr><td><strong>Sistematização de prontuários</strong></td><td>Governança rigorosa da informação, assegurando que o armazenamento cumpra todas as regras de sigilo profissional.</td><td>p. 25</td></tr>
+                </tbody>
+              </table>
             </div>
-            <p>O que já se pode afirmar com segurança é a <strong>direção</strong> dessas manifestações, plenamente alinhada ao restante do arcabouço: a IA é admitida como <strong>apoio</strong>, sob responsabilidade humana integral, com proteção rigorosa de dados e sem substituir o vínculo terapêutico. Esse é o mesmo princípio condutor deste e-book.</p>
+
+            <p><strong>3. Cartilha “Chatbots, Inteligência Artificial e sua Saúde Mental”</strong> (CFP, 2025) — material voltado ao <strong>público geral</strong>, que alerta para os riscos de tratar um chatbot como terapeuta. O guia reconhece que chatbots podem oferecer informação e apoio inicial, mas adverte que <strong>não realizam avaliação clínica, não assumem responsabilidade ética e podem errar — ou até agravar — um quadro de saúde mental</strong>, e que inserir dados identificáveis de um paciente em uma IA genérica representa risco ético e legal.</p>
+
+            <p>A direção dessas manifestações é clara e alinhada ao restante do arcabouço: a IA é admitida como <strong>apoio</strong>, sob responsabilidade humana integral, com proteção rigorosa de dados e sem substituir o vínculo terapêutico. É o mesmo princípio condutor deste e-book.</p>
 
             <h3 id="cap3-4">3.4 · LGPD — Lei nº 13.709/2018</h3>
             <p>A Lei Geral de Proteção de Dados é a camada que falta para fechar o quadro. Ela não fala de Psicologia, mas trata do insumo central da clínica: <strong>dados pessoais</strong>.</p>
             <h4>Dado de saúde mental é dado sensível</h4>
-            <p>A LGPD cria uma categoria especial — <strong>dado pessoal sensível</strong> — que inclui dados <em>referentes à saúde</em>. Informação sobre o estado psíquico, diagnóstico, sofrimento ou tratamento de uma pessoa é <strong>dado sensível</strong> e recebe proteção reforçada. <span class="validar">A VALIDAR: citar Art. 5º, II da LGPD na fonte oficial — planalto.gov.br</span></p>
+            <p>A LGPD cria uma categoria especial — <strong>dado pessoal sensível</strong>. O Art. 5º, II define como tal o:</p>
+            <blockquote>“dado pessoal sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural”.</blockquote>
+            <p>Informação sobre o estado psíquico, diagnóstico, sofrimento ou tratamento de uma pessoa é, portanto, <strong>dado referente à saúde</strong> — dado sensível — e recebe proteção reforçada.</p>
             <p>Isso muda tudo na prática com IA: o que você cola num chatbot sobre um paciente não é “um texto qualquer” — é, juridicamente, <strong>dado sensível de saúde de um terceiro</strong>.</p>
             <h4>Três exigências que se aplicam diretamente</h4>
             <div class="table-wrap">
@@ -486,15 +514,15 @@
             <ul>
               <li>Conselho Federal de Psicologia. (2005). <em>Código de Ética Profissional do Psicólogo</em> (Resolução CFP nº 010/2005).</li>
               <li>Conselho Federal de Psicologia. (2024). <em>Resolução CFP nº 9, de 18 de julho de 2024</em> — exercício profissional mediado por TDICs.</li>
-              <li>Conselho Federal de Psicologia. (2025). <em>Nota de Posicionamento sobre Inteligência Artificial e Psicologia</em> (03/07/2025). <span class="validar">A VALIDAR</span></li>
-              <li>Conselho Federal de Psicologia. (2025). <em>IA na Psicologia: prática ética e responsável</em> (cartilha). <span class="validar">A VALIDAR</span></li>
-              <li>Conselho Federal de Psicologia. (2025). <em>Chatbots, IA e sua Saúde Mental</em> (cartilha). <span class="validar">A VALIDAR</span></li>
+              <li>Conselho Federal de Psicologia. (2025, 3 de julho). <em>CFP divulga posicionamento sobre Inteligência Artificial no contexto da prática psicológica</em>. <a href="https://site.cfp.org.br/cfp-divulga-posicionamento-sobre-inteligencia-artificial-no-contexto-da-pratica-psicologica/" target="_blank" rel="noopener">site.cfp.org.br</a></li>
+              <li>Conselho Federal de Psicologia. (2025). <em>Inteligência Artificial na Psicologia: guia para uma prática ética e responsável</em> (cartilha). <a href="https://site.cfp.org.br/wp-content/uploads/2025/12/Cartilha_IA_A5-1.pdf" target="_blank" rel="noopener">PDF</a></li>
+              <li>Conselho Federal de Psicologia. (2025). <em>Chatbots, Inteligência Artificial e sua Saúde Mental: um guia para navegar com mais segurança na nova fronteira digital</em> (cartilha). <a href="https://site.cfp.org.br/wp-content/uploads/2025/12/Cartilha_chatbot_IA_A5-1.pdf" target="_blank" rel="noopener">PDF</a></li>
               <li>Brasil. (2018). <em>Lei nº 13.709, de 14 de agosto de 2018</em> — Lei Geral de Proteção de Dados Pessoais (LGPD).</li>
             </ul>
             <p><strong>Científicas (da matriz do projeto):</strong></p>
             <ul>
               <li>Pillay (2025), <em>Healthcare</em> — framework ético de cinco pilares.</li>
-              <li>Abderrahmen &amp; Djamel (2026), <em>Science, Education and Innovations</em> — governança ética e decisão humano-IA.</li>
+              <li>Senoussaoui &amp; Rahmani (2026), <em>Science, Education and Innovations</em> — governança ética e decisão humano-IA.</li>
             </ul>
             <div class="callout warn">
               <div class="callout-title">🔎 Nota de validação</div>
@@ -662,7 +690,7 @@
             </div>
             <p>Cada prompt segue a mesma estrutura: <strong>Contexto</strong> (para que serve) · <strong>Limite</strong> (o que ele NÃO faz) · <strong>Prompt pronto</strong> (com botão “copiar”) · <strong>Selo</strong> ✔ <em>Uso de apoio</em>.</p>
             <h4>Anatomia de um bom prompt</h4>
-            <p>Um prompt eficaz tem três partes: <strong>(1) papel/contexto</strong> (“Você é um assistente que apoia um psicólogo em…”), <strong>(2) instrução clara</strong> (o que fazer) e <strong>(3) formato de saída</strong> (lista, tabela, tom, extensão). A literatura sobre IA aplicada ao trabalho clínico de apoio mostra que instruções bem-estruturadas melhoram a utilidade e reduzem desvios (Stade et al., 2024; McCrudden et al., 2025).</p>
+            <p>Um prompt eficaz tem três partes: <strong>(1) papel/contexto</strong> (“Você é um assistente que apoia um psicólogo em…”), <strong>(2) instrução clara</strong> (o que fazer) e <strong>(3) formato de saída</strong> (lista, tabela, tom, extensão). A literatura sobre IA aplicada ao trabalho clínico de apoio mostra que instruções bem-estruturadas melhoram a utilidade e reduzem desvios (Stade et al., 2024; McCrudden et al., 2026).</p>
 
             <h3 id="cap5-1">5.1 · Documentos clínicos <span style="font-weight:400;color:var(--text-muted);font-size:.95rem">(apoio à redação, não substituição do registro)</span></h3>
             <div class="callout warn"><p><strong>Este conjunto NÃO serve para:</strong> gerar laudo, parecer ou diagnóstico, nem substituir o prontuário. Serve para <strong>organizar e revisar a forma</strong> de um texto que <strong>você</strong> redige e valida (Código de Ética, Art. 2º, g).</p></div>
@@ -812,7 +840,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
             <h4>Referências deste capítulo</h4>
             <ul>
               <li>Sheperis &amp; Sadeh-Sharvit (2023), <em>J. Technology in Counselor Education &amp; Supervision</em> — supervisão apoiada por IA.</li>
-              <li>McCrudden et al. (2025), <em>JMIR Formative Research</em> — documentação clínica com IA.</li>
+              <li>McCrudden et al. (2026), <em>JMIR Formative Research</em> — documentação clínica com IA.</li>
               <li>Shafran et al. (2025), <em>Behaviour Research and Therapy</em> — IA em treino/supervisão de TCC.</li>
               <li>Volpe (2025), <em>European Psychiatry</em> — aplicações atuais de IA em saúde mental.</li>
               <li>Mesquiti &amp; Nook (2026), <em>Annual Review of Biomedical Data Science</em> — LLMs em pesquisa e tratamento.</li>
@@ -898,7 +926,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
                     <td><strong>NotebookLM</strong> (Google)</td>
                     <td>Trabalhar sobre documentos que você fornece (resumir, perguntar)</td>
                     <td><span class="pill ok">Bom</span></td>
-                    <td>Gratuito <span class="validar">A VALIDAR</span></td>
+                    <td>Gratuito + pago (NotebookLM Plus) <span class="validar">A VALIDAR</span></td>
                     <td>Responde com base nas suas fontes <span class="validar">A VALIDAR</span></td>
                     <td>Estudar materiais/artigos que você já tem</td>
                   </tr>
@@ -907,7 +935,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
                     <td>Busca com IA e citação de fontes</td>
                     <td><span class="pill ok">Bom</span></td>
                     <td>Gratuito + pago <span class="validar">A VALIDAR</span></td>
-                    <td>Verificar política de dados <span class="validar">A VALIDAR</span></td>
+                    <td>Usa dados para treino por padrão; verificar opções de desativação <span class="validar">A VALIDAR</span></td>
                     <td>Pesquisa com rastreabilidade de fontes</td>
                   </tr>
                   <tr>
@@ -1001,7 +1029,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
             </ul>
 
             <h3 id="cap7-2">7.2 · Documentação automática</h3>
-            <p><strong>O cenário:</strong> assistência à produção de registros e materiais a partir de informações fornecidas pelo profissional (McCrudden et al., 2025; Stade et al., 2024).</p>
+            <p><strong>O cenário:</strong> assistência à produção de registros e materiais a partir de informações fornecidas pelo profissional (McCrudden et al., 2026; Stade et al., 2024).</p>
             <ul>
               <li><strong>Potencial:</strong> reduzir a carga burocrática, um fator real de sobrecarga e desgaste.</li>
               <li><strong>Risco:</strong> registros genéricos ou imprecisos; <strong>quebra de sigilo</strong> se dados identificáveis forem inseridos; documentos sem fundamentação técnica própria.</li>
@@ -1026,7 +1054,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
                   <tr><td><strong>Erosão do sigilo</strong></td><td>Mais ferramentas = mais pontos de vazamento</td><td>Anonimização e política de dados (Cap. 4, 6)</td></tr>
                   <tr><td><strong>Viés algorítmico</strong></td><td>Modelos herdam preconceitos dos dados</td><td>Leitura crítica das saídas (Cap. 2)</td></tr>
                   <tr><td><strong>Desigualdade de acesso</strong></td><td>Nem todos terão as mesmas ferramentas</td><td>Letramento e governança (Gupta &amp; Gandhi, 2025)</td></tr>
-                  <tr><td><strong>Vácuo regulatório</strong></td><td>A norma corre atrás da tecnologia</td><td>Governança ética e decisão humano-IA (Abderrahmen &amp; Djamel, 2026)</td></tr>
+                  <tr><td><strong>Vácuo regulatório</strong></td><td>A norma corre atrás da tecnologia</td><td>Governança ética e decisão humano-IA (Senoussaoui &amp; Rahmani, 2026)</td></tr>
                 </tbody>
               </table>
             </div>
@@ -1047,10 +1075,10 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
               <li>Shafran et al. (2025), <em>Behaviour Research and Therapy</em> — IA em treino/supervisão.</li>
               <li>Zhang et al. (2025), <em>Nature Computational Science</em> — taxonomia de papéis de LLM e ética.</li>
               <li>Tan et al. (2025), <em>Journal of Psychology and AI</em> — competência de LLMs em psicoterapia.</li>
-              <li>Abderrahmen &amp; Djamel (2026), <em>Science, Education and Innovations</em> — governança ética e decisão humano-IA.</li>
+              <li>Senoussaoui &amp; Rahmani (2026), <em>Science, Education and Innovations</em> — governança ética e decisão humano-IA.</li>
               <li>Gupta &amp; Gandhi (2025), <em>International Review of Psychiatry</em> — letramento em IA e futuro da área.</li>
               <li>Sheperis &amp; Sadeh-Sharvit (2023), <em>J. Technology in Counselor Education &amp; Supervision</em> — supervisão apoiada por IA.</li>
-              <li>McCrudden et al. (2025), <em>JMIR Formative Research</em> — documentação clínica com IA.</li>
+              <li>McCrudden et al. (2026), <em>JMIR Formative Research</em> — documentação clínica com IA.</li>
             </ul>
             <p><strong>Norma aplicada:</strong> reforço do posicionamento ético central + Código de Ética (Art. 2º, g). <em>Detalhamento no Cap. 3.</em></p>
           </section>
@@ -1063,12 +1091,11 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
             </div>
             <div class="callout info">
               <p>Reúne (1) as 20 referências científicas — todas com DOI verificável, extraídas da planilha Elicit — e (2) as normativas (CFP/LGPD). Formatação <strong>APA 7ª edição</strong>.</p>
-              <p style="margin-top:.6rem"><strong>Nota de validação:</strong> volume, número e páginas foram completados via API do Crossref e conferidos na OpenAlex a partir do DOI de cada artigo (12/06/2026). <strong>17 das 20</strong> estão completas. As 3 restantes (Irshad, 2022; Sheperis &amp; Sadeh-Sharvit, 2023; Mesquiti &amp; Nook, 2026) não têm número de página em nenhuma das bases — nesses casos a APA 7 admite a omissão das páginas. As marcações <span class="validar">A VALIDAR</span> restantes apontam divergências menores (ano/ordem de autor) a confirmar na página oficial do artigo.</p>
+              <p style="margin-top:.6rem"><strong>Nota de validação:</strong> volume, número e páginas foram completados via API do Crossref e conferidos na OpenAlex a partir do DOI de cada artigo (12/06/2026). <strong>17 das 20</strong> estão completas. As 3 restantes (Irshad, 2022; Sheperis &amp; Sadeh-Sharvit, 2023; Mesquiti &amp; Nook, 2026) não têm número de página em nenhuma das bases — nesses casos a APA 7 admite a omissão das páginas. As divergências de ano e de ordem de autor foram conferidas na fonte primária e corrigidas (Senoussaoui &amp; Rahmani, 2026 — ordem confirmada no PDF do artigo; McCrudden et al., 2026 — ano confirmado na página oficial do JMIR).</p>
             </div>
 
             <h3 id="ref-cientificas">Referências (APA 7)</h3>
             <ol class="ref-list">
-              <li>Abderrahmen, S., &amp; Djamel, R. (2026). Reframing ethical governance of artificial intelligence in mental health care: Toward a human-centered, explainable, and clinically responsible psychotherapeutic paradigm. <em>Science, Education and Innovations in the Context of Modern Problems</em>, <em>9</em>(5), 1–13. <a class="ref-doi" href="https://doi.org/10.56334/sei/9.5.22" target="_blank" rel="noopener">https://doi.org/10.56334/sei/9.5.22</a> <span class="validar">A VALIDAR: ordem sobrenome/nome</span></li>
               <li>Bharti, J., &amp; Singh, R. (2025). Between care and code: Clinicians' perspectives as an ethical lens for AI in mental health – Insights from an interview-based case study. <em>Science Insights</em>, <em>47</em>(5), 2041–2048. <a class="ref-doi" href="https://doi.org/10.15354/si.25.or1302" target="_blank" rel="noopener">https://doi.org/10.15354/si.25.or1302</a></li>
               <li>Guo, Z., Lai, A., Thygesen, J., Farrington, J., Keen, T., &amp; Li, K. (2024). Large language models for mental health applications: Systematic review. <em>JMIR Mental Health</em>, <em>11</em>, e57400. <a class="ref-doi" href="https://doi.org/10.2196/57400" target="_blank" rel="noopener">https://doi.org/10.2196/57400</a></li>
               <li>Gupta, D. R., &amp; Gandhi, T. (2025). AI and ethics in mental health: Personal reflections on the future of psychiatry. <em>International Review of Psychiatry</em>, <em>38</em>(1–3), 122–125. <a class="ref-doi" href="https://doi.org/10.1080/09540261.2025.2600617" target="_blank" rel="noopener">https://doi.org/10.1080/09540261.2025.2600617</a></li>
@@ -1077,10 +1104,11 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
               <li>Iftikhar, Z., Xiao, A., Ransom, S., Huang, J., &amp; Suresh, H. (2025). How LLM counselors violate ethical standards in mental health practice: A practitioner-informed framework. <em>Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society</em>, <em>8</em>(2), 1311–1323. <a class="ref-doi" href="https://doi.org/10.1609/aies.v8i2.36632" target="_blank" rel="noopener">https://doi.org/10.1609/aies.v8i2.36632</a></li>
               <li>Irshad, S., Azmi, S., &amp; Begum, N. (2022). Uses of artificial intelligence in psychology. <em>Journal of Health and Medical Sciences</em>, <em>5</em>(4). <a class="ref-doi" href="https://doi.org/10.31014/aior.1994.05.04.242" target="_blank" rel="noopener">https://doi.org/10.31014/aior.1994.05.04.242</a></li>
               <li>Komatsu, H., Watanabe, E., &amp; Fukuchi, M. (2021). Psychiatric neural networks and precision therapeutics by machine learning. <em>Biomedicines</em>, <em>9</em>(4), 403. <a class="ref-doi" href="https://doi.org/10.3390/biomedicines9040403" target="_blank" rel="noopener">https://doi.org/10.3390/biomedicines9040403</a></li>
-              <li>McCrudden, K., Swirbul, M., Peake, E., Rodio, M. J., &amp; Padmanabhan, A. (2025). AI-powered documentation for mental health providers: Retrospective observational mixed methods study. <em>JMIR Formative Research</em>, <em>10</em>, e84628. <a class="ref-doi" href="https://doi.org/10.2196/84628" target="_blank" rel="noopener">https://doi.org/10.2196/84628</a> <span class="validar">A VALIDAR: ano — bases indicam 2026</span></li>
-              <li>Mesquiti, S., &amp; Nook, E. C. (2026). Large language models in mental health research and treatment. <em>Annual Review of Biomedical Data Science</em>. Advance online publication. <a class="ref-doi" href="https://doi.org/10.1146/annurev-biodatasci-092524-113527" target="_blank" rel="noopener">https://doi.org/10.1146/annurev-biodatasci-092524-113527</a> <span class="validar">A VALIDAR: volume/páginas</span></li>
+              <li>McCrudden, K. E., Swirbul, M. S., Peake, E. E., Rodio, M. J., &amp; Padmanabhan, A. (2026). AI-powered documentation for mental health providers: Retrospective observational mixed methods study. <em>JMIR Formative Research</em>, <em>10</em>, e84628. <a class="ref-doi" href="https://doi.org/10.2196/84628" target="_blank" rel="noopener">https://doi.org/10.2196/84628</a></li>
+              <li>Mesquiti, S., &amp; Nook, E. C. (2026). Large language models in mental health research and treatment. <em>Annual Review of Biomedical Data Science</em>. Advance online publication. <a class="ref-doi" href="https://doi.org/10.1146/annurev-biodatasci-092524-113527" target="_blank" rel="noopener">https://doi.org/10.1146/annurev-biodatasci-092524-113527</a></li>
               <li>Pillay, Y. (2025). Ethical decision-making guidelines for mental health clinicians in the artificial intelligence (AI) era. <em>Healthcare</em>, <em>13</em>(23), 3057. <a class="ref-doi" href="https://doi.org/10.3390/healthcare13233057" target="_blank" rel="noopener">https://doi.org/10.3390/healthcare13233057</a></li>
               <li>Saeidnia, H. R., Hashemi Fotami, S. G., Lund, B. D., &amp; Ghiasi, N. (2024). Ethical considerations in artificial intelligence interventions for mental health and well-being: Ensuring responsible implementation and impact. <em>Social Sciences</em>, <em>13</em>(7), 381. <a class="ref-doi" href="https://doi.org/10.3390/socsci13070381" target="_blank" rel="noopener">https://doi.org/10.3390/socsci13070381</a></li>
+              <li>Senoussaoui, A., &amp; Rahmani, D. (2026). Reframing ethical governance of artificial intelligence in mental health care: Toward a human-centered, explainable, and clinically responsible psychotherapeutic paradigm. <em>Science, Education and Innovations in the Context of Modern Problems</em>, <em>9</em>(5), 1–13. <a class="ref-doi" href="https://doi.org/10.56334/sei/9.5.22" target="_blank" rel="noopener">https://doi.org/10.56334/sei/9.5.22</a></li>
               <li>Shafran, R., Bond, L., Carlbring, P., Cohen, Z., Creed, T. A., Davey, E., Egan, S. J., Freeman, D., Hollon, S. D., Jacobson, N. C., Johnson, C., Kaysen, D. L., McGuinness, D. L., Patel, V., Pozuelo, J. R., Santos, H., Singla, D. R., Stirman, S., Taylor, D., &amp; Wade, T. D. (2025). From innovation to implementation: Artificial intelligence in cognitive behaviour therapy training and supervision. <em>Behaviour Research and Therapy</em>, <em>197</em>, Article 104945. <a class="ref-doi" href="https://doi.org/10.1016/j.brat.2025.104945" target="_blank" rel="noopener">https://doi.org/10.1016/j.brat.2025.104945</a></li>
               <li>Sheperis, D., &amp; Sadeh-Sharvit, S. (2023). Using AI-supported supervision in a university telemental health training clinic. <em>Journal of Technology in Counselor Education and Supervision</em>, <em>4</em>(1). <a class="ref-doi" href="https://doi.org/10.61888/2692-4129.1093" target="_blank" rel="noopener">https://doi.org/10.61888/2692-4129.1093</a></li>
               <li>Singhal, S., Cooke, D. L., Villareal, R. I., Stoddard, J. J., Lin, C.-T., &amp; Dempsey, A. G. (2024). Machine learning for mental health: Applications, challenges, and the clinician's role. <em>Current Psychiatry Reports</em>, <em>26</em>(12), 694–702. <a class="ref-doi" href="https://doi.org/10.1007/s11920-024-01561-w" target="_blank" rel="noopener">https://doi.org/10.1007/s11920-024-01561-w</a></li>
@@ -1095,9 +1123,9 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
               <li>Brasil. (2018). <em>Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD)</em>. Diário Oficial da União. <a class="ref-doi" href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">planalto.gov.br</a></li>
               <li>Conselho Federal de Psicologia. (2005). <em>Resolução CFP nº 010/2005. Código de Ética Profissional do Psicólogo</em>. CFP.</li>
               <li>Conselho Federal de Psicologia. (2024). <em>Resolução CFP nº 9, de 18 de julho de 2024. Regulamenta o exercício profissional da Psicologia mediado por Tecnologias Digitais da Informação e da Comunicação (TDICs)</em>. CFP.</li>
-              <li>Conselho Federal de Psicologia. (2025). <em>Nota de posicionamento sobre Inteligência Artificial e Psicologia</em> (03 de julho de 2025). CFP. <span class="validar">A VALIDAR: URL e título exatos</span></li>
-              <li>Conselho Federal de Psicologia. (2025). <em>IA na Psicologia: prática ética e responsável</em> [Cartilha]. CFP. <span class="validar">A VALIDAR: título e dados exatos</span></li>
-              <li>Conselho Federal de Psicologia. (2025). <em>Chatbots, IA e sua saúde mental</em> [Cartilha]. CFP. <span class="validar">A VALIDAR: título e dados exatos</span></li>
+              <li>Conselho Federal de Psicologia. (2025, 3 de julho). <em>CFP divulga posicionamento sobre Inteligência Artificial no contexto da prática psicológica</em>. CFP. <a class="ref-doi" href="https://site.cfp.org.br/cfp-divulga-posicionamento-sobre-inteligencia-artificial-no-contexto-da-pratica-psicologica/" target="_blank" rel="noopener">site.cfp.org.br</a></li>
+              <li>Conselho Federal de Psicologia. (2025). <em>Inteligência Artificial na Psicologia: guia para uma prática ética e responsável</em> [Cartilha]. CFP. <a class="ref-doi" href="https://site.cfp.org.br/wp-content/uploads/2025/12/Cartilha_IA_A5-1.pdf" target="_blank" rel="noopener">Cartilha_IA_A5-1.pdf</a></li>
+              <li>Conselho Federal de Psicologia. (2025). <em>Chatbots, Inteligência Artificial e sua Saúde Mental: um guia para navegar com mais segurança na nova fronteira digital</em> [Cartilha]. CFP. <a class="ref-doi" href="https://site.cfp.org.br/wp-content/uploads/2025/12/Cartilha_chatbot_IA_A5-1.pdf" target="_blank" rel="noopener">Cartilha_chatbot_IA_A5-1.pdf</a></li>
             </ul>
 
             <h3 id="encerramento">Encerramento</h3>

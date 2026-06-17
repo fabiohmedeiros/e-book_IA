@@ -22,7 +22,7 @@ Cada prompt segue a mesma estrutura:
 - **Selo** — ✔ *Uso de apoio*.
 
 ### Anatomia de um bom prompt
-Um prompt eficaz tem três partes: **(1) papel/contexto** ("Você é um assistente que apoia um psicólogo em..."), **(2) instrução clara** (o que fazer) e **(3) formato de saída** (lista, tabela, tom, extensão). A literatura sobre IA aplicada ao trabalho clínico de apoio mostra que instruções bem-estruturadas melhoram a utilidade e reduzem desvios (Stade et al., 2024; McCrudden et al., 2025).
+Um prompt eficaz tem três partes: **(1) papel/contexto** ("Você é um assistente que apoia um psicólogo em..."), **(2) instrução clara** (o que fazer) e **(3) formato de saída** (lista, tabela, tom, extensão). A literatura sobre IA aplicada ao trabalho clínico de apoio mostra que instruções bem-estruturadas melhoram a utilidade e reduzem desvios (Stade et al., 2024; McCrudden et al., 2026).
 
 ---
 
@@ -153,7 +153,7 @@ Um bom prompt para psicólogo é aquele que **economiza tempo em tarefas acessó
 
 ### Referências deste capítulo
 - Sheperis & Sadeh-Sharvit (2023), *J. Technology in Counselor Education & Supervision* — supervisão apoiada por IA.
-- McCrudden et al. (2025), *JMIR Formative Research* — documentação clínica com IA.
+- McCrudden et al. (2026), *JMIR Formative Research* — documentação clínica com IA.
 - Shafran et al. (2025), *Behaviour Research and Therapy* — IA em treino/supervisão de TCC.
 - Volpe (2025), *European Psychiatry* — aplicações atuais de IA em saúde mental.
 - Mesquiti & Nook (2026), *Annual Review of Biomedical Data Science* — LLMs em pesquisa e tratamento.

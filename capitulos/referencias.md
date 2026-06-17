@@ -2,13 +2,11 @@
 
 > **Seção final do e-book.** Reúne (1) as 20 referências científicas — todas com DOI verificável, extraídas da planilha Elicit — e (2) as normativas (CFP/LGPD). Formatação **APA 7ª edição**.
 >
-> **Nota de validação:** volume, número e páginas foram completados via **API do Crossref** e conferidos na **OpenAlex** a partir do DOI de cada artigo (2026-06-12). **17 das 20** estão completas. As 3 restantes (Irshad, 2022; Sheperis & Sadeh-Sharvit, 2023; Mesquiti & Nook, 2026) **não têm número de página em nenhuma das bases** — ou porque o periódico não pagina tradicionalmente, ou por ser publicação avançada; nesses casos a APA 7 admite a omissão das páginas. As marcações `[A VALIDAR]` restantes apontam divergências menores (ano/ordem de autor) a confirmar na página oficial do artigo. Nomes convertidos ao padrão APA (Sobrenome, Iniciais).
+> **Nota de validação:** volume, número e páginas foram completados via **API do Crossref** e conferidos na **OpenAlex** a partir do DOI de cada artigo (2026-06-12). **17 das 20** estão completas. As 3 restantes (Irshad, 2022; Sheperis & Sadeh-Sharvit, 2023; Mesquiti & Nook, 2026) **não têm número de página em nenhuma das bases** — ou porque o periódico não pagina tradicionalmente, ou por ser publicação avançada; nesses casos a APA 7 admite a omissão das páginas. As divergências de ano e de ordem de autor foram conferidas na fonte primária e corrigidas (Senoussaoui & Rahmani, 2026 — ordem confirmada no PDF do artigo; McCrudden et al., 2026 — ano confirmado na página oficial do JMIR). Nomes convertidos ao padrão APA (Sobrenome, Iniciais).
 
 ---
 
 ## Referências (APA 7)
-
-Abderrahmen, S., & Djamel, R. (2026). Reframing ethical governance of artificial intelligence in mental health care: Toward a human-centered, explainable, and clinically responsible psychotherapeutic paradigm. *Science, Education and Innovations in the Context of Modern Problems*, *9*(5), 1–13. https://doi.org/10.56334/sei/9.5.22 `[A VALIDAR: ordem sobrenome/nome dos autores]`
 
 Bharti, J., & Singh, R. (2025). Between care and code: Clinicians' perspectives as an ethical lens for AI in mental health – Insights from an interview-based case study. *Science Insights*, *47*(5), 2041–2048. https://doi.org/10.15354/si.25.or1302
 
@@ -26,13 +24,15 @@ Irshad, S., Azmi, S., & Begum, N. (2022). Uses of artificial intelligence in psy
 
 Komatsu, H., Watanabe, E., & Fukuchi, M. (2021). Psychiatric neural networks and precision therapeutics by machine learning. *Biomedicines*, *9*(4), 403. https://doi.org/10.3390/biomedicines9040403
 
-McCrudden, K., Swirbul, M., Peake, E., Rodio, M. J., & Padmanabhan, A. (2025). AI-powered documentation for mental health providers: Retrospective observational mixed methods study. *JMIR Formative Research*, *10*, e84628. https://doi.org/10.2196/84628 `[A VALIDAR: ano — Crossref/OpenAlex indicam 2026]`
+McCrudden, K. E., Swirbul, M. S., Peake, E. E., Rodio, M. J., & Padmanabhan, A. (2026). AI-powered documentation for mental health providers: Retrospective observational mixed methods study. *JMIR Formative Research*, *10*, e84628. https://doi.org/10.2196/84628
 
-Mesquiti, S., & Nook, E. C. (2026). Large language models in mental health research and treatment. *Annual Review of Biomedical Data Science*. Advance online publication. https://doi.org/10.1146/annurev-biodatasci-092524-113527 `[A VALIDAR: volume/páginas — publicação avançada]`
+Mesquiti, S., & Nook, E. C. (2026). Large language models in mental health research and treatment. *Annual Review of Biomedical Data Science*. Advance online publication. https://doi.org/10.1146/annurev-biodatasci-092524-113527
 
 Pillay, Y. (2025). Ethical decision-making guidelines for mental health clinicians in the artificial intelligence (AI) era. *Healthcare*, *13*(23), 3057. https://doi.org/10.3390/healthcare13233057
 
 Saeidnia, H. R., Hashemi Fotami, S. G., Lund, B. D., & Ghiasi, N. (2024). Ethical considerations in artificial intelligence interventions for mental health and well-being: Ensuring responsible implementation and impact. *Social Sciences*, *13*(7), 381. https://doi.org/10.3390/socsci13070381
+
+Senoussaoui, A., & Rahmani, D. (2026). Reframing ethical governance of artificial intelligence in mental health care: Toward a human-centered, explainable, and clinically responsible psychotherapeutic paradigm. *Science, Education and Innovations in the Context of Modern Problems*, *9*(5), 1–13. https://doi.org/10.56334/sei/9.5.22
 
 Shafran, R., Bond, L., Carlbring, P., Cohen, Z., Creed, T. A., Davey, E., Egan, S. J., Freeman, D., Hollon, S. D., Jacobson, N. C., Johnson, C., Kaysen, D. L., McGuinness, D. L., Patel, V., Pozuelo, J. R., Santos, H., Singla, D. R., Stirman, S., Taylor, D., & Wade, T. D. (2025). From innovation to implementation: Artificial intelligence in cognitive behaviour therapy training and supervision. *Behaviour Research and Therapy*, *197*, Article 104945. https://doi.org/10.1016/j.brat.2025.104945
 
@@ -58,11 +58,11 @@ Conselho Federal de Psicologia. (2005). *Resolução CFP nº 010/2005. Código d
 
 Conselho Federal de Psicologia. (2024). *Resolução CFP nº 9, de 18 de julho de 2024. Regulamenta o exercício profissional da Psicologia mediado por Tecnologias Digitais da Informação e da Comunicação (TDICs)*. CFP.
 
-Conselho Federal de Psicologia. (2025). *Nota de posicionamento sobre Inteligência Artificial e Psicologia* (03 de julho de 2025). CFP. `[A VALIDAR: URL e título exatos na fonte oficial]`
+Conselho Federal de Psicologia. (2025, 3 de julho). *CFP divulga posicionamento sobre Inteligência Artificial no contexto da prática psicológica*. CFP. https://site.cfp.org.br/cfp-divulga-posicionamento-sobre-inteligencia-artificial-no-contexto-da-pratica-psicologica/
 
-Conselho Federal de Psicologia. (2025). *IA na Psicologia: prática ética e responsável* [Cartilha]. CFP. `[A VALIDAR: título e dados exatos]`
+Conselho Federal de Psicologia. (2025). *Inteligência Artificial na Psicologia: guia para uma prática ética e responsável* [Cartilha]. CFP. https://site.cfp.org.br/wp-content/uploads/2025/12/Cartilha_IA_A5-1.pdf
 
-Conselho Federal de Psicologia. (2025). *Chatbots, IA e sua saúde mental* [Cartilha]. CFP. `[A VALIDAR: título e dados exatos]`
+Conselho Federal de Psicologia. (2025). *Chatbots, Inteligência Artificial e sua Saúde Mental: um guia para navegar com mais segurança na nova fronteira digital* [Cartilha]. CFP. https://site.cfp.org.br/wp-content/uploads/2025/12/Cartilha_chatbot_IA_A5-1.pdf
 
 ---
 

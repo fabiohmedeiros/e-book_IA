@@ -32,7 +32,7 @@ Examinamos quatro cenários. Para cada um: o **potencial**, o **risco** e o **li
 
 ## 7.2 Documentação automática
 
-**O cenário:** assistência à produção de registros e materiais a partir de informações fornecidas pelo profissional (McCrudden et al., 2025; Stade et al., 2024).
+**O cenário:** assistência à produção de registros e materiais a partir de informações fornecidas pelo profissional (McCrudden et al., 2026; Stade et al., 2024).
 
 - **Potencial:** reduzir a carga burocrática, um fator real de sobrecarga e desgaste.
 - **Risco:** registros genéricos ou imprecisos; **quebra de sigilo** se dados identificáveis forem inseridos; documentos sem fundamentação técnica própria.
@@ -60,7 +60,7 @@ Além dos cenários, há riscos que atravessam todos eles e exigem vigilância c
 | **Erosão do sigilo** | Mais ferramentas = mais pontos de vazamento | Anonimização e política de dados (Cap. 4, 6) |
 | **Viés algorítmico** | Modelos herdam preconceitos dos dados | Leitura crítica das saídas (Cap. 2) |
 | **Desigualdade de acesso** | Nem todos terão as mesmas ferramentas | Letramento e governança (Gupta & Gandhi, 2025) |
-| **Vácuo regulatório** | A norma corre atrás da tecnologia | Governança ética e decisão humano-IA (Abderrahmen & Djamel, 2026) |
+| **Vácuo regulatório** | A norma corre atrás da tecnologia | Governança ética e decisão humano-IA (Senoussaoui & Rahmani, 2026) |
 
 > **Card de fechamento — o que a IA não substitui.**
 > O vínculo terapêutico. A presença. A escuta que acolhe o que não foi dito. O julgamento clínico que pesa singularidades. A responsabilidade ética e legal. Esses são o núcleo da Psicologia — e nenhum avanço técnico os transfere para uma máquina.
@@ -79,9 +79,9 @@ O futuro da Psicologia com IA não é a substituição do psicólogo, e sim a **
 - Shafran et al. (2025), *Behaviour Research and Therapy* — IA em treino/supervisão.
 - Zhang et al. (2025), *Nature Computational Science* — taxonomia de papéis de LLM e ética.
 - Tan et al. (2025), *Journal of Psychology and AI* — competência de LLMs em psicoterapia.
-- Abderrahmen & Djamel (2026), *Science, Education and Innovations* — governança ética e decisão humano-IA.
+- Senoussaoui & Rahmani (2026), *Science, Education and Innovations* — governança ética e decisão humano-IA.
 - Gupta & Gandhi (2025), *International Review of Psychiatry* — letramento em IA e futuro da área.
 - Sheperis & Sadeh-Sharvit (2023), *J. Technology in Counselor Education & Supervision* — supervisão apoiada por IA.
-- McCrudden et al. (2025), *JMIR Formative Research* — documentação clínica com IA.
+- McCrudden et al. (2026), *JMIR Formative Research* — documentação clínica com IA.
 
 **Norma aplicada:** reforço do posicionamento ético central + Código de Ética (Art. 2º, g). *Detalhamento no Cap. 3.*
