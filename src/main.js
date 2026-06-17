@@ -123,8 +123,15 @@ const ICON_CHECK =
 document.querySelectorAll('.copy-btn').forEach((btn) => {
   btn.innerHTML = ICON_COPY + '<span>Copiar</span>'
   btn.addEventListener('click', async () => {
-    const code = btn.parentElement.querySelector('.prompt-code')
-    const text = code ? code.textContent.trim() : ''
+    const targetSel = btn.getAttribute('data-copy-target')
+    let text
+    if (targetSel) {
+      const el = document.querySelector(targetSel)
+      text = el ? el.textContent.replace(/\s+/g, ' ').trim() : ''
+    } else {
+      const code = btn.parentElement.querySelector('.prompt-code')
+      text = code ? code.textContent.trim() : ''
+    }
     try {
       await navigator.clipboard.writeText(text)
     } catch {

@@ -255,6 +255,22 @@ mark.search-hit.current { outline: 2px solid var(--primary); }
 .title-page .tp-credits p { margin: 0; font-size: 1.02rem; color: var(--text); line-height: 1.5; }
 .title-page .tp-label { display: block; font-family: 'Outfit', sans-serif; font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: .25rem; }
 .title-page .tp-imprint { margin-top: 2.5rem; font-family: 'Outfit', sans-serif; letter-spacing: .15em; text-transform: uppercase; font-size: .8rem; color: var(--text-muted); }
+.title-page .tp-cite {
+  margin-top: 2.25rem; width: 100%; max-width: 34rem; text-align: left;
+  border: 1px solid var(--border); border-radius: .9rem;
+  background: var(--bg-elevated); box-shadow: var(--shadow-sm);
+  padding: 1.1rem 1.25rem; display: grid; gap: .9rem;
+}
+.title-page .tp-cite-title {
+  font-family: 'Outfit', sans-serif; font-weight: 700; font-size: .7rem;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--text-muted); margin: 0;
+}
+.title-page .tp-cite-item { display: grid; gap: .4rem; }
+.title-page .tp-cite-head { display: flex; align-items: center; justify-content: space-between; gap: .6rem; }
+.title-page .tp-cite-tag { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: .72rem; color: var(--primary); letter-spacing: .04em; }
+.title-page .tp-cite .copy-btn { position: static; flex: none; }
+.title-page .cite-text { margin: 0; font-size: .9rem; line-height: 1.55; color: var(--text); }
+.title-page .tp-cite-note { margin: 0; font-size: .76rem; color: var(--text-muted); font-style: italic; }
 
 /* Cabeçalho de seção das páginas de abertura */
 .cl-eyebrow { font-family: 'Outfit', sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--text-muted); text-align: center; margin: 0 0 1.5rem; }
