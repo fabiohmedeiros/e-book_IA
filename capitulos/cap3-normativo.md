@@ -66,7 +66,7 @@ A Resolução 9/2024 regula *"o exercício da psicologia mediado por Tecnologia 
 ### O elo com a IA: "servidores remotos"
 O Art. 2º define exercício mediado por TDICs como aquele que envolve *"emprego de métodos e técnicas psicológicas dependentes de **servidores remotos**"*. O Art. 3º, III repete: *"emprego de métodos e técnicas psicológicas mediante servidores remotos"*.
 
-**Toda ferramenta de IA em nuvem (ChatGPT, Claude, Gemini etc.) roda em servidores remotos.** Logo, ao processar informação ligada à prática clínica nesses serviços, o psicólogo está dentro do alcance desta resolução — e dos deveres que ela impõe.
+**Toda ferramenta de IA em nuvem (ChatGPT, Claude, Gemini etc.) roda em servidores remotos.** A leitura mais prudente, portanto, é considerar que, ao processar informação ligada à prática clínica nesses serviços, o psicólogo se coloca **sob o alcance** desta resolução — e dos deveres que ela impõe. Não se trata de interpretação já pacificada pelo CFP, mas da postura mais conservadora e segura diante da norma.
 
 ### Os deveres que mais importam para a IA
 
@@ -77,10 +77,10 @@ O Art. 2º define exercício mediado por TDICs como aquele que envolve *"emprego
 | **Art. 4º, I** | Avaliar as condições de **confidencialidade e privacidade** das informações | Na prática: antes de adotar uma ferramenta, descubra **onde ela guarda seus dados, por quanto tempo e se os usa para treinar o modelo** — e só use a que você conhece e aprova. |
 | **Art. 4º, II** | Ter as **competências** para o manejo das TDICs empregadas | Na prática: você precisa entender **como a ferramenta funciona, como ela erra** (alucinação, viés) e onde processa os dados antes de colocá-la no seu fluxo de trabalho. |
 | **Art. 4º, V** | Embasar o uso (ou o não-uso) da TDIC em **produção científica e ética** | Na prática: decida usar — ou deixar de usar — a IA com base em **evidência e fundamentos éticos**, não por modismo ou comodidade. |
-| **Art. 5º** | Encaminhar à **rede presencial** situações de risco de morte, violência, urgência e emergência | Na prática: diante de risco, violência ou emergência, **encaminhe à rede presencial de imediato**. Uma IA jamais conduz uma crise. |
+| **Art. 5º** | Encaminhar à **rede presencial** situações de risco de morte, violência, urgência e emergência | Na prática: diante de risco, violência ou emergência, **encaminhe à rede presencial de imediato**. O manejo de crise não é tarefa de IA — exige presença humana e rede de cuidado. |
 | **Art. 7º, parág. único** | Especificar os recursos tecnológicos que garantem o sigilo e **informar o cliente** | Na prática: **avise o paciente** quando uma tecnologia (inclusive IA) participa do atendimento e quais recursos protegem o sigilo dele. |
 
-> **O que conta como "informação sensível"?** A LGPD (Art. 5º, II) define **dado pessoal sensível** como aquele que revela origem racial ou étnica, convicção religiosa, opinião política, filiação sindical ou a organização religiosa/filosófica/política, **dado referente à saúde ou à vida sexual**, e dado genético ou biométrico. Na clínica, isso abrange quase tudo o que um paciente traz: diagnóstico, sofrimento, história de vida, orientação sexual, religião. Por isso, **praticamente todo conteúdo clínico é dado sensível** — e exige proteção reforçada antes de chegar a qualquer IA (detalhamento jurídico em 3.4).
+> **O que conta como "informação sensível"?** A LGPD (Art. 5º, II) define **dado pessoal sensível** como aquele que revela origem racial ou étnica, convicção religiosa, opinião política, filiação sindical ou a organização religiosa/filosófica/política, **dado referente à saúde ou à vida sexual**, e dado genético ou biométrico. Na clínica, isso abrange quase tudo o que um paciente traz: diagnóstico, sofrimento, história de vida, orientação sexual, religião. Por isso, no contexto clínico, **as informações que um paciente traz em regra configuram dado pessoal sensível** — e exigem proteção reforçada antes de chegar a qualquer IA (detalhamento jurídico em 3.4).
 
 > **Leitura-chave:** a Resolução 9/2024 não "proíbe" nem "autoriza" a IA — ela **transfere para o uso de IA os mesmos deveres de sigilo, competência e responsabilidade** que já regem o atendimento mediado por tecnologia. A ferramenta muda; o dever permanece.
 
