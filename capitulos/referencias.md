@@ -2,7 +2,7 @@
 
 > **Seção final do e-book.** Reúne (1) as 20 referências científicas — todas com DOI verificável, extraídas da planilha Elicit — e (2) as normativas (CFP/LGPD). Formatação **APA 7ª edição**.
 >
-> **Nota de validação:** volume, número e páginas foram completados via **API do Crossref** e conferidos na **OpenAlex** a partir do DOI de cada artigo (2026-06-12). **17 das 20** estão completas. As 3 restantes (Irshad, 2022; Sheperis & Sadeh-Sharvit, 2023; Mesquiti & Nook, 2026) **não têm número de página em nenhuma das bases** — ou porque o periódico não pagina tradicionalmente, ou por ser publicação avançada; nesses casos a APA 7 admite a omissão das páginas. As divergências de ano e de ordem de autor foram conferidas na fonte primária e corrigidas (Senoussaoui & Rahmani, 2026 — ordem confirmada no PDF do artigo; McCrudden et al., 2026 — ano confirmado na página oficial do JMIR). Nomes convertidos ao padrão APA (Sobrenome, Iniciais).
+> **Nota de validação:** volume, número e páginas foram completados via **API do Crossref** e conferidos na **OpenAlex** a partir do DOI de cada artigo (2026-06-12). **15 das 18** estão completas. As 3 restantes (Irshad, 2022; Sheperis & Sadeh-Sharvit, 2023; Mesquiti & Nook, 2026) **não têm número de página em nenhuma das bases** — ou porque o periódico não pagina tradicionalmente, ou por ser publicação avançada; nesses casos a APA 7 admite a omissão das páginas. O ano de McCrudden et al. (2026) foi confirmado na página oficial do JMIR. Duas fontes mais frágeis foram **substituídas por referências mais sólidas já da matriz**: o resumo de congresso de Volpe (2025) deu lugar a **Singhal et al. (2024)**; e o artigo de Senoussaoui & Rahmani (2026), em periódico de baixa indexação, deu lugar a **Heyen & Salloch (2021)**. Nomes convertidos ao padrão APA (Sobrenome, Iniciais).
 
 ---
 
@@ -32,8 +32,6 @@ Pillay, Y. (2025). Ethical decision-making guidelines for mental health clinicia
 
 Saeidnia, H. R., Hashemi Fotami, S. G., Lund, B. D., & Ghiasi, N. (2024). Ethical considerations in artificial intelligence interventions for mental health and well-being: Ensuring responsible implementation and impact. *Social Sciences*, *13*(7), 381. https://doi.org/10.3390/socsci13070381
 
-Senoussaoui, A., & Rahmani, D. (2026). Reframing ethical governance of artificial intelligence in mental health care: Toward a human-centered, explainable, and clinically responsible psychotherapeutic paradigm. *Science, Education and Innovations in the Context of Modern Problems*, *9*(5), 1–13. https://doi.org/10.56334/sei/9.5.22
-
 Shafran, R., Bond, L., Carlbring, P., Cohen, Z., Creed, T. A., Davey, E., Egan, S. J., Freeman, D., Hollon, S. D., Jacobson, N. C., Johnson, C., Kaysen, D. L., McGuinness, D. L., Patel, V., Pozuelo, J. R., Santos, H., Singla, D. R., Stirman, S., Taylor, D., & Wade, T. D. (2025). From innovation to implementation: Artificial intelligence in cognitive behaviour therapy training and supervision. *Behaviour Research and Therapy*, *197*, Article 104945. https://doi.org/10.1016/j.brat.2025.104945
 
 Sheperis, D., & Sadeh-Sharvit, S. (2023). Using AI-supported supervision in a university telemental health training clinic. *Journal of Technology in Counselor Education and Supervision*, *4*(1). https://doi.org/10.61888/2692-4129.1093
@@ -43,8 +41,6 @@ Singhal, S., Cooke, D. L., Villareal, R. I., Stoddard, J. J., Lin, C.-T., & Demp
 Stade, E. C., Stirman, S. W., Ungar, L. H., Boland, C., Schwartz, H. A., Yaden, D. B., Sedoc, J., DeRubeis, R. J., Willer, R., & Eichstaedt, J. C. (2024). Large language models could change the future of behavioral healthcare: A proposal for responsible development and evaluation. *npj Mental Health Research*, *3*(1), Article 12. https://doi.org/10.1038/s44184-024-00056-z
 
 Tan, K. S., Cervin, M., Leman, P., Nielsen, K., Kumar, P., & Medvedev, O. N. (2025). AI meets psychology: An exploratory study of large language models' competence in psychotherapy contexts. *Journal of Psychology and AI*, *1*(1), Article 2545258. https://doi.org/10.1080/29974100.2025.2545258
-
-Volpe, U. (2025). What can AI do for mental health care? *European Psychiatry*, *68*(S1), S61–S62. https://doi.org/10.1192/j.eurpsy.2025.239
 
 Zhang, R., Meng, H., Neubronner, M., & Lee, Y.-C. (2025). Computational and ethical considerations for using large language models in psychotherapy. *Nature Computational Science*, *5*(10), 854–862. https://doi.org/10.1038/s43588-025-00874-x
 

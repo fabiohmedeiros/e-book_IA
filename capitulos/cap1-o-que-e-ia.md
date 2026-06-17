@@ -76,7 +76,7 @@ Para não cair nem no ceticismo nem no exagero, vale conhecer o que **já está 
 
 - **Triagem e organização de informação** e apoio a pesquisa em saúde mental (Irshad et al., 2022; Mesquiti & Nook, 2026).
 - **Apoio a tarefas clínicas acessórias** — psicoeducação, organização de materiais, rascunho de documentos (detalhado no Cap. 5).
-- **Ferramentas conversacionais** que demonstram potencial e, ao mesmo tempo, limites importantes de segurança e eficácia (Guo et al., 2024; Volpe, 2025).
+- **Ferramentas conversacionais** que demonstram potencial e, ao mesmo tempo, limites importantes de segurança e eficácia (Guo et al., 2024; Singhal et al., 2024).
 - **Pesquisa e análise** — apoio à análise de dados e à produção científica em psicologia (Mesquiti & Nook, 2026).
 
 > **Card de equilíbrio:** a evidência atual sustenta a IA como **assistente de tarefas**, não como agente clínico. Onde os estudos apontam bons resultados, há sempre um profissional humano no comando da decisão.
@@ -94,6 +94,6 @@ IA é um campo amplo cujo expoente atual, o LLM, é um **preditor de texto** mui
 - Irshad et al. (2022), *Journal of Health and Medical Sciences* — usos de IA na psicologia.
 - Guo et al. (2024), *JMIR Mental Health* — revisão sistemática de LLMs em saúde mental.
 - Mesquiti & Nook (2026), *Annual Review of Biomedical Data Science* — LLMs em pesquisa e tratamento.
-- Volpe (2025), *European Psychiatry* — o que a IA já realiza em saúde mental.
+- Singhal et al. (2024), *Current Psychiatry Reports* — aplicações de ML em saúde mental e o papel do clínico.
 
 **Norma introduzida:** dever de competência técnica (Código de Ética, Art. 1º, b) — aprofundado no Cap. 3.

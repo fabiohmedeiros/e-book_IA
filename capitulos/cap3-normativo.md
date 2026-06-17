@@ -175,6 +175,6 @@ O Brasil ainda não tem uma "lei da IA na Psicologia" — mas o **Código de Ét
 
 **Científicas (da matriz do projeto):**
 - Pillay (2025), *Healthcare* — framework ético de cinco pilares.
-- Senoussaoui & Rahmani (2026), *Science, Education and Innovations* — governança ética e decisão humano-IA.
+- Heyen & Salloch (2021), *BMC Medical Ethics* — ética do apoio à decisão clínica (humano-IA).
 
 > **Nota de validação.** As passagens marcadas `[A VALIDAR]` serão preenchidas com citações literais verificadas dos documentos oficiais (CFP 2025 e LGPD) antes da geração do HTML final, conforme a regra anti-alucinação do projeto.
