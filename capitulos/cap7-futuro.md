@@ -22,7 +22,7 @@ Examinamos quatro cenários. Para cada um: o **potencial**, o **risco** e o **li
 
 ## 7.1 Supervisão assistida
 
-**O cenário:** ferramentas de IA que ajudam o supervisor e o supervisionando a organizar casos, gerar perguntas reflexivas e estruturar feedback de treino (Sheperis & Sadeh-Sharvit, 2023; Shafran et al., 2025).
+**O cenário:** ferramentas de IA que ajudam o supervisor e o supervisionando a organizar casos, gerar perguntas reflexivas e estruturar feedback de treino (Sheperis & Sadeh-Sharvit, 2023; Shafran et al., 2026).
 
 - **Potencial:** ampliar o acesso à supervisão, padronizar parte do treino, liberar tempo para a discussão que realmente importa.
 - **Risco:** terceirizar o julgamento formativo; achatar a singularidade do caso em respostas genéricas.
@@ -42,7 +42,7 @@ Examinamos quatro cenários. Para cada um: o **potencial**, o **risco** e o **li
 
 ## 7.3 Simulação de pacientes para treino
 
-**O cenário:** "pacientes virtuais" gerados por IA para estudantes praticarem entrevista, escuta e manejo, em ambiente seguro (Shafran et al., 2025; Tan et al., 2025).
+**O cenário:** "pacientes virtuais" gerados por IA para estudantes praticarem entrevista, escuta e manejo, em ambiente seguro (Shafran et al., 2026; Tan et al., 2025).
 
 - **Potencial:** treino repetível e de baixo risco, sem expor pessoas reais; espaço para errar e aprender.
 - **Risco:** aprender padrões irreais (um paciente simulado não reage como um humano); confundir competência técnica com competência relacional.
@@ -76,7 +76,7 @@ O futuro da Psicologia com IA não é a substituição do psicólogo, e sim a **
 
 ### Referências deste capítulo
 - Stade et al. (2024), *npj Mental Health Research* — roadmap de desenvolvimento responsável.
-- Shafran et al. (2025), *Behaviour Research and Therapy* — IA em treino/supervisão.
+- Shafran et al. (2026), *Behaviour Research and Therapy* — IA em treino/supervisão.
 - Zhang et al. (2025), *Nature Computational Science* — taxonomia de papéis de LLM e ética.
 - Tan et al. (2025), *Journal of Psychology and AI* — competência de LLMs em psicoterapia.
 - Heyen & Salloch (2021), *BMC Medical Ethics* — ética do apoio à decisão clínica baseada em aprendizado de máquina.

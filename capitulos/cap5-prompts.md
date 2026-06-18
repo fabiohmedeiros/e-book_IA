@@ -78,7 +78,7 @@ Tema (genérico e anonimizado): "[ex.: manejo de ansiedade de desempenho em adul
 
 ## 5.3 Supervisão *(estruturação de estudo de caso)*
 
-> **Este conjunto NÃO serve para:** substituir o supervisor humano. Serve para **organizar a apresentação** de um caso já anonimizado para levar à supervisão. A literatura explora a IA como apoio à supervisão e ao treino — sempre complementar ao supervisor (Sheperis & Sadeh-Sharvit, 2023; Shafran et al., 2025).
+> **Este conjunto NÃO serve para:** substituir o supervisor humano. Serve para **organizar a apresentação** de um caso já anonimizado para levar à supervisão. A literatura explora a IA como apoio à supervisão e ao treino — sempre complementar ao supervisor (Sheperis & Sadeh-Sharvit, 2023; Shafran et al., 2026).
 
 **Prompt 4 — Roteiro para apresentar um caso na supervisão**
 ```
@@ -154,7 +154,7 @@ Um bom prompt para psicólogo é aquele que **economiza tempo em tarefas acessó
 ### Referências deste capítulo
 - Sheperis & Sadeh-Sharvit (2023), *J. Technology in Counselor Education & Supervision* — supervisão apoiada por IA.
 - McCrudden et al. (2026), *JMIR Formative Research* — documentação clínica com IA.
-- Shafran et al. (2025), *Behaviour Research and Therapy* — IA em treino/supervisão de TCC.
+- Shafran et al. (2026), *Behaviour Research and Therapy* — IA em treino/supervisão de TCC.
 - Stade et al. (2024), *npj Mental Health Research* — desenvolvimento e uso responsável.
 
 **Normativas aplicadas:** Código de Ética (Art. 2º g, 2º q, 9º, 20); Res. CFP 9/2024 (Art. 5º); LGPD. *Detalhamento no Cap. 3 e 4.*
