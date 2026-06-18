@@ -242,6 +242,15 @@ mark.search-hit.current { outline: 2px solid var(--primary); }
 }
 
 /* Folha de rosto (página de título) */
+.cover-page {
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 !important; margin: 0 auto 2.25rem !important;
+  max-width: none; border: none; border-radius: 0;
+  box-shadow: none; background: #0D1B2A;
+}
+.cover-page::before { display: none; }
+.book-cover { width: 100%; height: auto; display: block; }
+
 .title-page {
   min-height: min(78vh, 40rem);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -588,35 +597,49 @@ table.sortable thead th.sort-desc::after { content: "↓"; opacity: 1; color: va
    IMPRESSÃO / PDF (Ctrl+P)
    ============================================================ */
 @media print {
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
   :root {
     --bg: #fff; --bg-elevated: #fff; --bg-sidebar: #fff;
     --text: #1a1a1a; --text-strong: #000; --text-muted: #444;
     --border: #d0d0d0; --border-strong: #b0b0b0;
     --primary: #1d4ed8; --primary-strong: #1d4ed8; --primary-soft: #f2f6ff;
     --code-bg: #f4f4f4; --shadow-sm: none; --shadow-md: none; --shadow-lg: none;
+    --warn-bg: #fbf3df; --warn-border: #ecd9a3; --warn-text: #8a5a13;
+    --danger-bg: #fbeeea; --danger-border: #f0cabd; --danger-text: #9a3412;
+    --ok-bg: #eef6ec; --ok-border: #c4ddb9; --ok-text: #3f6b32;
+    --info-bg: #eef4fb; --info-border: #cfe0f0; --info-text: #1e4d80;
   }
-  /* Página física do livro: 6×9 pol. com margens de miolo */
-  @page { size: 6in 9in; margin: 18mm 16mm; }
+  @page { size: 6in 9in; margin: 16mm 14mm; }
+  @page :first { margin: 0; }
   html { background: #fff; }
   body { background: #fff; color: #000; font-size: 10.5pt; line-height: 1.5; }
   .no-print { display: none !important; }
   .sidebar, .topbar, #to-top, #overlay, #progress-bar, .copy-btn { display: none !important; }
   .content-wrap { margin-left: 0 !important; }
   .container { max-width: none; padding: 0; }
-  /* Cada folha vira página real: sem sombra/moldura/limite, uma por página */
   .sheet {
     max-width: none; width: auto; margin: 0; padding: 0;
     border: none; box-shadow: none; border-radius: 0;
-    page-break-before: always;
   }
-  .sheet:first-child { page-break-before: avoid; }
   .sheet::before { display: none; }
-  .title-page { min-height: 0; }
-  .title-page .tp-rule { background: #1d4ed8; }
+  .cover-page {
+    background: #0D1B2A !important; padding: 0 !important; margin: 0 !important;
+    width: 100%; height: 100vh;
+    page-break-after: always;
+  }
+  .book-cover { width: 100%; height: 100%; display: block; }
+  .colophon-page { padding-top: 3rem !important; }
+  .chapter, .toc-page { page-break-before: always; }
   .chapter { padding-top: 0; }
   #avisos { page-break-before: avoid; }
+  .title-page { min-height: 0; }
+  .title-page .tp-rule { background: #1d4ed8; }
   .prompt-card, .callout, .compare, .table-wrap, .checklist, .prompt-code, tr, .summary-box, .book-toc .bt-item { page-break-inside: avoid; }
   .content h2.chapter-title, .content h3 { page-break-after: avoid; }
   a.ref-link, a.ref-doi { color: #1d4ed8; text-decoration: none; }
   .prompt-code { padding: .6rem .8rem; }
+  .content, .container { overflow-wrap: break-word; word-wrap: break-word; box-sizing: border-box; max-width: 100% !important; }
+  img, svg, table, .callout, .prompt-card, .compare, .notice, .tp-cite, .table-wrap { max-width: 100% !important; box-sizing: border-box; }
+  .notice-grid { grid-template-columns: 1fr !important; }
+  .content ul, .content ol { padding-left: 1.2em; }
 }
