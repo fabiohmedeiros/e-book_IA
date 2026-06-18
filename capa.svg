@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="1600" height="2400">
+
+  <!-- Background -->
+  <rect width="1600" height="2400" fill="#0D1B2A"/>
+
+  <!-- Geometric detail: top-left corner bracket -->
+  <line x1="130" y1="400" x2="330" y2="400" stroke="#C49A6C" stroke-width="2" opacity="0.7"/>
+  <line x1="130" y1="400" x2="130" y2="600" stroke="#C49A6C" stroke-width="2" opacity="0.7"/>
+
+  <!-- Geometric detail: bottom-right corner bracket -->
+  <line x1="1470" y1="1150" x2="1270" y2="1150" stroke="#C49A6C" stroke-width="2" opacity="0.7"/>
+  <line x1="1470" y1="1150" x2="1470" y2="950" stroke="#C49A6C" stroke-width="2" opacity="0.7"/>
+
+  <!-- Main title -->
+  <text x="200" y="640"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="140" font-weight="bold" fill="#FFFFFF"
+        letter-spacing="8">INTELIGÊNCIA</text>
+  <text x="200" y="810"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="140" font-weight="bold" fill="#FFFFFF"
+        letter-spacing="8">ARTIFICIAL</text>
+
+  <!-- Secondary title -->
+  <text x="200" y="960"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="74" font-weight="300" fill="#C49A6C"
+        letter-spacing="3">na Prática Clínica</text>
+
+  <!-- Separator line -->
+  <line x1="200" y1="1010" x2="740" y2="1010" stroke="#C49A6C" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Subtitle -->
+  <text x="200" y="1080"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="38" font-weight="300" fill="#6B7D8E"
+        letter-spacing="1.5">Um guia ético e prático para psicólogos</text>
+
+  <!-- Author (main) -->
+  <text x="200" y="2040"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="44" font-weight="bold" fill="#FFFFFF"
+        letter-spacing="3">FABIO HERNANDEZ DE MEDEIROS</text>
+
+  <!-- Co-authors -->
+  <text x="200" y="2110"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="32" font-weight="300" fill="#6B7D8E"
+        letter-spacing="1">Davi de Barros Silva · Letícia Maria Cristino Fritsch</text>
+  <text x="200" y="2158"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="32" font-weight="300" fill="#6B7D8E"
+        letter-spacing="1">Janaína Souza de Lima · Suelen Vitoria Gomes de Oliveira</text>
+
+  <!-- Edition -->
+  <text x="200" y="2330"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="20" font-weight="300" fill="#3D4F5F"
+        letter-spacing="4">1ª EDIÇÃO · BRASÍLIA · 2026</text>
+
+</svg>
