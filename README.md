@@ -1,6 +1,6 @@
-# E-book: Inteligência Artificial para a Psicologia — Guia Prático para a Clínica
+# E-book: Inteligência Artificial na Prática Clínica — Um guia ético e prático para psicólogos
 
-E-book interativo **"Inteligência Artificial para a Psicologia: Guia Prático para a Clínica"** — aplicações práticas, ética profissional e limites da Inteligência Artificial na Psicologia Clínica.
+E-book interativo **"Inteligência Artificial na Prática Clínica: Um guia ético e prático para psicólogos"** — aplicações práticas, ética profissional e limites da Inteligência Artificial na Psicologia Clínica.
 
 🔗 **Versão publicada (online):** https://fabiohmedeiros.github.io/e-book_IA/
 📦 **Repositório:** https://github.com/fabiohmedeiros/e-book_IA · branch `main`
