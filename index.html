@@ -8,7 +8,7 @@
     <meta name="color-scheme" content="light dark" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@500;700;800&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
     <title>Inteligência Artificial na Prática Clínica: Um guia ético e prático para psicólogos</title>
   </head>
   <body>
@@ -29,7 +29,7 @@
 
           <div class="search-box">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <input id="search-input" type="search" placeholder="Buscar no e-book…" autocomplete="off" aria-label="Buscar no conteúdo" />
+            <input id="search-input" type="search" placeholder="Buscar no livro…" autocomplete="off" aria-label="Buscar no conteúdo" />
           </div>
           <div id="search-count" class="search-count" aria-live="polite"></div>
         </div>
@@ -37,7 +37,10 @@
         <nav class="toc scroll-thin" aria-label="Índice">
           <p class="toc-label">Início</p>
           <a href="#rosto"><span class="num">❖</span><span>Capa</span></a>
+          <a href="#folha-rosto"><span class="num">◈</span><span>Folha de rosto</span></a>
+          <a href="#ficha-cip"><span class="num">▤</span><span>Ficha catalográfica</span></a>
           <a href="#creditos"><span class="num">©</span><span>Créditos &amp; ficha</span></a>
+          <a href="#editora"><span class="num">⬡</span><span>Editora</span></a>
           <a href="#sumario"><span class="num">☰</span><span>Sumário</span></a>
           <p class="toc-label" style="margin-top:1rem">Capítulos</p>
           <a href="#cap1"><span class="num">1</span><span>O que é IA e o que não é</span></a>
@@ -94,8 +97,41 @@
               <text x="200" y="2040" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="44" font-weight="bold" fill="#FFFFFF" letter-spacing="3">FABIO HERNANDEZ DE MEDEIROS</text>
               <text x="200" y="2110" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32" font-weight="300" fill="#6B7D8E" letter-spacing="1">Davi de Barros Silva · Letícia Maria Cristino Fritsch</text>
               <text x="200" y="2158" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32" font-weight="300" fill="#6B7D8E" letter-spacing="1">Janaína Souza de Lima · Suelen Vitoria Gomes de Oliveira</text>
-              <text x="200" y="2330" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#3D4F5F" letter-spacing="4">1ª EDIÇÃO · BRASÍLIA · 2026</text>
+              <text x="200" y="2250" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#3D4F5F" letter-spacing="4">1ª EDIÇÃO · BRASÍLIA · 2026</text>
+              <text x="800" y="2370" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="300" fill="#3D4F5F" letter-spacing="2" text-anchor="middle">Editora do Instituto Walden4</text>
             </svg>
+          </section>
+
+          <!-- ============================ FOLHA DE ROSTO ============================ -->
+          <section id="folha-rosto" class="sheet title-page" aria-label="Folha de rosto">
+            <p class="tp-title">Inteligência Artificial na Prática Clínica</p>
+            <p class="tp-subtitle">Um guia ético e prático para psicólogos</p>
+            <hr class="tp-rule" />
+            <div class="tp-credits">
+              <p>
+                <span class="tp-label">Autor</span>
+                Fabio Hernandez de Medeiros
+              </p>
+              <p>
+                <span class="tp-label">Coautores</span>
+                Davi de Barros Silva · Letícia Maria Cristino Fritsch<br>
+                Janaína Souza de Lima · Suelen Vitoria Gomes de Oliveira
+              </p>
+              <p>
+                <span class="tp-label">Edição</span>
+                1ª edição | ISBN 978-______________
+              </p>
+            </div>
+            <p class="tp-imprint">Editora do Instituto Walden4</p>
+            <p class="tp-imprint" style="letter-spacing:.1em;margin-top:.25rem">Brasília · 2026</p>
+          </section>
+
+          <!-- ============================ FICHA CIP ============================ -->
+          <section id="ficha-cip" class="sheet cip-page" aria-label="Ficha catalográfica">
+            <p class="cip-header">Dados Internacionais de Catalogação na Publicação (CIP)<br>(Câmara Brasileira do Livro, SP, Brasil)</p>
+            <div class="cip-box">
+              <p class="cip-placeholder">[Ficha catalográfica a ser inserida pela editora após obtenção do ISBN]</p>
+            </div>
           </section>
 
           <!-- ============================ CRÉDITOS / FICHA ============================ -->
@@ -104,12 +140,11 @@
 
             <div class="cl-meta">
               <p><strong>Inteligência Artificial na Prática Clínica — Um guia ético e prático para psicólogos</strong></p>
-              <p>1ª edição · Brasília · 2026.</p>
+              <p>1ª edição · Brasília: Editora do Instituto Walden4, 2026.</p>
               <p>© 2026 Fabio Hernandez de Medeiros e coautores. Todos os direitos reservados. Reprodução somente mediante autorização prévia dos autores.</p>
               <p><strong>Autor:</strong> Fabio Hernandez de Medeiros.<br>
               <strong>Coautores:</strong> Davi de Barros Silva · Letícia Maria Cristino Fritsch · Janaína Souza de Lima · Suelen Vitoria Gomes de Oliveira.</p>
-              <p><strong>ISBN:</strong> 978-________________ <span class="validar">A DEFINIR</span></p>
-              <p><strong>DOI:</strong> <span class="validar">A DEFINIR</span></p>
+              <p><strong>Editora:</strong> Editora do Instituto Walden4 — <a href="https://www.walden4.com.br" target="_blank" rel="noopener">www.walden4.com.br</a></p>
             </div>
 
             <div class="tp-cite">
@@ -119,16 +154,15 @@
                   <span class="tp-cite-tag">APA · 7ª ed.</span>
                   <button class="copy-btn no-print" type="button" data-copy-target="#cite-apa"></button>
                 </div>
-                <p class="cite-text" id="cite-apa">Medeiros, F. H., Silva, D. B., Fritsch, L. M. C., Lima, J. S., &amp; Oliveira, S. V. G. (2026). <em>Inteligência artificial na prática clínica: Um guia ético e prático para psicólogos</em>.</p>
+                <p class="cite-text" id="cite-apa">Medeiros, F. H., Silva, D. B., Fritsch, L. M. C., Lima, J. S., &amp; Oliveira, S. V. G. (2026). <em>Inteligência artificial na prática clínica: Um guia ético e prático para psicólogos</em>. Editora do Instituto Walden4.</p>
               </div>
               <div class="tp-cite-item">
                 <div class="tp-cite-head">
                   <span class="tp-cite-tag">ABNT · NBR 6023</span>
                   <button class="copy-btn no-print" type="button" data-copy-target="#cite-abnt"></button>
                 </div>
-                <p class="cite-text" id="cite-abnt">MEDEIROS, F. H.; SILVA, D. B.; FRITSCH, L. M. C.; LIMA, J. S.; OLIVEIRA, S. V. G. <strong>Inteligência artificial na prática clínica</strong>: um guia ético e prático para psicólogos. Brasília: Edição do autor, 2026.</p>
+                <p class="cite-text" id="cite-abnt">MEDEIROS, F. H.; SILVA, D. B.; FRITSCH, L. M. C.; LIMA, J. S.; OLIVEIRA, S. V. G. <strong>Inteligência artificial na prática clínica</strong>: um guia ético e prático para psicólogos. Brasília: Editora do Instituto Walden4, 2026.</p>
               </div>
-              <p class="tp-cite-note">Atualize quando o ISBN e o DOI forem definidos (o DOI será acrescentado ao final de cada citação).</p>
             </div>
 
             <div id="avisos" class="notice-grid">
@@ -141,6 +175,22 @@
                 <p><strong>Uso educacional</strong>Conteúdo formativo. Não substitui a prática clínica, a supervisão profissional nem a assessoria jurídica/ética.</p>
               </div>
             </div>
+          </section>
+
+          <!-- ============================ EDITORA ============================ -->
+          <section id="editora" class="sheet publisher-page" aria-label="Editora">
+            <h3 class="pub-title">Editora do Instituto Walden4</h3>
+            <p class="pub-text">A Editora do Instituto Walden4 tem o compromisso de disseminar o conhecimento produzido na área da Análise do Comportamento, tanto em termos científicos quanto profissionais. Buscando democratizar o acesso a esse conhecimento, muitos de nossos livros são disponibilizados gratuitamente. Todos os nossos livros estão disponíveis no formato digital online, o que significa que em questão de segundos você poderá estar desfrutando da leitura dos livros publicados por nós que despertarem seu interesse.</p>
+            <p class="pub-label">Conselho Editorial</p>
+            <p class="pub-text">Dr. Gleidson Gabriel da Cruz<br>Dr. Márcio Borges Moreira</p>
+            <p class="pub-label">Contato</p>
+            <p class="pub-text">
+              <a href="mailto:secretaria@walden4.com.br">secretaria@walden4.com.br</a><br>
+              <a href="https://www.walden4.com.br" target="_blank" rel="noopener">www.walden4.com.br</a><br>
+              <a href="https://www.instagram.com/instituto.walden4" target="_blank" rel="noopener">@instituto.walden4</a><br>
+              <a href="https://www.facebook.com/iwalden4" target="_blank" rel="noopener">facebook.com/iwalden4</a><br>
+              <a href="https://www.youtube.com/user/instwalden4" target="_blank" rel="noopener">youtube.com/user/instwalden4</a>
+            </p>
           </section>
 
           <!-- ============================ SUMÁRIO ============================ -->
@@ -164,7 +214,7 @@
               <span class="chapter-kicker">Capítulo 1</span>
               <h2 class="chapter-title">O que é IA e o que não é</h2>
             </div>
-            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
 
             <h3 id="cap1-oa">Objetivos de aprendizagem</h3>
             <p>Ao final deste capítulo, você será capaz de:</p>
@@ -272,7 +322,7 @@
               <span class="chapter-kicker">Capítulo 2</span>
               <h2 class="chapter-title">Ética e limites profissionais</h2>
             </div>
-            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
 
             <h3 id="cap2-oa">Objetivos de aprendizagem</h3>
             <p>Ao final deste capítulo, você será capaz de:</p>
@@ -377,7 +427,7 @@
               <span class="chapter-kicker">Capítulo 3</span>
               <h2 class="chapter-title">O que o CFP e a legislação dizem</h2>
             </div>
-            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
 
             <h3 id="cap3-oa">Objetivos de aprendizagem</h3>
             <p>Ao final deste capítulo, você será capaz de:</p>
@@ -407,16 +457,16 @@
             <p>Quatro deveres concentram quase tudo o que importa aqui.</p>
             <h4>a) Competência técnica (Art. 1º, b e c)</h4>
             <div class="callout tip"><p><em>“Assumir responsabilidades profissionais somente por atividades para as quais esteja capacitado pessoal, teórica e tecnicamente”</em> (Art. 1º, b) e <em>“prestar serviços psicológicos de qualidade […] utilizando princípios, conhecimentos e técnicas reconhecidamente fundamentados na ciência psicológica”</em> (Art. 1º, c).</p></div>
-            <p><strong>Na prática com IA:</strong> usar uma ferramenta que você não compreende é, em si, um problema ético. Antes de colocar a IA no fluxo de trabalho, é preciso entender o que ela faz, como erra (alucinação, viés) e onde guarda os dados. O dever de competência fundamenta a própria existência deste e-book: <strong>letramento em IA é pré-requisito, não acessório.</strong></p>
+            <p><strong>Na prática com IA:</strong> usar uma ferramenta que você não compreende é, em si, um problema ético. Antes de colocar a IA no fluxo de trabalho, é preciso entender o que ela faz, como erra (alucinação, viés) e onde guarda os dados. O dever de competência fundamenta a própria existência deste livro: <strong>letramento em IA é pré-requisito, não acessório.</strong></p>
             <h4>b) Responsabilidade técnico-científica dos documentos (Art. 2º, g)</h4>
             <div class="callout tip"><p>Ao psicólogo é vedado <em>“emitir documentos sem fundamentação e qualidade técnico-científica”</em>.</p></div>
             <p><strong>Na prática com IA:</strong> um texto gerado por IA <strong>não tem</strong> fundamentação técnico-científica própria — ele é predição estatística de palavras. Se você usa a IA para apoiar a redação de um relatório, <strong>a responsabilidade técnica continua integralmente sua</strong>. A IA rascunha; o psicólogo valida, corrige e assina. Nunca o contrário.</p>
             <h4>c) Sigilo profissional (Art. 9º e 10)</h4>
             <div class="callout tip"><p><em>“É dever do psicólogo respeitar o sigilo profissional a fim de proteger, por meio da confidencialidade, a intimidade das pessoas […] a que tenha acesso no exercício profissional”</em> (Art. 9º).</p></div>
-            <p><strong>Na prática com IA:</strong> este é o ponto mais sensível de todo o e-book. Colar o relato de um paciente — com nome, história, detalhes identificáveis — em um chatbot de IA pode significar <strong>expor dado sigiloso a um servidor de terceiros</strong>. O sigilo do Art. 9º é o motivo pelo qual o Capítulo 4 inteiro é dedicado a anonimização. A quebra de sigilo só é admitida em hipóteses estritas (Art. 10) e jamais por conveniência tecnológica.</p>
+            <p><strong>Na prática com IA:</strong> este é o ponto mais sensível de todo o livro. Colar o relato de um paciente — com nome, história, detalhes identificáveis — em um chatbot de IA pode significar <strong>expor dado sigiloso a um servidor de terceiros</strong>. O sigilo do Art. 9º é o motivo pelo qual o Capítulo 4 inteiro é dedicado a anonimização. A quebra de sigilo só é admitida em hipóteses estritas (Art. 10) e jamais por conveniência tecnológica.</p>
             <h4>d) Diagnóstico e exposição (Art. 2º, q)</h4>
             <div class="callout tip"><p>É vedado <em>“realizar diagnósticos, divulgar procedimentos ou apresentar resultados de serviços psicológicos em meios de comunicação, de forma a expor pessoas, grupos ou organizações”</em>.</p></div>
-            <p><strong>Na prática com IA:</strong> sustenta a <strong>trava de segurança</strong> do e-book — nenhum prompt deste material faz diagnóstico, parecer automático ou manejo de crise. A IA não diagnostica; ela apoia tarefas acessórias.</p>
+            <p><strong>Na prática com IA:</strong> sustenta a <strong>trava de segurança</strong> do livro — nenhum prompt deste material faz diagnóstico, parecer automático ou manejo de crise. A IA não diagnostica; ela apoia tarefas acessórias.</p>
             <div class="callout info">
               <div class="callout-title">📣 Dever de informar o paciente (Art. 14)</div>
               <p><em>“A utilização de quaisquer meios de registro e observação da prática psicológica […] devendo o usuário ou beneficiário, desde o início, ser informado.”</em> Se a IA entra no registro ou na observação da prática, há um dever de <strong>transparência</strong> com o paciente. Ver Capítulo 2.</p>
@@ -481,7 +531,7 @@
 
             <p><strong>3. Cartilha “Chatbots, Inteligência Artificial e sua Saúde Mental”</strong> (CFP, 2025) — material voltado ao <strong>público geral</strong>, que alerta para os riscos de tratar um chatbot como terapeuta. O guia reconhece que chatbots podem oferecer informação e apoio inicial, mas adverte que <strong>não realizam avaliação clínica, não assumem responsabilidade ética e podem errar — ou até agravar — um quadro de saúde mental</strong>, e que inserir dados identificáveis de um paciente em uma IA genérica representa risco ético e legal.</p>
 
-            <p>A direção dessas manifestações é clara e alinhada ao restante do arcabouço: a IA é admitida como <strong>apoio</strong>, sob responsabilidade humana integral, com proteção rigorosa de dados e sem substituir o vínculo terapêutico. É o mesmo princípio condutor deste e-book.</p>
+            <p>A direção dessas manifestações é clara e alinhada ao restante do arcabouço: a IA é admitida como <strong>apoio</strong>, sob responsabilidade humana integral, com proteção rigorosa de dados e sem substituir o vínculo terapêutico. É o mesmo princípio condutor deste livro.</p>
 
             <h3 id="cap3-4">3.4 · LGPD — Lei nº 13.709/2018</h3>
             <p>A Lei Geral de Proteção de Dados é a camada que falta para fechar o quadro. Ela não fala de Psicologia, mas trata do insumo central da clínica: <strong>dados pessoais</strong>.</p>
@@ -556,7 +606,7 @@
               <span class="chapter-kicker">Capítulo 4</span>
               <h2 class="chapter-title">Uso seguro da IA</h2>
             </div>
-            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
 
             <h3 id="cap4-oa">Objetivos de aprendizagem</h3>
             <p>Ao final deste capítulo, você será capaz de:</p>
@@ -695,13 +745,108 @@
             </div>
           </section>
 
+          <!-- ============================ ENCARTE IDIO ============================ -->
+          <section id="anuncio-idio" class="sheet idio-ad" aria-label="Anúncio: Idio">
+            <header class="idio-header">
+              <div class="idio-logo">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="idioLogoGradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#2DD4BF" />
+                      <stop offset="100%" stop-color="#4F46E5" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="50" cy="25" r="7" fill="url(#idioLogoGradient)" />
+                  <path d="M50 45 V90" stroke="url(#idioLogoGradient)" stroke-width="10" stroke-linecap="round" />
+                  <path d="M20 35 Q20 75 50 75 Q80 75 80 35" stroke="url(#idioLogoGradient)" stroke-width="10" stroke-linecap="round" fill="none" />
+                </svg>
+                <div class="idio-logo-text">
+                  <span class="idio-logo-title">idio</span>
+                  <span class="idio-logo-sub">Psicologia Inteligente</span>
+                </div>
+              </div>
+              <span class="idio-badge">✨ Inteligência Artificial na Prática</span>
+            </header>
+
+            <h3 class="idio-headline">O futuro da psicologia clínica<br><span class="idio-gradient">já chegou ao seu consultório.</span></h3>
+            <p class="idio-sub">Conheça a primeira plataforma de gestão clínica para psicólogos com inteligência artificial ética, nativa e desenhada para proteger o sigilo do seu paciente.</p>
+
+            <div class="idio-showcase">
+              <div class="idio-showcase-head">
+                <span class="idio-showcase-title"><span class="idio-showcase-icon">Ψ</span> Conheça a <strong>PsiquIA</strong> — sua assistente clínica</span>
+                <span class="idio-lgpd">🔒 100% LGPD &amp; CFP</span>
+              </div>
+              <div class="idio-flow">
+                <div class="idio-flow-step"><strong>1. Sessão</strong><span>Escuta ativa sem distrações</span></div>
+                <span class="idio-flow-arrow">➔</span>
+                <div class="idio-flow-step"><strong>2. Processamento</strong><span>IA ética organiza relatos</span></div>
+                <span class="idio-flow-arrow">➔</span>
+                <div class="idio-flow-step"><strong>3. Prontuário pronto</strong><span>Evolução estruturada em segundos</span></div>
+              </div>
+            </div>
+
+            <div class="idio-features">
+              <div class="idio-feature">
+                <div class="idio-feature-icon idio-icon-teal">🧠</div>
+                <h4>Evoluções automáticas</h4>
+                <p>Esqueça o trabalho burocrático pós-sessão. A PsiquIA gera resumos clínicos estruturados e organiza o histórico do paciente.</p>
+              </div>
+              <div class="idio-feature">
+                <div class="idio-feature-icon idio-icon-indigo">🔒</div>
+                <h4>Sigilo inegociável</h4>
+                <p>Arquitetura isolada por profissional, criptografia de ponta e estrita conformidade com as resoluções do CFP.</p>
+              </div>
+              <div class="idio-feature">
+                <div class="idio-feature-icon idio-icon-rose">📹</div>
+                <h4>Vídeo integrado e seguro</h4>
+                <p>Sala de teleconsulta própria, estável e sem limite de tempo. Sem necessidade de instalar aplicativos externos.</p>
+              </div>
+              <div class="idio-feature">
+                <div class="idio-feature-icon idio-icon-amber">⚡</div>
+                <h4>Consultório completo</h4>
+                <p>Agenda com lembretes automáticos via WhatsApp, portal do paciente, contratos, recibos e cobranças Pix.</p>
+              </div>
+            </div>
+
+            <footer class="idio-footer">
+              <div class="idio-cta-text">
+                <span class="idio-cta-highlight">Convite especial para leitores</span>
+                <h4>Comece a usar hoje mesmo.</h4>
+                <p>Plano Start <strong>grátis para sempre</strong> (até 3 pacientes ativos). Sem cartão de crédito.</p>
+              </div>
+              <div class="idio-cta-right">
+                <div class="idio-cta-url">
+                  <span class="idio-url-main">idio.com.br</span>
+                  <span class="idio-url-social">@idio.psi</span>
+                </div>
+                <div class="idio-qr" title="Aponte a câmera para acessar idio.com.br">
+                  <svg viewBox="0 0 29 29" fill="#0F172A" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h8v8H0V0zm2 2v4h4V2H2zM21 0h8v8h-8V0zm2 2v4h4V2h-4zM0 21h8v8H0v-8zm2 2v4h4v-4H2z"/>
+                    <rect x="3" y="3" width="2" height="2"/>
+                    <rect x="24" y="3" width="2" height="2"/>
+                    <rect x="3" y="24" width="2" height="2"/>
+                    <rect x="10" y="1" width="2" height="2"/><rect x="14" y="1" width="3" height="2"/><rect x="18" y="2" width="2" height="2"/>
+                    <rect x="10" y="4" width="3" height="2"/><rect x="15" y="4" width="2" height="3"/><rect x="18" y="5" width="2" height="2"/>
+                    <rect x="10" y="7" width="2" height="2"/><rect x="13" y="8" width="4" height="2"/><rect x="19" y="8" width="2" height="2"/>
+                    <rect x="1" y="10" width="2" height="2"/><rect x="4" y="10" width="3" height="2"/><rect x="8" y="10" width="2" height="3"/><rect x="12" y="11" width="2" height="2"/><rect x="16" y="10" width="3" height="2"/><rect x="21" y="11" width="2" height="2"/><rect x="25" y="10" width="3" height="2"/>
+                    <rect x="2" y="13" width="3" height="2"/><rect x="6" y="14" width="2" height="2"/><rect x="10" y="14" width="3" height="2"/><rect x="15" y="13" width="2" height="3"/><rect x="19" y="14" width="3" height="2"/><rect x="24" y="13" width="2" height="2"/>
+                    <rect x="1" y="16" width="2" height="3"/><rect x="5" y="17" width="3" height="2"/><rect x="9" y="16" width="2" height="2"/><rect x="13" y="17" width="3" height="2"/><rect x="18" y="17" width="2" height="2"/><rect x="22" y="16" width="3" height="2"/><rect x="26" y="17" width="2" height="2"/>
+                    <rect x="10" y="20" width="3" height="2"/><rect x="14" y="19" width="2" height="3"/><rect x="18" y="20" width="3" height="2"/><rect x="23" y="19" width="2" height="2"/><rect x="26" y="20" width="2" height="3"/>
+                    <rect x="10" y="23" width="2" height="2"/><rect x="13" y="23" width="3" height="2"/><rect x="17" y="23" width="2" height="3"/><rect x="21" y="23" width="3" height="2"/><rect x="25" y="24" width="3" height="2"/>
+                    <rect x="10" y="26" width="3" height="2"/><rect x="15" y="26" width="2" height="2"/><rect x="18" y="26" width="3" height="2"/><rect x="22" y="26" width="2" height="2"/><rect x="26" y="27" width="2" height="2"/>
+                  </svg>
+                </div>
+              </div>
+            </footer>
+          </section>
+
           <!-- ============================ CAPÍTULO 5 ============================ -->
           <section id="cap5" class="sheet chapter">
             <div class="chapter-head">
               <span class="chapter-kicker">Capítulo 5</span>
               <h2 class="chapter-title">Prompts para psicólogos</h2>
             </div>
-            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
 
             <h3 id="cap5-oa">Objetivos de aprendizagem</h3>
             <p>Ao final deste capítulo, você será capaz de:</p>
@@ -881,7 +1026,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
               <span class="chapter-kicker">Capítulo 6</span>
               <h2 class="chapter-title">Ferramentas de IA</h2>
             </div>
-            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
 
             <h3 id="cap6-oa">Objetivos de aprendizagem</h3>
             <p>Ao final deste capítulo, você será capaz de:</p>
@@ -1032,7 +1177,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
               <span class="chapter-kicker">Capítulo 7</span>
               <h2 class="chapter-title">Futuro da Psicologia com IA</h2>
             </div>
-            <div class="callout principio"><span class="pin">Princípio condutor:</span> A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.</div>
+
 
             <h3 id="cap7-oa">Objetivos de aprendizagem</h3>
             <p>Ao final deste capítulo, você será capaz de:</p>
@@ -1084,11 +1229,8 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
                 </tbody>
               </table>
             </div>
-            <div class="callout principio">
-              <div class="callout-title" style="font-style:normal">🫶 O que a IA não substitui</div>
-              <p style="font-style:normal">O vínculo terapêutico. A presença. A escuta que acolhe o que não foi dito. O julgamento clínico que pesa singularidades. A responsabilidade ética e legal. Esses são o núcleo da Psicologia — e nenhum avanço técnico os transfere para uma máquina.</p>
-            </div>
-            <p>A taxonomia de papéis que os LLMs podem assumir em saúde mental converge para a mesma conclusão deste e-book: <strong>quanto mais a tarefa se aproxima do juízo clínico e do cuidado, menos cabe à IA e mais cabe ao humano</strong> (Zhang et al., 2025).</p>
+
+            <p>A taxonomia de papéis que os LLMs podem assumir em saúde mental converge para a mesma conclusão deste livro: <strong>quanto mais a tarefa se aproxima do juízo clínico e do cuidado, menos cabe à IA e mais cabe ao humano</strong> (Zhang et al., 2025).</p>
 
             <div class="summary-box">
               <span class="summary-label">Em uma frase</span>
@@ -1115,13 +1257,8 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
               <span class="chapter-kicker">Seção final</span>
               <h2 class="chapter-title">Referências &amp; encerramento</h2>
             </div>
-            <div class="callout info">
-              <p>Reúne (1) as 20 referências científicas — todas com DOI verificável, extraídas da planilha Elicit — e (2) as normativas (CFP/LGPD). Formatação <strong>APA 7ª edição</strong>.</p>
-              <p style="margin-top:.6rem"><strong>Nota de validação:</strong> volume, número e páginas foram completados via API do Crossref e conferidos na OpenAlex a partir do DOI de cada artigo (12/06/2026). <strong>15 das 18</strong> estão completas. As 3 restantes (Irshad, 2022; Sheperis &amp; Sadeh-Sharvit, 2023; Mesquiti &amp; Nook, 2026) não têm número de página em nenhuma das bases — nesses casos a APA 7 admite a omissão das páginas. O ano de McCrudden et al. (2026) foi confirmado na página oficial do JMIR. Os <strong>18 DOIs foram reauditados no Crossref em 17/06/2026</strong> (autor/ano/título conferem); na ocasião, o ano de <strong>Shafran et al. foi corrigido para 2026</strong> (data <em>issued</em>/impressa do vol. 197 da <em>Behaviour Research and Therapy</em>; o “2025” no DOI é numeração interna do periódico). Duas fontes mais frágeis foram <strong>substituídas por referências mais sólidas já da matriz</strong>: o resumo de congresso de Volpe (2025) deu lugar a <strong>Singhal et al. (2024)</strong>; e o artigo de Senoussaoui &amp; Rahmani (2026), em periódico de baixa indexação, deu lugar a <strong>Heyen &amp; Salloch (2021)</strong>.</p>
-            </div>
-
-            <h3 id="ref-cientificas">Referências (APA 7)</h3>
-            <ol class="ref-list">
+            <h3 id="ref-cientificas">Referências</h3>
+            <ul class="ref-list">
               <li>Bharti, J., &amp; Singh, R. (2025). Between care and code: Clinicians' perspectives as an ethical lens for AI in mental health – Insights from an interview-based case study. <em>Science Insights</em>, <em>47</em>(5), 2041–2048. <a class="ref-doi" href="https://doi.org/10.15354/si.25.or1302" target="_blank" rel="noopener">https://doi.org/10.15354/si.25.or1302</a></li>
               <li>Guo, Z., Lai, A., Thygesen, J., Farrington, J., Keen, T., &amp; Li, K. (2024). Large language models for mental health applications: Systematic review. <em>JMIR Mental Health</em>, <em>11</em>, e57400. <a class="ref-doi" href="https://doi.org/10.2196/57400" target="_blank" rel="noopener">https://doi.org/10.2196/57400</a></li>
               <li>Gupta, D. R., &amp; Gandhi, T. (2025). AI and ethics in mental health: Personal reflections on the future of psychiatry. <em>International Review of Psychiatry</em>, <em>38</em>(1–3), 122–125. <a class="ref-doi" href="https://doi.org/10.1080/09540261.2025.2600617" target="_blank" rel="noopener">https://doi.org/10.1080/09540261.2025.2600617</a></li>
@@ -1140,7 +1277,7 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
               <li>Stade, E. C., Stirman, S. W., Ungar, L. H., Boland, C., Schwartz, H. A., Yaden, D. B., Sedoc, J., DeRubeis, R. J., Willer, R., &amp; Eichstaedt, J. C. (2024). Large language models could change the future of behavioral healthcare: A proposal for responsible development and evaluation. <em>npj Mental Health Research</em>, <em>3</em>(1), Article 12. <a class="ref-doi" href="https://doi.org/10.1038/s44184-024-00056-z" target="_blank" rel="noopener">https://doi.org/10.1038/s44184-024-00056-z</a></li>
               <li>Tan, K. S., Cervin, M., Leman, P., Nielsen, K., Kumar, P., &amp; Medvedev, O. N. (2025). AI meets psychology: An exploratory study of large language models' competence in psychotherapy contexts. <em>Journal of Psychology and AI</em>, <em>1</em>(1), Article 2545258. <a class="ref-doi" href="https://doi.org/10.1080/29974100.2025.2545258" target="_blank" rel="noopener">https://doi.org/10.1080/29974100.2025.2545258</a></li>
               <li>Zhang, R., Meng, H., Neubronner, M., &amp; Lee, Y.-C. (2025). Computational and ethical considerations for using large language models in psychotherapy. <em>Nature Computational Science</em>, <em>5</em>(10), 854–862. <a class="ref-doi" href="https://doi.org/10.1038/s43588-025-00874-x" target="_blank" rel="noopener">https://doi.org/10.1038/s43588-025-00874-x</a></li>
-            </ol>
+            </ul>
 
             <h3 id="ref-normativas">Normativas e documentos oficiais</h3>
             <ul class="ref-list">
@@ -1153,17 +1290,15 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
             </ul>
 
             <h3 id="encerramento">Encerramento</h3>
-            <p>Este e-book nasceu de uma convicção simples: <strong>a melhor resposta à chegada da Inteligência Artificial na Psicologia não é proibir nem idolatrar, mas compreender.</strong> Ao longo dos sete capítulos, procuramos mostrar que a IA pode aliviar o psicólogo de tarefas acessórias — organizar, revisar, rascunhar, pesquisar — sem jamais tocar naquilo que é o coração da profissão: o vínculo, a escuta, o julgamento clínico e a responsabilidade ética.</p>
+            <p>Este livro nasceu de uma convicção simples: <strong>a melhor resposta à chegada da Inteligência Artificial na Psicologia não é proibir nem idolatrar, mas compreender.</strong> Ao longo dos sete capítulos, procuramos mostrar que a IA pode aliviar o psicólogo de tarefas acessórias — organizar, revisar, rascunhar, pesquisar — sem jamais tocar naquilo que é o coração da profissão: o vínculo, a escuta, o julgamento clínico e a responsabilidade ética.</p>
             <p>As normas brasileiras — o Código de Ética, a Resolução CFP nº 9/2024 e a LGPD — não foram escritas para a IA, mas já oferecem um mapa seguro: sigilo rigoroso, competência técnica, transparência com o paciente e responsabilidade indelegável. A evidência científica reunida aqui aponta na mesma direção: quanto mais perto do cuidado, menos lugar para a máquina e mais lugar para o humano.</p>
             <p>Que este material sirva de bússola — não de manual fechado — para um uso da tecnologia que seja, antes de tudo, <strong>ético, seguro e a serviço das pessoas</strong>.</p>
-            <div class="callout principio">
-              <p>“A Inteligência Artificial é uma ferramenta de apoio à prática psicológica, nunca substitui o psicólogo, o vínculo terapêutico ou o julgamento clínico.”</p>
-            </div>
+
 
             <div class="endnote">
               <p style="margin:0 0 .6rem"><em>Obra produzida com auxílio de Inteligência Artificial (Claude Opus 4.8, da Anthropic), sob revisão humana integral. Uso educacional — não substitui a prática clínica, a supervisão profissional nem a assessoria jurídica/ética formal.</em></p>
               <p style="margin:0"><strong>Inteligência Artificial na Prática Clínica — Um guia ético e prático para psicólogos</strong><br>
-              Fabio Hernandez de Medeiros e coautores · 1ª edição · Brasília · 2026</p>
+              Fabio Hernandez de Medeiros e coautores · 1ª edição · Brasília: Editora do Instituto Walden4, 2026</p>
             </div>
           </section>
 
@@ -1176,5 +1311,14 @@ Tema: "[ex.: a importância das pausas no trabalho]"</code></pre>
     </button>
 
     <script type="module" src="/src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@14.1.0/dist/twemoji.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+      });
+    </script>
+    <style>
+      img.emoji { height: 1.2em; width: 1.2em; margin: 0 .05em 0 .1em; vertical-align: -0.2em; }
+    </style>
   </body>
 </html>
